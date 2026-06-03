@@ -1,0 +1,41 @@
+{
+  "candidates": [
+    {
+      "id": "C001", "name": "Arjun Mehta", "city": "Noida",
+      "skills": ["Python", "pandas", "statistics", "mean-reversion"],
+      "experience_years": 3, "education": "B.Tech IIT Delhi",
+      "prev_role": "Quant Analyst, Edelweiss", "gpa": 8.7
+    },
+    {
+      "id": "C002", "name": "Priya Sharma", "city": "Gurugram",
+      "skills": ["R", "C++", "options pricing", "Black-Scholes"],
+      "experience_years": 5, "education": "MSc Statistics, DSE",
+      "prev_role": "Derivatives Trader, ICICI Securities", "gpa": 9.1
+    },
+    {
+      "id": "C003", "name": "Rohan Das", "city": "Delhi",
+      "skills": ["Python", "ML", "NLP", "sentiment analysis"],
+      "experience_years": 2, "education": "MBA Finance, FMS Delhi",
+      "prev_role": "Research Associate, Kotak", "gpa": 7.9
+    },
+    {
+      "id": "C004", "name": "Sneha Kapoor", "city": "Noida",
+      "skills": ["Python", "backtesting", "Sharpe ratio", "factor models"],
+      "experience_years": 4, "education": "M.Tech, BITS Pilani",
+      "prev_role": "Quant Researcher, AlphaGrep", "gpa": 8.5
+    },
+    {
+      "id": "C005", "name": "Vikram Nair", "city": "Faridabad",
+      "skills": ["Excel", "VBA", "basic statistics"],
+      "experience_years": 1, "education": "BBA, Amity University",
+      "prev_role": "Finance Intern, HDFC", "gpa": 6.8
+    }
+  ],
+  "open_role": {
+    "title": "Quant Researcher — AI R&D",
+    "location": "Delhi-NCR",
+    "required_skills": ["Python", "statistics", "backtesting"],
+    "min_experience": 2,
+    "min_gpa": 7.5
+  }
+}
