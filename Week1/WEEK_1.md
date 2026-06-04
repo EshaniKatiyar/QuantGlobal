@@ -23,9 +23,11 @@
 > Zero human input after trigger.
 
 ## WIN
-> All 5 agents completed sequentially on llama-3.2-3b-instruct via LM Studio.
-> Full dossier generated and saved to outputs/ autonomously.
+> All 5 agents ran sequentially on llama-3.2-3b-instruct via LM Studio.
+> Full dossier generated autonomously — JD, screening, schedule, onboarding, aptitude test.
+> UI features: candidate CRUD, skill match chart, email simulator, dossier download.
 
 ## FAIL / LESSON
-> 3b model repeated onboarding phases 3x — fixed with deduplication in app.py.
-> Table formatting required custom parsing due to inconsistent pipe output.
+> 3b model repeats output phases and ignores strict formatting instructions.
+> Mitigated with deduplication logic in app.py and output parsing.
+> Would use llama3-8b or larger model in production for consistent formatting.
