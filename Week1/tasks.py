@@ -45,13 +45,30 @@ Use only this table. No extra text.""",
     )
 
     t4 = Task(
-        description="""Create a 30-day onboarding plan for the #1 ranked candidate.
-OUTPUT FORMAT:
-Phase 1 (Days 1-10): [focus area] — [3 tasks]
-Phase 2 (Days 11-20): [focus area] — [3 tasks]
-Phase 3 (Days 21-30): [focus area] — [3 tasks]
-No extra text.""",
-        expected_output="3-phase 30-day onboarding plan.",
+        description="""You are writing a 30-day onboarding plan for a new Quant Researcher hire.
+You MUST output EXACTLY this structure, no more, no less:
+
+Phase 1 (Days 1-10): Technical Setup
+1. [task]
+2. [task]
+3. [task]
+
+Phase 2 (Days 11-20): Strategy & Backtesting
+1. [task]
+2. [task]
+3. [task]
+
+Phase 3 (Days 21-30): Live Research & Review
+1. [task]
+2. [task]
+3. [task]
+
+Rules:
+- Start immediately with "Phase 1" — no preamble
+- Never repeat a phase header
+- Never add extra phases
+- Replace [task] with one specific quant onboarding task""",
+        expected_output="Exactly 3 phases with exactly 3 tasks each. No repetition.",
         agent=onboarding,
         context=[t2]
     )
