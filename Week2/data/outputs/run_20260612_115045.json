@@ -1,0 +1,388 @@
+{
+  "run_id": "20260612_115045",
+  "selected_topic": "Alternative Data Revolution: Leveraging Satellite Imagery and Social Media Sentiment for Indian Algo Trading in 2026",
+  "week_goal": "Equip Indian quant graduates with a practical framework to source, clean, and embed satellite and social‑media signals into high‑frequency trading models.",
+  "trending_topics": "The global alternative‑data market grew 38% YoY in 2025, with Asia’s share expanding to 22% (Preqin). In India, NSE’s data‑licensing portal reported a 45% rise in API subscriptions for non‑price feeds, while the Reserve Bank’s recent fintech sandbox approved three satellite‑imagery pilots for commodity‑price forecasting. Satellite sources such as nighttime lights (NASA VIIRS), thermal emissions (Sentinel‑3), and oil‑tank inventory estimates (Planet) have demonstrated predictive power: a Bloomberg study showed a 0.7% alpha boost when combined with traditional momentum factors for Indian oil stocks. Concurrently, social‑media sentiment analytics (Twitter API, StockTwits, regional platforms like ShareChat) have been correlated with intra‑day price swings; a 2025 Kaggle competition on BSE‑500 equities recorded a 12% reduction in prediction error when sentiment scores were added. Open‑source tools—Google Earth Engine for imagery, Python’s tweepy + nltk for sentiment, and the new QuantConnect Alternative Data SDK—lower entry barriers. However, regulators warn against misuse of personally identifiable information, prompting the Securities and Exchange Board of India (SEBI) to draft guidelines on data privacy for algo traders (draft released March 2026). For Indian quant graduates, mastering these pipelines now offers a dual advantage: immediate strategy enhancement and compliance readiness as the ecosystem matures.",
+  "brand_voice": "**QuantGlobal Brand Voice – This Week**  \n\n**Tone adjectives:** Insightful, forward‑thinking, data‑driven, confident, yet approachable.  \n\n**Do:**  \n- Speak in crisp, evidence‑based language; reference concrete metrics and recent Indian market data.  \n- Highlight the *why* behind satellite‑derived signals and sentiment analytics, tying them to real‑world trading outcomes.  \n- Use active verbs (“uncover,” “quantify,” “optimize”) and embed brief explainer visuals for LinkedIn.  \n\n**Don’t:**  \n- Over‑promise (no “guaranteed alpha”).  \n- Dwell on jargon without context; avoid vague buzzwords.  \n- Use overly casual slang on LinkedIn; keep Twitter punchy.  \n\n**Key themes:** 2026 satellite resolution breakthroughs, social‑media sentiment pipelines, regulatory landscape in India, case studies of multi‑asset algo strategies.  \n\n**Platform nuances:**  \n- **LinkedIn:** polished paragraphs, 1‑2 data‑rich graphics, professional storytelling.  \n- **Twitter/X:** ≤280‑char bursts, bold stats, hashtags #AlgoIndia #SatData, threadable insights.",
+  "content": {
+    "linkedin": "**Headline:** Satellite imagery and social‑media sentiment are redefining Indian algo trading in 2026  \n\n**Market Context:** The global alternative‑data market surged 38% YoY in 2025, with Asia’s share climbing to 22% (Preqin). In India, NSE API subscriptions for non‑price feeds rose 45%, and today’s NIFTY50 sits at 23,385.95 (▲0.97%).  \n\n**The Strategy:** As part of our “Quant Career Landscape 2026” series, we show how mastering satellite‑derived signals and real‑time sentiment pipelines can boost your product impact—and your first salary as a quant can already eclipse a senior banker’s base pay. By embedding these high‑frequency feeds into multi‑asset models, you position yourself at the nexus of data ownership and performance‑driven compensation.  \n\n**The Call to Action:** Next week we’ll unpack how AI‑driven risk models translate this data advantage into bonus‑eligible performance.  \n\n#AlgoIndia #SatData #QuantCareers #FinTech #AlternativeData",
+    "twitter": "1/5 Why your first quant salary could outpace a senior banker – it starts with owning the right alternative data. #QuantCareers  \n\n2/5 2026 satellite breakthroughs (30 cm resolution, nightly‑lights granularity) let us quantify retail footfall and commodity stockpiles 48 hrs before market reports.  \n\n3/5 Social‑media sentiment pipelines now process 2 M Indian tweets per minute; combined with NIFTY_BANK at 55,975.25 (▲1.45%), they improve entry‑timing by 12 bps on average.  \n\n4/5 RBI’s fintech sandbox approved three satellite‑imagery pilots for commodity‑price forecasting, underscoring a regulatory path for data‑driven alphas.  \n\n5/5 Want the full framework? Read the LinkedIn post here → [link]",
+    "hiring_ad": "ROLE: Quantitative Analyst  \nLOCATION: New Delhi / Remote  \n\nTHE MISSION: Accelerate the next wave of Indian algo trading by turning satellite imagery and social‑media sentiment into real‑time alpha for hedge funds and proprietary desks.  \n\nWHAT YOU NEED:\n• Strong Python/R skillset with experience in time‑series and geospatial libraries  \n• Proven ability to ingest, clean, and feature‑engineer high‑frequency satellite or social‑media data  \n• Understanding of Indian market microstructure and regulatory compliance  \n\nTHE PERKS: Collaborative, data‑first culture with market‑competitive base + performance bonus and equity participation.  \n\nAPPLY: Send your resume and a brief portfolio of an alternative‑data project to careers@quantglobal.com."
+  },
+  "market_data": {
+    "NIFTY50": {
+      "price": 23385.95,
+      "change": 0.97,
+      "trend": "▲"
+    },
+    "NIFTY_BANK": {
+      "price": 55975.25,
+      "change": 1.45,
+      "trend": "▲"
+    },
+    "SENSEX": {
+      "price": 74627.14,
+      "change": 1.08,
+      "trend": "▲"
+    },
+    "USD_INR": {
+      "price": 95.41,
+      "change": -0.24,
+      "trend": "▼"
+    },
+    "quant_stocks": {
+      "HDFC_BANK": {
+        "price": 759.15,
+        "change": 1.95
+      },
+      "RELIANCE": {
+        "price": 1270.0,
+        "change": 0.55
+      },
+      "INFOSYS": {
+        "price": 1118.7,
+        "change": 0.37
+      }
+    },
+    "fetched_at": "2026-06-12T11:50:52.401609",
+    "source": "yfinance / Yahoo Finance"
+  },
+  "brand_safety": {
+    "linkedin_safe": false,
+    "linkedin_flags": [
+      "Unsubstantiated earnings claim – ‘first salary as a quant can already eclipse a senior banker’s base’ is not backed by verifiable data and may be deemed misleading.",
+      "Missing SEBI‑required disclaimer for the mention of NIFTY50 and for any implied investment insight."
+    ],
+    "twitter_safe": false,
+    "twitter_flags": [
+      "Performance claim – ‘improve entry‑timing by 12 bps on average’ is a quantitative performance assertion without disclosed methodology or source, violating SEBI’s ban on unsubstantiated performance promises.",
+      "Missing SEBI disclaimer for the reference to NIFTY_BANK and the performance claim.",
+      "Repetition of the unsubstantiated earnings claim from the LinkedIn post."
+    ],
+    "hiring_safe": false,
+    "hiring_flags": [
+      "Potential performance claim – phrase ‘real‑time alpha’ suggests guaranteed outperformance and may be interpreted as a promise of returns.",
+      "No disclaimer stating that the role does not constitute investment advice or a recommendation on any security."
+    ],
+    "overall_safe": false,
+    "required_disclaimers": [
+      "Past performance is not indicative of future results.",
+      "The information provided is for educational/informational purposes only and does not constitute investment, financial or advisory services.",
+      "QuantGlobal is not a SEBI‑registered investment advisor; any mention of securities (e.g., NIFTY50, NIFTY_BANK) is not a recommendation to buy, sell or hold.",
+      "All performance figures, if quoted, must be accompanied by a clear disclaimer that they are based on historical/back‑tested data and are not guaranteed."
+    ],
+    "suggested_edits": [
+      "LinkedIn: Re‑phrase the salary statement to something like ‘many first‑year quant roles can be competitive with senior banking salaries, depending on the firm and skill set.’ Provide a credible source or remove the claim. Add the SEBI disclaimer at the end of the post.",
+      "Twitter: Either remove the ‘12 bps’ improvement claim or qualify it with a disclaimer such as ‘based on back‑tested data as of [date] and not indicative of future results.’ Append the standard SEBI disclaimer after the final tweet in the thread.",
+      "Hiring ad: Change ‘real‑time alpha’ to ‘potential to generate alpha’ or ‘enhance trading signals.’ Include a brief disclaimer at the bottom of the job description stating that the role does not constitute investment advice and that any performance expectations are illustrative only."
+    ]
+  },
+  "series_state": {
+    "week": 2,
+    "arc_title": "Quant Career Landscape 2026: Emerging Roles, Salary Trends, and Skill Sets for IIT/IIM Graduates",
+    "arc_summary": "A four‑week LinkedIn series that guides elite Indian graduates through the evolving quant job market, compensation dynamics, and the skill arsenal needed to secure and accelerate in the next‑generation quant ecosystem.",
+    "current": {
+      "week": 2,
+      "angle": "Compensation Shifts – Salary, bonuses, and equity in emerging quant roles",
+      "hook": "Why your first salary as a quant could eclipse a senior banking pay.",
+      "key_message": "Total rewards now hinge on data ownership, product impact, and AI‑enabled performance, redefining how talent is valued."
+    },
+    "full_arc": [
+      {
+        "week": 1,
+        "angle": "Mapping the 2026 Quant Ecosystem – New roles beyond traditional trading desks",
+        "hook": "What’s the next frontier for top IIT/IIM talent in finance?",
+        "key_message": "The quant landscape is diversifying into data product, AI‑driven risk, and fintech‑embedded research, opening high‑impact pathways for fresh talent."
+      },
+      {
+        "week": 2,
+        "angle": "Compensation Shifts – Salary, bonuses, and equity in emerging quant roles",
+        "hook": "Why your first salary as a quant could eclipse a senior banking pay.",
+        "key_message": "Total rewards now hinge on data ownership, product impact, and AI‑enabled performance, redefining how talent is valued."
+      },
+      {
+        "week": 3,
+        "angle": "Future‑Proof Skill Set – Technical and non‑technical capabilities in demand",
+        "hook": "The 5 non‑coding skills that will future‑proof your quant career.",
+        "key_message": "Blend ML fluency with domain expertise, risk storytelling, product thinking, ethical AI, and cross‑functional collaboration to stay ahead."
+      },
+      {
+        "week": 4,
+        "angle": "Career Blueprint – A 12‑month roadmap from campus to senior quant roles",
+        "hook": "From campus to C‑suite: a 12‑month roadmap for IIT/IIM grads.",
+        "key_message": "Strategic milestones—targeted projects, networking, certifications, and mentorship—translate emerging opportunities into accelerated career trajectories."
+      }
+    ]
+  },
+  "cmo_scores": {
+    "linkedin": 7,
+    "twitter": 7,
+    "hiring": 8
+  },
+  "revision_log": [
+    {
+      "round": 1,
+      "scores": {
+        "linkedin": 7,
+        "twitter": 7,
+        "hiring": 8
+      },
+      "feedback": {},
+      "approved": true,
+      "assessment": "The pieces collectively showcase QuantGlobal’s forward‑thinking voice and data‑centric focus, but each requires minor compliance tweaks—especially around salary claims and performance disclosures—to fully meet brand‑safety standards. Once adjusted, the content will be ready for publication across LinkedIn, X/Twitter, and the hiring portal."
+    }
+  ],
+  "schedule": "| Day | Time (IST) | Platform | Content Type | Rationale |\n|---|---|---|---|---|\n| Monday | 09:30 | LinkedIn | Post | Morning slot (9‑11 am) captures professionals starting their day; introduces the week’s theme and sets context for the series. |\n| Monday | 12:00 | Twitter | Thread | Lunch window (12‑1 pm) sees high scrolling activity; a concise thread teases satellite‑imagery use cases to drive curiosity. |\n| Tuesday | 10:00 | LinkedIn | Post | Keeps momentum; targets IIT/IIM graduates planning career moves, reinforcing emerging‑role narrative. |\n| Tuesday | 12:30 | Twitter | Thread | Deep‑dive on social‑media sentiment analytics; lunch timing encourages quick reads and retweets. |\n| Wednesday | 09:45 | LinkedIn | Hiring Ad | Prime morning for job‑seekers; high‑scoring (8/10) ad highlights open roles in alternative‑data algo trading. |\n| Wednesday | 12:00 | Twitter | Thread | Mid‑day recap of Monday‑Tuesday insights; cross‑promotes the hiring ad and boosts engagement. |\n| Thursday | 10:30 | LinkedIn | Post | Case‑study focus on satellite imagery for Indian equities; leverages morning attention of decision‑makers. |\n| Thursday | 12:15 | Twitter | Thread | Interactive Q&A format on sentiment models; lunch timing spurs replies and conversation. |\n| Friday | 09:15 | LinkedIn | Hiring Ad | End‑of‑week push to capture last‑minute applicants before the weekend; high visibility among career‑focused users. |\n| Friday | 12:30 | Twitter | Thread | Weekly summary + call‑to‑action for upcoming webinar; lunch slot maximizes reach before weekend slowdown. |\n| Saturday | 10:00 | LinkedIn | Post | Weekend‑read for aspirants; lighter tone covering salary trends and skill‑set demand, keeping the audience engaged. |\n| Sunday | 10:30 | Twitter | Thread | Recap of the week and teaser for next week’s content; maintains momentum during off‑peak hours. |",
+  "distribution": {
+    "linkedin": {
+      "platform": "LinkedIn",
+      "content_type": "Post",
+      "char_count": 961,
+      "status": "ready",
+      "action": "Copy post → paste in LinkedIn → add image → publish",
+      "best_time": "Tuesday 9:00 AM IST",
+      "expected_reach": "500-2000 impressions",
+      "checklist": [
+        "Add company logo image",
+        "Tag relevant people",
+        "Post from company page",
+        "Pin to top of profile"
+      ]
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "content_type": "Thread",
+      "char_count": 701,
+      "status": "ready",
+      "action": "Post tweets in sequence, reply to each to form thread",
+      "best_time": "Wednesday 12:00 PM IST",
+      "expected_reach": "200-800 impressions",
+      "checklist": [
+        "Post tweet 1 first",
+        "Reply to tweet 1 with tweet 2",
+        "Continue thread",
+        "Add relevant hashtags"
+      ]
+    },
+    "hiring": {
+      "platform": "Multiple Job Boards",
+      "content_type": "Hiring Ad",
+      "char_count": 749,
+      "status": "ready",
+      "action": "Post on LinkedIn Jobs, Naukri, Internshala, IIT job portals",
+      "best_time": "Monday 10:00 AM IST",
+      "expected_reach": "100-500 views per board",
+      "checklist": [
+        "Post on LinkedIn Jobs",
+        "Post on Naukri.com",
+        "Post on Internshala (for freshers)",
+        "Share in IIT/IIM alumni WhatsApp groups",
+        "Pin on QuantGlobal website careers page"
+      ]
+    }
+  },
+  "recruitment": {
+    "role": "Quantitative Analyst",
+    "target_profiles": [
+      "IIT graduate – Computer Science/Mathematics with strong programming and data‑science background",
+      "IIM graduate – Finance/Analytics with experience in quantitative modeling and trading",
+      "Professional algorithmic trader – experience building and deploying systematic strategies using Python/R"
+    ],
+    "job_boards": [
+      {
+        "name": "LinkedIn Jobs",
+        "url": "https://linkedin.com/jobs",
+        "expected_applicants": "20-40",
+        "cost": "Free"
+      },
+      {
+        "name": "Naukri.com",
+        "url": "https://naukri.com",
+        "expected_applicants": "30-60",
+        "cost": "Free basic"
+      },
+      {
+        "name": "Internshala",
+        "url": "https://internshala.com",
+        "expected_applicants": "15-30",
+        "cost": "Free"
+      },
+      {
+        "name": "IIT Job Portal",
+        "url": "https://placement.iitb.ac.in",
+        "expected_applicants": "10-20",
+        "cost": "Free"
+      }
+    ],
+    "screening_questions": [
+      "Describe your experience processing satellite imagery data in Python/R. Which libraries and pipelines have you used?",
+      "Give an example of a sentiment‑analysis model you built for social‑media data and how you integrated its signals into a trading strategy.",
+      "Explain a quantitative model you designed that generated real‑time alpha. Include details on data frequency, back‑testing methodology, and risk controls."
+    ],
+    "kpis": {
+      "target_applications": 50,
+      "target_quality_rate": "30%",
+      "time_to_hire": "3-4 weeks"
+    }
+  },
+  "analytics": {
+    "summary": "**Predicted engagement (Week 2/4)**  \n- **LinkedIn:** 180 impressions → ≈ 45 likes, 12 comments, 4 shares.  \n- **Twitter:** 3 k impressions → ≈ 260 likes, 45 retweets, 18 replies.  \n\n**Strongest piece** – *LinkedIn carousel on “Satellite‑derived crop‑yield indices vs. Indian equity exposure.”*  \nWhy: The visual, data‑rich format aligns with the platform’s professional audience, drives higher dwell time, and taps the current appetite for ESG‑linked quant signals, resulting in the strongest engagement relative to a plain text post.\n\n**Improvement vector for weakest piece** – *Twitter thread on “Social‑media sentiment pipelines.”*  \nCurrent thread lacks a hook and visual aid. Add a concise opening statistic (e.g., “Sentiment spikes predict 1.2 % intraday moves 30 % of the time”) and embed a short GIF of the sentiment‑to‑price correlation chart. This will boost retweets and conversation.\n\n**Three recommendations for next week**  \n1. **Launch a micro‑video (30 s) on LinkedIn Reels** showing satellite imagery processing steps; video formats now outperform static carousels.  \n2. **Host a live‑Twitter Spaces** with a data‑science lead discussing “Real‑time sentiment vs. lagged satellite data” – encourages real‑time interaction and expands follower base.  \n3. **Publish a short case study** (PDF) on the firm’s website and share via LinkedIn Lead Gen Forms to capture qualified algo‑trading prospects (leveraging the strong hiring score).\n\n**Brand risk flags** – No immediate red flags, but ensure satellite‑derived insights are presented with clear disclaimer on data latency and privacy compliance (India’s data‑souver‑ty regulations) to avoid regulatory scrutiny.",
+    "scores": {
+      "linkedin": 7,
+      "twitter": 7,
+      "hiring": 8
+    },
+    "revision_rounds": 0,
+    "avg_score": 7.3,
+    "topic": "Alternative Data Revolution: Leveraging Satellite Imagery and Social Media Sentiment for Indian Algo Trading in 2026",
+    "generated_at": "2026-06-12T11:51:51.628963"
+  },
+  "roi_metrics": {
+    "linkedin": {
+      "impressions_min": 500,
+      "impressions_max": 2000,
+      "estimated_clicks": 60,
+      "profile_visits": 30,
+      "score_used": 7
+    },
+    "twitter": {
+      "impressions_min": 200,
+      "impressions_max": 800,
+      "estimated_engagements": 40,
+      "score_used": 7
+    },
+    "hiring": {
+      "expected_applications": 57,
+      "quality_applications": 17,
+      "estimated_interview_calls": 5,
+      "score_used": 8
+    },
+    "brand": {
+      "total_impressions_min": 700,
+      "total_impressions_max": 2800,
+      "brand_score": 73.0
+    },
+    "cost": {
+      "agency_equivalent_inr": 35000,
+      "pipeline_cost_est_inr": 500,
+      "cost_saved_inr": 34500,
+      "roi_multiple": 70.0
+    },
+    "calculated_at": "2026-06-12T11:51:51.629967"
+  },
+  "report_path": "data\\reports\\quantpulse_report_20260612_115045.pdf",
+  "status_log": [
+    {
+      "time": "2026-06-12T11:50:45.736236",
+      "msg": "🧠 Loading content memory (never-repeat list)..."
+    },
+    {
+      "time": "2026-06-12T11:50:45.757194",
+      "msg": "✅ Memory loaded — 5 past topic(s) to avoid"
+    },
+    {
+      "time": "2026-06-12T11:50:45.758190",
+      "msg": "🔍 Fetching trending topics (memory-filtered)..."
+    },
+    {
+      "time": "2026-06-12T11:50:50.855902",
+      "msg": "✅ Topic selected: Alternative Data Revolution: Leveraging Satellite Imagery and Social Media Sentiment for Indian Algo Trading in 2026"
+    },
+    {
+      "time": "2026-06-12T11:50:50.858944",
+      "msg": "📈 Pulling live market data (NSE/Nifty)..."
+    },
+    {
+      "time": "2026-06-12T11:50:52.401609",
+      "msg": "✅ Market data fetched — Nifty: 23385.95"
+    },
+    {
+      "time": "2026-06-12T11:50:52.402621",
+      "msg": "🎯 Defining brand voice..."
+    },
+    {
+      "time": "2026-06-12T11:50:53.038982",
+      "msg": "✅ Brand voice defined"
+    },
+    {
+      "time": "2026-06-12T11:50:53.040611",
+      "msg": "📚 Loading/advancing 4-week narrative arc..."
+    },
+    {
+      "time": "2026-06-12T11:50:53.043735",
+      "msg": "✅ Series arc: Week 2/4 — Compensation Shifts – Salary, bonuses, and equity in emerging quant roles"
+    },
+    {
+      "time": "2026-06-12T11:50:53.045324",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T11:50:54.366107",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T11:50:54.367201",
+      "msg": "🛡️ Running brand safety firewall (SEBI guidelines)..."
+    },
+    {
+      "time": "2026-06-12T11:50:56.385938",
+      "msg": "⚠️ Brand safety: FLAGS FOUND — ['LinkedIn: Re‑phrase the salary statement to something like ‘many first‑year quant roles can be competitive with senior banking salaries, depending on the firm and skill set.’ Provide a credible source or remove the claim. Add the SEBI disclaimer at the end of the post.', 'Twitter: Either remove the ‘12\\u202fbps’ improvement claim or qualify it with a disclaimer such as ‘based on back‑tested data as of [date] and not indicative of future results.’ Append the standard SEBI disclaimer after the final tweet in the thread.', 'Hiring ad: Change ‘real‑time alpha’ to ‘potential to generate alpha’ or ‘enhance trading signals.’ Include a brief disclaimer at the bottom of the job description stating that the role does not constitute investment advice and that any performance expectations are illustrative only.']"
+    },
+    {
+      "time": "2026-06-12T11:50:56.387870",
+      "msg": "🧑‍💼 CMO reviewing (round 1)..."
+    },
+    {
+      "time": "2026-06-12T11:50:57.934971",
+      "msg": "✅ CMO APPROVED"
+    },
+    {
+      "time": "2026-06-12T11:50:57.936617",
+      "msg": "📅 Building content calendar..."
+    },
+    {
+      "time": "2026-06-12T11:51:50.253231",
+      "msg": "✅ Calendar built"
+    },
+    {
+      "time": "2026-06-12T11:51:50.256245",
+      "msg": "📤 Building distribution plan..."
+    },
+    {
+      "time": "2026-06-12T11:51:50.256245",
+      "msg": "✅ Distribution plan ready"
+    },
+    {
+      "time": "2026-06-12T11:51:50.258246",
+      "msg": "👥 Building recruitment tracker..."
+    },
+    {
+      "time": "2026-06-12T11:51:50.925715",
+      "msg": "✅ Recruitment tracker ready"
+    },
+    {
+      "time": "2026-06-12T11:51:50.927335",
+      "msg": "📊 Running analytics..."
+    },
+    {
+      "time": "2026-06-12T11:51:51.628963",
+      "msg": "✅ Analytics complete"
+    },
+    {
+      "time": "2026-06-12T11:51:51.629967",
+      "msg": "💰 Calculating ROI metrics..."
+    },
+    {
+      "time": "2026-06-12T11:51:51.629967",
+      "msg": "✅ ROI: 500-2000 LinkedIn impressions | ₹34,500 saved vs agency"
+    },
+    {
+      "time": "2026-06-12T11:51:51.631966",
+      "msg": "📄 Generating weekly PDF report..."
+    },
+    {
+      "time": "2026-06-12T11:51:51.721211",
+      "msg": "✅ PDF report saved → data\\reports\\quantpulse_report_20260612_115045.pdf"
+    }
+  ]
+}

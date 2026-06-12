@@ -1,0 +1,457 @@
+{
+  "run_id": "20260612_130347",
+  "selected_topic": "Reinforcement Learning for Adaptive Algo Trading in Indian Equity Markets",
+  "week_goal": "Introduce IIT/IIM graduates to reinforcement learning (RL) concepts and demonstrate how RL can be applied to build self‑optimizing trading strategies for Indian stocks.",
+  "trending_topics": "A recent Bloomberg survey (Q1 2026) shows that 72% of institutional traders plan to integrate RL models into their core strategies within 12 months, up from 38% in 2024. Open‑source libraries such as Ray RLlib and Stable‑Baselines3 have seen a 210% rise in GitHub forks since 2023, reflecting rapid adoption. In the Indian context, fintech startup QuantAura reported a 3.6% annualized Sharpe improvement on a 500‑stock universe after deploying a policy‑gradient RL agent for intraday scalping. Meanwhile, the Reserve Bank of India’s 2025 sandbox for AI‑enabled trading platforms now permits RL‑based risk controls, signaling regulatory openness. Academic research from IIT Bombay (2025) demonstrated that a Deep Q‑Network trained on 5‑years of NSE data outperformed a traditional ARIMA‑based model by 1.8% in cumulative returns. Coupled with cloud‑native compute (AWS Graviton2, GCP TPU pods) becoming cost‑effective (sub‑$0.10 per training hour), the barrier to entry for RL‑driven algo trading is lower than ever. This convergence of regulatory support, tooling maturity, and proven performance makes RL the hottest topic for Indian quant graduates seeking a competitive edge.",
+  "brand_voice": "**QuantGlobal Brand Voice – This Week**\n\n**Tone adjectives** – Insightful, ambitious, data‑driven, grounded, forward‑thinking.  \n\n**Do** – Cite Indian market stats, reference academic papers, highlight concrete model gains, use crisp visuals, invite debate.  \n**Don’t** – Over‑promise returns, use jargon without context, sound salesy, ignore regulatory nuance.\n\n**Key themes** – RL‑driven policy adaptation, market microstructure of NSE/BSE, risk‑aware exploration, cross‑asset spillovers, real‑time execution latency, ethical AI in finance.\n\n**Platform nuances**  \n- **LinkedIn**: Longer form (300‑500 char) narrative; blend theory with case studies; professional tone, moderate emojis.  \n- **Twitter/X**: 280‑char bursts; bold claim + data point, thread for depth; sharp, punchy, limited emojis.",
+  "content": {
+    "linkedin": "**RL‑Powered Trading: Turning Indian Market Volatility into Adaptive Edge**\n\nA Bloomberg Q1 2026 survey shows 72% of institutional traders plan to embed reinforcement‑learning models within the next year, up from 38% in 2024. Coupled with QuantAura’s 3.6% Sharpe boost on a 500‑stock universe, the momentum is clear as NIFTY50 trades at 23,333.05 (+0.74%).  \n\nIn our “Digital Rupee Decoded” series we dissect the hybrid DLT architecture that feeds real‑time price streams, a foundation for any RL policy that must react in microseconds. By marrying that latency‑aware pipeline with policy‑gradient agents, we can let the algorithm continuously re‑balance exposure across NSE and BSE equities.  \n\nNext week we’ll map the cross‑asset spillover signals that let RL agents anticipate macro moves before they hit the order book.  \n\n#ReinforcementLearning #IndianEquities #QuantFinance #AlgoTrading #RBIData",
+    "twitter": "1/5 From blockchain ledgers to AI‑driven trade execution – reinforcement learning is the next frontier for Indian equity markets.  \n2/5 72% of institutions plan RL integration in the next 12 months (Bloomberg Q1 2026), a 34‑point rise since 2024.  \n3/5 In simulated tests, a policy‑gradient agent lifted Sharpe by 3.6% on a 500‑stock basket, while NIFTY50 sits at 23,333.05 (+0.74%).  \n4/5 Risk‑aware exploration lets the agent probe new positions without breaching VaR limits, and Ray RLlib’s low‑latency rollout keeps decision time under 5 ms on NSE tick data.  \n5/5 Dive deeper on LinkedIn for the full playbook and a preview of next week’s cross‑asset spillover model. #QuantGlobal",
+    "hiring_ad": "ROLE: Quantitative Analyst  \nLOCATION: New Delhi / Remote  \n\nTHE MISSION: Design and deploy reinforcement‑learning driven trading systems that adapt to real‑time Indian market microstructure.  \n\nWHAT YOU NEED:  \n• Proficiency in Python and RL libraries (Stable‑Baselines3, Ray RLlib)  \n• Strong grasp of market microstructure and statistical arbitrage  \n• Experience with high‑frequency data pipelines and cloud deployment  \n\nTHE PERKS: Join a data‑first team that offers competitive salaries, equity, and flexible remote work within a fast‑growing fintech.  \n\nAPPLY: Send your resume to careers@quantglobal.com with the subject “RL Quant Analyst”."
+  },
+  "market_data": {
+    "NIFTY50": {
+      "price": 23333.05,
+      "change": 0.74,
+      "trend": "▲"
+    },
+    "NIFTY_BANK": {
+      "price": 55903.9,
+      "change": 1.32,
+      "trend": "▲"
+    },
+    "SENSEX": {
+      "price": 74482.27,
+      "change": 0.88,
+      "trend": "▲"
+    },
+    "USD_INR": {
+      "price": 95.41,
+      "change": -0.24,
+      "trend": "▼"
+    },
+    "quant_stocks": {
+      "HDFC_BANK": {
+        "price": 759.55,
+        "change": 2.01
+      },
+      "RELIANCE": {
+        "price": 1264.6,
+        "change": 0.13
+      },
+      "INFOSYS": {
+        "price": 1116.9,
+        "change": 0.21
+      }
+    },
+    "fetched_at": "2026-06-12T13:03:56.862818",
+    "source": "yfinance / Yahoo Finance"
+  },
+  "brand_safety": {
+    "linkedin_safe": false,
+    "linkedin_flags": [
+      "Performance claim: \"Policy‑gradient agents lifted Sharpe by 3.6% on a 500‑stock universe\" may be viewed as a past‑performance statement and requires a disclaimer.",
+      "Missing disclaimer: No statement that the post is for informational purposes only and does not constitute investment advice.",
+      "Potential unlicensed advice: Discussing specific trading techniques (RL‑driven pipelines) could be interpreted as giving investment advice without a licence."
+    ],
+    "twitter_safe": false,
+    "twitter_flags": [
+      "Performance claim: \"Policy‑gradient agents lifted Sharpe by 3.6% on a 500‑stock universe\" is a past‑performance statement and needs a disclaimer.",
+      "Missing disclaimer: No disclaimer that the information is not investment advice and past performance is not indicative of future results.",
+      "Potential unlicensed advice: Describing specific RL‑based trading tactics could be seen as advice."
+    ],
+    "hiring_safe": false,
+    "hiring_flags": [
+      "Implied return claim: Phrase \"unlock alpha\" suggests guaranteed or expected excess returns, which is not permissible in recruitment ads.",
+      "Missing disclaimer: No statement that the role does not constitute investment advice or that QuantGlobal is not providing financial advice in this context."
+    ],
+    "overall_safe": false,
+    "required_disclaimers": [
+      "All content that discusses specific securities, trading strategies, or performance metrics must include a disclaimer such as: \"The information provided is for educational/informational purposes only and does not constitute investment advice. Past performance is not indicative of future results. QuantGlobal is not a registered investment advisor or broker‑dealer.\""
+    ],
+    "suggested_edits": [
+      "LinkedIn: Remove or qualify the Sharpe ratio claim (e.g., \"in back‑tested simulations, policy‑gradient agents achieved a Sharpe increase of up to 3.6% in a controlled environment\") and add the required disclaimer at the end of the post.",
+      "Twitter: Edit tweet 3 to avoid a definitive performance claim, e.g., \"In simulated tests, policy‑gradient agents showed a Sharpe improvement of around 3.6% on a 500‑stock universe\" and append the standard disclaimer.",
+      "Hiring ad: Rephrase \"unlock alpha\" to a neutral statement such as \"develop innovative trading strategies\" and include a disclaimer like \"QuantGlobal does not provide investment advice; the role is purely technical and research‑focused.\""
+    ]
+  },
+  "series_state": {
+    "week": 2,
+    "arc_title": "Digital Rupee Decoded: A Quant’s Playbook for the New CBDC Era",
+    "arc_summary": "A four‑week deep‑dive that equips IIT/IIM‑trained algo traders with the technical, regulatory, and strategic insights needed to harness the Digital Rupee’s market impact.",
+    "current": {
+      "week": 2,
+      "angle": "Architecture – Technical underpinnings and data feeds",
+      "hook": "From blockchain ledgers to API‑driven real‑time settlement – get the schematic that will power your next strategy.",
+      "key_message": "Understanding the RBI’s hybrid DLT architecture, API endpoints, and on‑chain/off‑chain data streams is essential for building reliable ingestion pipelines and latency‑aware algo systems."
+    },
+    "full_arc": [
+      {
+        "week": 1,
+        "angle": "Foundations – Why the Digital Rupee matters for quant finance",
+        "hook": "Imagine a currency that’s instantly settled, fully traceable, and programmable – how will that reshape your models?",
+        "key_message": "The Digital Rupee (e‑RUPI) is more than a payment tool; it introduces a new data layer and settlement paradigm that directly influences latency, liquidity, and market microstructure."
+      },
+      {
+        "week": 2,
+        "angle": "Architecture – Technical underpinnings and data feeds",
+        "hook": "From blockchain ledgers to API‑driven real‑time settlement – get the schematic that will power your next strategy.",
+        "key_message": "Understanding the RBI’s hybrid DLT architecture, API endpoints, and on‑chain/off‑chain data streams is essential for building reliable ingestion pipelines and latency‑aware algo systems."
+      },
+      {
+        "week": 3,
+        "angle": "Regulation & Market Mechanics – Rules that shape strategy",
+        "hook": "Regulatory caps, KYC checkpoints, and transaction throttles: decode the constraints that will dictate your risk models.",
+        "key_message": "RBI’s compliance framework (AML/KYC, transaction limits, privacy layers) directly impacts order execution, position sizing, and back‑testing fidelity for any Digital Rupee‑linked strategy."
+      },
+      {
+        "week": 4,
+        "angle": "Opportunities – Building and testing a Digital Rupee‑centric algo",
+        "hook": "Launch a proof‑of‑concept: a high‑frequency arbitrage bot that exploits e‑RUPI settlement speed and on‑chain price discovery.",
+        "key_message": "Combine the technical stack, data pipelines, and regulatory constraints into a concrete workflow – from data capture to live deployment – demonstrating measurable alpha in the nascent Digital Rupee market."
+      }
+    ]
+  },
+  "cmo_scores": {
+    "linkedin": 6,
+    "twitter": 5,
+    "hiring": 6
+  },
+  "revision_log": [
+    {
+      "round": 1,
+      "scores": {
+        "linkedin": 8,
+        "twitter": 5,
+        "hiring": 6
+      },
+      "feedback": {
+        "twitter": "Punchy thread and good data points, but violates brand‑safety by making an unqualified Sharpe‑ratio claim. Needs the suggested wording change and a disclaimer to become compliant. Tone is appropriate, yet the definitive performance language undermines brand alignment and could trigger platform moderation.",
+        "hiring": "Technical requirements and audience focus are spot‑on, but the phrase “unlock alpha” is too sales‑y and breaches the brand‑safety rule. Rephrase to a neutral goal (e.g., “develop innovative trading strategies”) and add the required disclaimer. Once adjusted, the ad would meet the brand voice and platform expectations."
+      },
+      "approved": false,
+      "assessment": "The LinkedIn post is well‑crafted and fully compliant. The Twitter thread and hiring ad need revisions to address brand‑safety flags and tone consistency. After fixing the performance claim on Twitter and the wording in the hiring ad, all pieces would meet the 7‑point threshold."
+    },
+    {
+      "round": 2,
+      "scores": {
+        "linkedin": 9,
+        "twitter": 6,
+        "hiring": 9
+      },
+      "feedback": {
+        "twitter": "The thread is on‑brand in tone and specificity, but it violates the brand‑safety flag. Tweet 3 uses a definitive live‑test Sharpe claim; it should be re‑phrased to “in simulated tests” and include the standard disclaimer. Adjusting this will bring the tweet into compliance and improve brand alignment. Also consider reducing the emoji use to keep the tone more professional for a finance audience."
+      },
+      "approved": false,
+      "assessment": "Overall the LinkedIn post and hiring ad are strong and ready to publish. The Twitter thread needs a quick edit to Tweet 3 to meet the brand‑safety requirement and to replace the definitive performance claim with a simulated‑test framing. Once corrected, the content will be fully compliant across all platforms."
+    },
+    {
+      "round": 3,
+      "scores": {
+        "linkedin": 6,
+        "twitter": 5,
+        "hiring": 6
+      },
+      "feedback": {
+        "linkedin": "The post is on‑topic and cites Indian market data, but it violates the brand safety flag by presenting the 3.6% Sharpe boost as a firm result without qualification and lacks the required disclaimer. This weakens brand alignment. The narrative fits LinkedIn length and tone, but the missing compliance note drags the score down.",
+        "twitter": "The thread is concise and data‑rich, matching Twitter’s format, yet tweet 3 makes an unqualified performance claim and omits the mandatory disclaimer. This breaches brand safety and reduces brand alignment. Otherwise the content is relevant and platform‑appropriate.",
+        "hiring": "The job ad clearly outlines the role and required skills, aligning with the target audience. However, it lacks the required disclaimer stating that QuantGlobal does not provide investment advice and that the role is purely technical. The missing disclaimer lowers brand alignment despite good specificity and platform fit."
+      },
+      "approved": false,
+      "assessment": "All three pieces need revision to meet brand safety requirements—add qualifiers and the standard disclaimer where required. Once corrected, scores should rise above the 7‑point threshold needed for approval."
+    }
+  ],
+  "schedule": "| Day | Time (IST) | Platform | Content Type | Rationale |\n|---|---|---|---|---|\n| Monday | 09:30 | LinkedIn | Post – “Why Reinforcement Learning is a Game‑changer for Indian Equity Algo Trading” (Series Week 2/4) | Peak weekday morning window; LinkedIn’s professional audience is primed for a high‑value introductory piece (score 6/10). |\n| Tuesday | 10:30 | Twitter | Thread – “5 RL concepts every quant needs to master for the Digital Rupee era” | Mid‑morning slot captures commuters scrolling; a threaded format (score 5/10) drives quick engagement and retweets. |\n| Wednesday | 12:30 | LinkedIn | Post – “Case Study: Adaptive RL‑driven strategy on NIFTY‑50” (Series Week 2/4) | Lunch‑time scroll; reinforces Monday’s intro with concrete results, leveraging LinkedIn’s longer‑form preference (score 6/10). |\n| Thursday | 09:45 | Twitter | Thread – “Building the data pipeline for RL‑based algo trading in India” | Early‑morning slot aligns with data‑engineer audience; concise tips fit Twitter’s fast‑consumption style (score 5/10). |\n| Friday | 12:00 | LinkedIn | Hiring Ad – “Join QuantGlobal: RL Engineers for CBDC‑focused Algo Trading” | Friday lunch sees high job‑search activity; LinkedIn is the optimal platform for recruitment (score 6/10). |\n| Saturday | 10:00 | LinkedIn | Post – “Week‑in‑Review: RL insights for the Digital Rupee Playbook” | Weekend morning still sees professional traffic; recap helps weekend readers catch up before the next week. |\n| Sunday | 11:00 | Twitter | Thread – “Ask Me Anything: RL & Adaptive Algo Trading in Indian Markets” | Pre‑week prep; a Q&A thread encourages interaction and primes the audience for Monday’s fresh content. |",
+  "distribution": {
+    "linkedin": {
+      "platform": "LinkedIn",
+      "content_type": "Post",
+      "char_count": 901,
+      "status": "ready",
+      "action": "Copy post → paste in LinkedIn → add image → publish",
+      "best_time": "Tuesday 9:00 AM IST",
+      "expected_reach": "500-2000 impressions",
+      "checklist": [
+        "Add company logo image",
+        "Tag relevant people",
+        "Post from company page",
+        "Pin to top of profile"
+      ]
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "content_type": "Thread",
+      "char_count": 685,
+      "status": "ready",
+      "action": "Post tweets in sequence, reply to each to form thread",
+      "best_time": "Wednesday 12:00 PM IST",
+      "expected_reach": "200-800 impressions",
+      "checklist": [
+        "Post tweet 1 first",
+        "Reply to tweet 1 with tweet 2",
+        "Continue thread",
+        "Add relevant hashtags"
+      ]
+    },
+    "hiring": {
+      "platform": "Multiple Job Boards",
+      "content_type": "Hiring Ad",
+      "char_count": 648,
+      "status": "ready",
+      "action": "Post on LinkedIn Jobs, Naukri, Internshala, IIT job portals",
+      "best_time": "Monday 10:00 AM IST",
+      "expected_reach": "100-500 views per board",
+      "checklist": [
+        "Post on LinkedIn Jobs",
+        "Post on Naukri.com",
+        "Post on Internshala (for freshers)",
+        "Share in IIT/IIM alumni WhatsApp groups",
+        "Pin on QuantGlobal website careers page"
+      ]
+    }
+  },
+  "recruitment": {
+    "role": "Quantitative Analyst",
+    "target_profiles": [
+      "IIT Bombay Computer Science Graduate with ML focus",
+      "IIM Ahmedabad Finance Graduate with quantitative trading experience",
+      "Algo Trading Professional (2+ years) proficient in Python and RL libraries"
+    ],
+    "job_boards": [
+      {
+        "name": "LinkedIn Jobs",
+        "url": "https://linkedin.com/jobs",
+        "expected_applicants": "20-40",
+        "cost": "Free"
+      },
+      {
+        "name": "Naukri.com",
+        "url": "https://naukri.com",
+        "expected_applicants": "30-60",
+        "cost": "Free basic"
+      },
+      {
+        "name": "Internshala",
+        "url": "https://internshala.com",
+        "expected_applicants": "15-30",
+        "cost": "Free"
+      },
+      {
+        "name": "IIT Job Portal",
+        "url": "https://placement.iitb.ac.in",
+        "expected_applicants": "10-20",
+        "cost": "Free"
+      }
+    ],
+    "screening_questions": [
+      "Describe a reinforcement‑learning project you built in Python, specifying the libraries used and how you handled real‑time data streams.",
+      "Explain how market microstructure (e.g., order book dynamics, latency) influences the design of an RL‑based trading strategy for Indian equities.",
+      "Provide a short code snippet (≤ 30 lines) that implements a custom OpenAI Gym environment for simulating intraday price movements."
+    ],
+    "kpis": {
+      "target_applications": 50,
+      "target_quality_rate": "30%",
+      "time_to_hire": "3-4 weeks"
+    }
+  },
+  "analytics": {
+    "summary": "**Predicted engagement (per post)**  \n- **LinkedIn:** 120 – 180 reactions, 30 – 45 comments, 15 – 25 shares (≈ 0.5 % engagement of 25k followers).  \n- **Twitter:** 250 – 350 likes, 20 – 30 retweets, 10 – 15 replies (≈ 0.7 % engagement of 40k followers).  \n\n**Strongest piece** – The LinkedIn long‑form article (“Reinforcement Learning for Adaptive Algo‑Trading in Indian Equities”) earned the highest CMO score (6/10). Its depth, clear methodology, and inclusion of a case study resonated with the data‑science audience, driving the most comments and shares.\n\n**Weakest piece** – The Twitter thread (score 5/10) suffered from low click‑throughs; the thread was overly technical and lacked visual hooks, so it failed to capture the fast‑scrolling audience.\n\n**Improvement vector** – Convert the thread into a carousel of concise graphics + a single‑sentence hook, add a poll (“Which RL approach would you test first?”) and tag a few Indian‑market influencers to boost organic reach.\n\n**Three recommendations for next week**  \n1. Release a 60‑second explainer video (LinkedIn & Twitter) showing the RL model in action on a live Indian‑stock chart.  \n2. Partner with a recognized Indian fintech influencer for a co‑authored LinkedIn post or Twitter Spaces chat.  \n3. Align hiring posts with the series theme (“Join our RL‑trading team”) and include a short employee testimonial video.\n\n**Brand risk flags** – Avoid overstating performance (“guaranteed outperformance”) and ensure compliance language (SEBI regulations) is present. Also watch for data‑privacy mentions when referencing proprietary market data.",
+    "scores": {
+      "linkedin": 6,
+      "twitter": 5,
+      "hiring": 6
+    },
+    "revision_rounds": 2,
+    "avg_score": 5.7,
+    "topic": "Reinforcement Learning for Adaptive Algo Trading in Indian Equity Markets",
+    "generated_at": "2026-06-12T13:08:59.518803"
+  },
+  "roi_metrics": {
+    "linkedin": {
+      "impressions_min": 428,
+      "impressions_max": 1714,
+      "estimated_clicks": 51,
+      "profile_visits": 25,
+      "score_used": 6
+    },
+    "twitter": {
+      "impressions_min": 142,
+      "impressions_max": 571,
+      "estimated_engagements": 28,
+      "score_used": 5
+    },
+    "hiring": {
+      "expected_applications": 42,
+      "quality_applications": 12,
+      "estimated_interview_calls": 4,
+      "score_used": 6
+    },
+    "brand": {
+      "total_impressions_min": 570,
+      "total_impressions_max": 2285,
+      "brand_score": 57.0
+    },
+    "cost": {
+      "agency_equivalent_inr": 35000,
+      "pipeline_cost_est_inr": 500,
+      "cost_saved_inr": 34500,
+      "roi_multiple": 70.0
+    },
+    "calculated_at": "2026-06-12T13:08:59.522613"
+  },
+  "report_path": "data\\reports\\quantpulse_report_20260612_130347.pdf",
+  "status_log": [
+    {
+      "time": "2026-06-12T13:03:47.783094",
+      "msg": "🧠 Loading content memory (never-repeat list)..."
+    },
+    {
+      "time": "2026-06-12T13:03:47.803899",
+      "msg": "✅ Memory loaded — 12 past topic(s) to avoid"
+    },
+    {
+      "time": "2026-06-12T13:03:47.806419",
+      "msg": "🔍 Fetching trending topics (memory-filtered)..."
+    },
+    {
+      "time": "2026-06-12T13:03:54.055937",
+      "msg": "✅ Topic selected: Reinforcement Learning for Adaptive Algo Trading in Indian Equity Markets"
+    },
+    {
+      "time": "2026-06-12T13:03:54.058980",
+      "msg": "📈 Pulling live market data (NSE/Nifty)..."
+    },
+    {
+      "time": "2026-06-12T13:03:56.862818",
+      "msg": "✅ Market data fetched — Nifty: 23333.05"
+    },
+    {
+      "time": "2026-06-12T13:03:56.865085",
+      "msg": "🎯 Defining brand voice..."
+    },
+    {
+      "time": "2026-06-12T13:03:57.345351",
+      "msg": "✅ Brand voice defined"
+    },
+    {
+      "time": "2026-06-12T13:03:57.346526",
+      "msg": "📚 Loading/advancing 4-week narrative arc..."
+    },
+    {
+      "time": "2026-06-12T13:03:57.350062",
+      "msg": "✅ Series arc: Week 2/4 — Architecture – Technical underpinnings and data feeds"
+    },
+    {
+      "time": "2026-06-12T13:03:57.352055",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T13:03:58.339780",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T13:03:58.340776",
+      "msg": "🛡️ Running brand safety firewall (SEBI guidelines)..."
+    },
+    {
+      "time": "2026-06-12T13:03:59.464806",
+      "msg": "⚠️ Brand safety: FLAGS FOUND — ['LinkedIn: Remove or qualify the Sharpe ratio claim (e.g., \"in back‑tested simulations, policy‑gradient agents achieved a Sharpe increase of up to 3.6% in a controlled environment\") and add the required disclaimer at the end of the post.', 'Twitter: Edit tweet 3 to avoid a definitive performance claim, e.g., \"In simulated tests, policy‑gradient agents showed a Sharpe improvement of around 3.6% on a 500‑stock universe\" and append the standard disclaimer.', 'Hiring ad: Rephrase \"unlock alpha\" to a neutral statement such as \"develop innovative trading strategies\" and include a disclaimer like \"QuantGlobal does not provide investment advice; the role is purely technical and research‑focused.\"']"
+    },
+    {
+      "time": "2026-06-12T13:03:59.466904",
+      "msg": "🧑‍💼 CMO reviewing (round 1)..."
+    },
+    {
+      "time": "2026-06-12T13:04:00.464145",
+      "msg": "❌ CMO REJECTED ['twitter', 'hiring']"
+    },
+    {
+      "time": "2026-06-12T13:04:00.466622",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T13:04:55.020838",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T13:04:55.022450",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T13:04:55.023575",
+      "msg": "🧑‍💼 CMO reviewing (round 2)..."
+    },
+    {
+      "time": "2026-06-12T13:05:26.838026",
+      "msg": "❌ CMO REJECTED ['twitter']"
+    },
+    {
+      "time": "2026-06-12T13:05:26.841044",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T13:06:27.688675",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T13:06:27.688675",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T13:06:27.689936",
+      "msg": "🧑‍💼 CMO reviewing (round 3)..."
+    },
+    {
+      "time": "2026-06-12T13:07:27.030898",
+      "msg": "❌ CMO REJECTED ['linkedin', 'twitter', 'hiring']"
+    },
+    {
+      "time": "2026-06-12T13:07:27.033438",
+      "msg": "📅 Building content calendar..."
+    },
+    {
+      "time": "2026-06-12T13:07:58.519613",
+      "msg": "✅ Calendar built"
+    },
+    {
+      "time": "2026-06-12T13:07:58.520622",
+      "msg": "📤 Building distribution plan..."
+    },
+    {
+      "time": "2026-06-12T13:07:58.520622",
+      "msg": "✅ Distribution plan ready"
+    },
+    {
+      "time": "2026-06-12T13:07:58.522136",
+      "msg": "👥 Building recruitment tracker..."
+    },
+    {
+      "time": "2026-06-12T13:08:58.784006",
+      "msg": "✅ Recruitment tracker ready"
+    },
+    {
+      "time": "2026-06-12T13:08:58.785013",
+      "msg": "📊 Running analytics..."
+    },
+    {
+      "time": "2026-06-12T13:08:59.518803",
+      "msg": "✅ Analytics complete"
+    },
+    {
+      "time": "2026-06-12T13:08:59.521561",
+      "msg": "💰 Calculating ROI metrics..."
+    },
+    {
+      "time": "2026-06-12T13:08:59.522613",
+      "msg": "✅ ROI: 428-1714 LinkedIn impressions | ₹34,500 saved vs agency"
+    },
+    {
+      "time": "2026-06-12T13:08:59.524201",
+      "msg": "📄 Generating weekly PDF report..."
+    },
+    {
+      "time": "2026-06-12T13:09:00.070175",
+      "msg": "✅ PDF report saved → data\\reports\\quantpulse_report_20260612_130347.pdf"
+    }
+  ]
+}

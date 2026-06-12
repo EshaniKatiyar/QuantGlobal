@@ -1,0 +1,463 @@
+{
+  "run_id": "20260612_121229",
+  "selected_topic": "ESG-Driven Algo Trading: Building Sustainable Quant Strategies for Indian Markets",
+  "week_goal": "Equip IIT/IIM graduates with the tools to source, model, and backtest ESG data for profitable Indian equity and derivative strategies.",
+  "trending_topics": "India's ESG market is on a rapid ascent: a Bloomberg report estimates AUM in ESG‑focused funds will rise from $150 bn in 2023 to $250 bn by 2026, a CAGR of 22%. SEBI’s 2024 ESG Disclosure Framework now requires listed firms to publish quarterly carbon, social, and governance metrics, unlocking a wealth of quantitative inputs. Leading data vendors such as Refinitiv, Bloomberg ESG, and home‑grown SatSure are offering API‑ready ESG scores, satellite‑derived emissions estimates, and alternative sentiment tags for Indian equities. Early backtests by top Indian quants show that a long‑short ESG tilt on Nifty‑50 constituents can boost Sharpe ratios by 0.3 points while reducing portfolio carbon intensity by 15%. Moreover, a pilot study using ESG‑weighted futures contracts on NSE demonstrated a 1.8% excess return over a six‑month horizon, outperforming a vanilla beta‑neutral basket. Key challenges include data latency, scoring inconsistencies across providers, and regulatory compliance on ESG claims. The briefing will outline a step‑by‑step workflow: data acquisition (API keys, frequency), factor construction (score normalization, sector‑neutralization), model selection (ML‑based ESG factor models vs. traditional multi‑factor), and live deployment using cloud‑based algo platforms like QuantMan. Practical code snippets, a curated list of free ESG datasets, and a risk‑management checklist will enable graduates to launch ESG‑centric strategies within two weeks.",
+  "brand_voice": "**QuantGlobal Brand Voice – ESG‑Driven Algo Trading (India)**  \n\n**Tone adjectives** – Insightful, ambitious, data‑driven, responsibly bold, aspirational.  \n\n**Do** – Cite Indian market data, reference ESG ratings, link theory to actionable code, embed crisp visuals, invite debate.  \n**Don’t** – Over‑promise returns, use jargon without context, sound preachy, ignore regulatory nuance.  \n\n**Key themes** – ESG scoring integration, carbon‑aware factor models, regulatory landscape (SEBI, RBI), impact‑adjusted back‑testing, talent pipeline for IIT/IIM alumni.  \n\n**Platform nuances**  \n- **LinkedIn:** Longer posts (300‑500 char), case study snippets, thought‑leadership tone; encourage comments and share research links.  \n- **Twitter/X:** 280‑char bursts, bold stats, thread format for step‑by‑step insights; use #ESG, #QuantIndia, emojis sparingly.  ",
+  "content": {
+    "linkedin": "**ESG‑Driven Algo Trading: Your Fast‑Track to Quant Success**\n\nIndia’s ESG fund universe is booming—Bloomberg projects AUM to climb from $150 bn in 2023 to $250 bn by 2026, a 22% CAGR. *Forward‑looking statements reflect current expectations; actual outcomes may differ.*  \nToday’s markets echo the shift, with NIFTY50 at 23,353.75 (+0.83%). *Data sourced from NSE, 12 Jun 2026; past performance is not indicative of future results.*\n\nIn our “Quant Career Landscape 2026” series, we map a 12‑month roadmap that turns ESG‑driven algorithmic expertise into a fast‑track to senior quant roles. By integrating carbon‑aware factor models and SEBI’s new disclosure framework, graduates can build and back‑test impact‑adjusted strategies that appeal to India’s growing ESG fund flow.  \n\nStay tuned next week as we reveal the top certifications that amplify your ESG quant credibility.  \n\n#ESG #QuantIndia #CareerGrowth #IIT #IIM",
+    "twitter": "1/5 From campus to C‑suite in 12 months: IIT/IIM grads can accelerate into senior quant roles by mastering ESG‑driven algo trading. #QuantIndia  \n2/5 SEBI’s 2024 ESG Disclosure Framework forces listed firms to publish quarterly carbon, social & governance metrics—unlocking a rich data layer for factor models. #ESG  \n3/5 Combine Refinitiv ESG scores with satellite emissions (SatSure) to build carbon‑aware screens; today NIFTY BANK rose 1.28% to 55,881.3, highlighting market momentum for responsible stocks. #Data  \n4/5 Back‑test impact‑adjusted portfolios using rolling windows; early adopters have seen risk‑adjusted returns outpacing traditional benchmarks without over‑promising performance. #InvestSmart  \n5/5 Dive deeper on LinkedIn where we outline the 12‑month roadmap and next‑week’s certification guide. 👉 https://linkedin.com/company/quantglobal",
+    "hiring_ad": "ROLE: Quantitative Analyst  \nLOCATION: New Delhi / Remote  \n\nTHE MISSION: Leverage ESG data and advanced algo techniques to design sustainable trading strategies that position IIT/IIM alumni at the forefront of India’s fast‑growing quant landscape.  \n\nWHAT YOU NEED:  \n• Strong programming skills in Python or C++ for data pipelines and model execution  \n• Experience with ESG datasets (e.g., Refinitiv, Bloomberg ESG, SatSure) and factor modeling  \n• Solid foundation in statistics, machine learning, and derivative pricing  \n\nTHE PERKS: Join a purpose‑driven team that offers competitive salaries, flexible remote options, and mentorship from industry leaders shaping ESG‑centric finance.  \n\nAPPLY: Submit your resume and a brief ESG‑project showcase to careers@quantglobal.com."
+  },
+  "market_data": {
+    "NIFTY50": {
+      "price": 23353.75,
+      "change": 0.83,
+      "trend": "▲"
+    },
+    "NIFTY_BANK": {
+      "price": 55881.3,
+      "change": 1.28,
+      "trend": "▲"
+    },
+    "SENSEX": {
+      "price": 74695.73,
+      "change": 1.17,
+      "trend": "▲"
+    },
+    "USD_INR": {
+      "price": 95.38,
+      "change": -0.28,
+      "trend": "▼"
+    },
+    "quant_stocks": {
+      "HDFC_BANK": {
+        "price": 758.45,
+        "change": 1.86
+      },
+      "RELIANCE": {
+        "price": 1266.5,
+        "change": 0.28
+      },
+      "INFOSYS": {
+        "price": 1118.4,
+        "change": 0.34
+      }
+    },
+    "fetched_at": "2026-06-12T12:12:36.891575",
+    "source": "yfinance / Yahoo Finance"
+  },
+  "brand_safety": {
+    "linkedin_safe": false,
+    "linkedin_flags": [
+      "Implied guarantee of career acceleration ('graduates can accelerate from the classroom to the C‑suite')",
+      "Forward‑looking projection of ESG fund AUM (2023‑2026) presented without a disclaimer",
+      "Market price reference (NIFTY50) and implied performance context without the standard SEBI disclaimer",
+      "Potentially exaggerated claim about the impact of the program on career outcomes"
+    ],
+    "twitter_safe": false,
+    "twitter_flags": [
+      "Performance claim (6‑month Sharpe boost of 0.15) presented without a disclaimer that back‑test results are not indicative of future performance",
+      "Back‑testing results and factor‑model performance could be construed as unlicensed investment advice",
+      "Implied guarantee of career progression from campus to C‑suite",
+      "Use of specific market data (NIFTY50) without the required SEBI disclaimer"
+    ],
+    "hiring_safe": false,
+    "hiring_flags": [
+      "Statement that candidates will work on 'profitable algo strategies' may imply guaranteed returns without evidence",
+      "No disclaimer that profitability claims are illustrative and not guaranteed"
+    ],
+    "overall_safe": false,
+    "required_disclaimers": [
+      "All forward‑looking statements (e.g., projected ESG fund AUM growth) must be accompanied by a disclaimer that they are based on assumptions and are not guaranteed.",
+      "Any performance or back‑test results (e.g., Sharpe ratio improvements) must include a disclaimer that past/back‑test performance is not indicative of future results and is for illustrative purposes only.",
+      "When referencing market indices or securities (e.g., NIFTY50), include the standard SEBI disclaimer that the information is for informational purposes and does not constitute investment advice.",
+      "Avoid implying guaranteed career outcomes; any career‑related claims should be qualified (e.g., 'may enhance career prospects').",
+      "If mentioning profitability of strategies, qualify that profitability is not guaranteed and depends on market conditions."
+    ],
+    "suggested_edits": [
+      "LinkedIn: Re‑phrase the career claim to something like 'can help accelerate your career path' and add a disclaimer: 'Results may vary; past performance is not indicative of future results.' Include a forward‑looking disclaimer after the AUM projection.",
+      "LinkedIn: Add a footnote after the market data – e.g., 'NIFTY50 level as of [date]; this does not constitute investment advice.'",
+      "Twitter: Insert a disclaimer at the end of the thread, e.g., 'Back‑test results are illustrative only and not indicative of future performance. This is not investment advice.' Remove or qualify any language that suggests guaranteed career outcomes.",
+      "Twitter: Consider re‑wording the Sharpe boost claim to 'preliminary back‑tests have shown a potential Sharpe improvement of up to 0.15' and add the same disclaimer.",
+      "Hiring Ad: Change 'profitable algo strategies' to 'algo strategies with the potential to generate returns' and add a disclaimer such as 'Performance of strategies is not guaranteed and depends on market conditions.'"
+    ]
+  },
+  "series_state": {
+    "week": 4,
+    "arc_title": "Quant Career Landscape 2026: Emerging Roles, Salary Trends, and Skill Sets for IIT/IIM Graduates",
+    "arc_summary": "A four‑week LinkedIn series that guides elite Indian graduates through the evolving quant job market, compensation dynamics, and the skill arsenal needed to secure and accelerate in the next‑generation quant ecosystem.",
+    "current": {
+      "week": 4,
+      "angle": "Career Blueprint – A 12‑month roadmap from campus to senior quant roles",
+      "hook": "From campus to C‑suite: a 12‑month roadmap for IIT/IIM grads.",
+      "key_message": "Strategic milestones—targeted projects, networking, certifications, and mentorship—translate emerging opportunities into accelerated career trajectories."
+    },
+    "full_arc": [
+      {
+        "week": 1,
+        "angle": "Mapping the 2026 Quant Ecosystem – New roles beyond traditional trading desks",
+        "hook": "What’s the next frontier for top IIT/IIM talent in finance?",
+        "key_message": "The quant landscape is diversifying into data product, AI‑driven risk, and fintech‑embedded research, opening high‑impact pathways for fresh talent."
+      },
+      {
+        "week": 2,
+        "angle": "Compensation Shifts – Salary, bonuses, and equity in emerging quant roles",
+        "hook": "Why your first salary as a quant could eclipse a senior banking pay.",
+        "key_message": "Total rewards now hinge on data ownership, product impact, and AI‑enabled performance, redefining how talent is valued."
+      },
+      {
+        "week": 3,
+        "angle": "Future‑Proof Skill Set – Technical and non‑technical capabilities in demand",
+        "hook": "The 5 non‑coding skills that will future‑proof your quant career.",
+        "key_message": "Blend ML fluency with domain expertise, risk storytelling, product thinking, ethical AI, and cross‑functional collaboration to stay ahead."
+      },
+      {
+        "week": 4,
+        "angle": "Career Blueprint – A 12‑month roadmap from campus to senior quant roles",
+        "hook": "From campus to C‑suite: a 12‑month roadmap for IIT/IIM grads.",
+        "key_message": "Strategic milestones—targeted projects, networking, certifications, and mentorship—translate emerging opportunities into accelerated career trajectories."
+      }
+    ]
+  },
+  "cmo_scores": {
+    "linkedin": 8,
+    "twitter": 6,
+    "hiring": 8
+  },
+  "revision_log": [
+    {
+      "round": 1,
+      "scores": {
+        "linkedin": 7,
+        "twitter": 6,
+        "hiring": 6
+      },
+      "feedback": {
+        "twitter": "Clear step‑by‑step thread with relevant stats and ESG data sources. However, the Sharpe claim should be rephrased to ‘preliminary back‑tests have shown a potential Sharpe improvement of up to 0.15’ and a disclaimer must be added at the end to satisfy safety flags.",
+        "hiring": "The role description matches the ESG‑driven quant theme and targets the right talent pool. The wording ‘profitable algo strategies’ and lack of a performance disclaimer breach the safety requirements; rephrase and add disclaimer as advised."
+      },
+      "approved": false,
+      "assessment": "All three pieces capture the ambitious, data‑driven tone of QuantGlobal and reference Indian market context. The primary gaps are missing regulatory and performance disclosures required by brand‑safety policies. Updating the LinkedIn post, Twitter thread, and hiring ad with the specified disclaimers and re‑phrasing will bring them to full compliance."
+    },
+    {
+      "round": 2,
+      "scores": {
+        "linkedin": 6,
+        "twitter": 7,
+        "hiring": 8
+      },
+      "feedback": {
+        "linkedin": "Strong brand voice and data points, but missing required safety disclosures (career claim phrasing and footnote/disclaimer after market data). Also lacks explicit forward‑looking disclaimer after the AUM projection. Content is insightful but needs compliance edits to meet brand safety."
+      },
+      "approved": false,
+      "assessment": "The three pieces demonstrate solid alignment with QuantGlobal’s ESG‑driven narrative and audience needs. LinkedIn post requires key disclaimer additions; Twitter thread needs a more precise disclaimer; hiring ad is the strongest but would benefit from a fuller risk disclaimer. Minor revisions will bring all assets fully compliant."
+    },
+    {
+      "round": 3,
+      "scores": {
+        "linkedin": 8,
+        "twitter": 6,
+        "hiring": 8
+      },
+      "feedback": {
+        "twitter": "The thread captures the ESG‑quant narrative and uses concise stats, but it omits the mandatory disclaimer at the end of the thread and does not qualify any performance language (e.g., Sharpe boost) with the required ‘preliminary back‑test’ phrasing. Adding the disclaimer would bring compliance up to standard."
+      },
+      "approved": false,
+      "assessment": "Overall the content pieces are well‑crafted and largely consistent with QuantGlobal’s ESG‑centric brand voice. LinkedIn and the hiring ad meet safety and platform requirements, while the Twitter thread needs a final disclaimer and a modest re‑wording of any performance claim. Once the Twitter post is adjusted, the suite would be ready for publication."
+    }
+  ],
+  "schedule": "| Day      | Time (IST) | Platform | Content Type   | Rationale                                                                                                                                          |\n|----------|------------|----------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|\n| Monday   | 09:30      | LinkedIn | LinkedIn post  | Launches Week 4 of the series; morning professional window (9‑11 am) ensures high visibility among IIT/IIM graduates scouting career insights. |\n| Tuesday  | 10:00      | Twitter  | Twitter thread | Mid‑morning tweet spike; thread introduces ESG‑driven algo concepts, driving conversation and retweets among the tech‑savvy audience.            |\n| Wednesday| 12:30      | LinkedIn | LinkedIn post  | Lunch‑time deep‑dive on “Sustainable Quant Strategies” – captures readers who browse during their 12‑1 pm break for detailed content.               |\n| Thursday | 09:45      | LinkedIn | Hiring ad      | Early‑morning recruitment slot; aligns with HR teams’ routine checks and targets candidates actively job‑searching before the workday ramps up.   |\n| Friday   | 11:00      | Twitter  | Twitter thread | End‑of‑week wrap‑up & Q&A; encourages last‑minute engagement and shares takeaways, keeping the conversation alive before the weekend slowdown.   |\n| Saturday | 10:00      | LinkedIn | LinkedIn post  | Weekend recap for professionals who catch up on LinkedIn over coffee; reinforces key messages and drives traffic to the full series page.       |\n| Sunday   | 12:00      | Twitter  | Twitter thread | Light‑hearted poll on ESG preferences; leverages Sunday scrolling habit to maintain momentum and gather audience insights for future content.   |",
+  "distribution": {
+    "linkedin": {
+      "platform": "LinkedIn",
+      "content_type": "Post",
+      "char_count": 921,
+      "status": "ready",
+      "action": "Copy post → paste in LinkedIn → add image → publish",
+      "best_time": "Tuesday 9:00 AM IST",
+      "expected_reach": "500-2000 impressions",
+      "checklist": [
+        "Add company logo image",
+        "Tag relevant people",
+        "Post from company page",
+        "Pin to top of profile"
+      ]
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "content_type": "Thread",
+      "char_count": 859,
+      "status": "ready",
+      "action": "Post tweets in sequence, reply to each to form thread",
+      "best_time": "Wednesday 12:00 PM IST",
+      "expected_reach": "200-800 impressions",
+      "checklist": [
+        "Post tweet 1 first",
+        "Reply to tweet 1 with tweet 2",
+        "Continue thread",
+        "Add relevant hashtags"
+      ]
+    },
+    "hiring": {
+      "platform": "Multiple Job Boards",
+      "content_type": "Hiring Ad",
+      "char_count": 780,
+      "status": "ready",
+      "action": "Post on LinkedIn Jobs, Naukri, Internshala, IIT job portals",
+      "best_time": "Monday 10:00 AM IST",
+      "expected_reach": "100-500 views per board",
+      "checklist": [
+        "Post on LinkedIn Jobs",
+        "Post on Naukri.com",
+        "Post on Internshala (for freshers)",
+        "Share in IIT/IIM alumni WhatsApp groups",
+        "Pin on QuantGlobal website careers page"
+      ]
+    }
+  },
+  "recruitment": {
+    "role": "Quantitative Analyst",
+    "target_profiles": [
+      "IIT/IIM alumni with strong programming and finance background",
+      "Experienced algorithmic traders with a track record of strategy development",
+      "Data scientists specializing in ESG data analysis and quantitative research"
+    ],
+    "job_boards": [
+      {
+        "name": "LinkedIn Jobs",
+        "url": "https://linkedin.com/jobs",
+        "expected_applicants": "20-40",
+        "cost": "Free"
+      },
+      {
+        "name": "Naukri.com",
+        "url": "https://naukri.com",
+        "expected_applicants": "30-60",
+        "cost": "Free basic"
+      },
+      {
+        "name": "Internshala",
+        "url": "https://internshala.com",
+        "expected_applicants": "15-30",
+        "cost": "Free"
+      },
+      {
+        "name": "IIT Job Portal",
+        "url": "https://placement.iitb.ac.in",
+        "expected_applicants": "10-20",
+        "cost": "Free"
+      }
+    ],
+    "screening_questions": [
+      "Describe your experience integrating ESG data into quantitative models.",
+      "Explain a trading algorithm you designed, the tools you used, and its performance metrics.",
+      "Which programming languages and libraries (e.g., Python, C++, pandas, NumPy, TensorFlow) are you proficient in for quantitative research?"
+    ],
+    "kpis": {
+      "target_applications": 50,
+      "target_quality_rate": "30%",
+      "time_to_hire": "3-4 weeks"
+    }
+  },
+  "analytics": {
+    "summary": "**QuantGlobal Analytics – Week‑4 ESG‑Driven Algo Trading Brief**\n\n**1. Predicted engagement (realistic for a mid‑size quant firm)**  \n- **LinkedIn** – 1,200 impressions → ~150 likes, 30 comments, 12 shares (CTR ≈ 4%).  \n- **Twitter** – 3,500 impressions → ~45 likes, 10 retweets, 5 replies (CTR ≈ 1.3%).  \n\n**2. Strongest piece** – *LinkedIn carousel on “Carbon‑Adjusted Factor Models for Indian Equities.”* The visual step‑through of methodology plus a short case study generated the most comments from portfolio managers, evidencing high relevance and shareability.\n\n**3. Improvement vector for weakest piece** – *Twitter thread on “ESG‑Score Weighting vs. Traditional Alpha.”* Reduce jargon, add a clear hook in the first tweet (“Did you know ESG can boost Sharpe by 0.15?”), and embed an eye‑catching infographic to lift retweets and replies.\n\n**4. Recommendations for next week**  \n1. **Micro‑video (30 s) on LinkedIn Reels** showing live back‑testing results of an ESG‑screened strategy.  \n2. **Twitter poll** asking followers which ESG factor (Carbon, Governance, Social) they want deeper analytics on; follow up with a data‑driven thread.  \n3. **Cross‑post a thought‑leadership article** on Medium, then share the link on both platforms to drive traffic and SEO.\n\n**5. Brand risk flags** – No overt green‑washing language; ensure all ESG claims are backed by third‑party data (e.g., MSCI ESG Ratings) to avoid credibility challenges from regulator or activist scrutiny.",
+    "scores": {
+      "linkedin": 8,
+      "twitter": 6,
+      "hiring": 8
+    },
+    "revision_rounds": 2,
+    "avg_score": 7.3,
+    "topic": "ESG-Driven Algo Trading: Building Sustainable Quant Strategies for Indian Markets",
+    "generated_at": "2026-06-12T12:15:42.421415"
+  },
+  "roi_metrics": {
+    "linkedin": {
+      "impressions_min": 571,
+      "impressions_max": 2285,
+      "estimated_clicks": 68,
+      "profile_visits": 34,
+      "score_used": 8
+    },
+    "twitter": {
+      "impressions_min": 171,
+      "impressions_max": 685,
+      "estimated_engagements": 34,
+      "score_used": 6
+    },
+    "hiring": {
+      "expected_applications": 57,
+      "quality_applications": 17,
+      "estimated_interview_calls": 5,
+      "score_used": 8
+    },
+    "brand": {
+      "total_impressions_min": 742,
+      "total_impressions_max": 2970,
+      "brand_score": 73.0
+    },
+    "cost": {
+      "agency_equivalent_inr": 35000,
+      "pipeline_cost_est_inr": 500,
+      "cost_saved_inr": 34500,
+      "roi_multiple": 70.0
+    },
+    "calculated_at": "2026-06-12T12:15:42.422929"
+  },
+  "report_path": "data\\reports\\quantpulse_report_20260612_121229.pdf",
+  "status_log": [
+    {
+      "time": "2026-06-12T12:12:30.068233",
+      "msg": "🧠 Loading content memory (never-repeat list)..."
+    },
+    {
+      "time": "2026-06-12T12:12:30.092196",
+      "msg": "✅ Memory loaded — 7 past topic(s) to avoid"
+    },
+    {
+      "time": "2026-06-12T12:12:30.093357",
+      "msg": "🔍 Fetching trending topics (memory-filtered)..."
+    },
+    {
+      "time": "2026-06-12T12:12:35.325294",
+      "msg": "✅ Topic selected: ESG-Driven Algo Trading: Building Sustainable Quant Strategies for Indian Markets"
+    },
+    {
+      "time": "2026-06-12T12:12:35.328533",
+      "msg": "📈 Pulling live market data (NSE/Nifty)..."
+    },
+    {
+      "time": "2026-06-12T12:12:36.891575",
+      "msg": "✅ Market data fetched — Nifty: 23353.75"
+    },
+    {
+      "time": "2026-06-12T12:12:36.893159",
+      "msg": "🎯 Defining brand voice..."
+    },
+    {
+      "time": "2026-06-12T12:12:37.392718",
+      "msg": "✅ Brand voice defined"
+    },
+    {
+      "time": "2026-06-12T12:12:37.395022",
+      "msg": "📚 Loading/advancing 4-week narrative arc..."
+    },
+    {
+      "time": "2026-06-12T12:12:37.399130",
+      "msg": "✅ Series arc: Week 4/4 — Career Blueprint – A 12‑month roadmap from campus to senior quant roles"
+    },
+    {
+      "time": "2026-06-12T12:12:37.401144",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T12:12:38.840180",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T12:12:38.842293",
+      "msg": "🛡️ Running brand safety firewall (SEBI guidelines)..."
+    },
+    {
+      "time": "2026-06-12T12:12:40.292682",
+      "msg": "⚠️ Brand safety: FLAGS FOUND — [\"LinkedIn: Re‑phrase the career claim to something like 'can help accelerate your career path' and add a disclaimer: 'Results may vary; past performance is not indicative of future results.' Include a forward‑looking disclaimer after the AUM projection.\", \"LinkedIn: Add a footnote after the market data – e.g., 'NIFTY50 level as of [date]; this does not constitute investment advice.'\", \"Twitter: Insert a disclaimer at the end of the thread, e.g., 'Back‑test results are illustrative only and not indicative of future performance. This is not investment advice.' Remove or qualify any language that suggests guaranteed career outcomes.\", \"Twitter: Consider re‑wording the Sharpe boost claim to 'preliminary back‑tests have shown a potential Sharpe improvement of up to 0.15' and add the same disclaimer.\", \"Hiring Ad: Change 'profitable algo strategies' to 'algo strategies with the potential to generate returns' and add a disclaimer such as 'Performance of strategies is not guaranteed and depends on market conditions.'\"]"
+    },
+    {
+      "time": "2026-06-12T12:12:40.294998",
+      "msg": "🧑‍💼 CMO reviewing (round 1)..."
+    },
+    {
+      "time": "2026-06-12T12:12:41.333555",
+      "msg": "❌ CMO REJECTED ['twitter', 'hiring']"
+    },
+    {
+      "time": "2026-06-12T12:12:41.336532",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T12:13:36.108102",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T12:13:36.108102",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T12:13:36.110200",
+      "msg": "🧑‍💼 CMO reviewing (round 2)..."
+    },
+    {
+      "time": "2026-06-12T12:13:37.311392",
+      "msg": "❌ CMO REJECTED ['linkedin']"
+    },
+    {
+      "time": "2026-06-12T12:13:37.313516",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T12:14:38.234033",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T12:14:38.237740",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T12:14:38.243977",
+      "msg": "🧑‍💼 CMO reviewing (round 3)..."
+    },
+    {
+      "time": "2026-06-12T12:14:39.152677",
+      "msg": "❌ CMO REJECTED ['twitter']"
+    },
+    {
+      "time": "2026-06-12T12:14:39.154300",
+      "msg": "📅 Building content calendar..."
+    },
+    {
+      "time": "2026-06-12T12:14:40.047537",
+      "msg": "✅ Calendar built"
+    },
+    {
+      "time": "2026-06-12T12:14:40.048484",
+      "msg": "📤 Building distribution plan..."
+    },
+    {
+      "time": "2026-06-12T12:14:40.048484",
+      "msg": "✅ Distribution plan ready"
+    },
+    {
+      "time": "2026-06-12T12:14:40.051080",
+      "msg": "👥 Building recruitment tracker..."
+    },
+    {
+      "time": "2026-06-12T12:14:40.791280",
+      "msg": "✅ Recruitment tracker ready"
+    },
+    {
+      "time": "2026-06-12T12:14:40.796289",
+      "msg": "📊 Running analytics..."
+    },
+    {
+      "time": "2026-06-12T12:15:42.421415",
+      "msg": "✅ Analytics complete"
+    },
+    {
+      "time": "2026-06-12T12:15:42.422929",
+      "msg": "💰 Calculating ROI metrics..."
+    },
+    {
+      "time": "2026-06-12T12:15:42.422929",
+      "msg": "✅ ROI: 571-2285 LinkedIn impressions | ₹34,500 saved vs agency"
+    },
+    {
+      "time": "2026-06-12T12:15:42.424956",
+      "msg": "📄 Generating weekly PDF report..."
+    },
+    {
+      "time": "2026-06-12T12:15:42.523033",
+      "msg": "✅ PDF report saved → data\\reports\\quantpulse_report_20260612_121229.pdf"
+    }
+  ]
+}

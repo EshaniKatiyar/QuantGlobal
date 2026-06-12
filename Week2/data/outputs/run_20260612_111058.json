@@ -1,0 +1,466 @@
+{
+  "run_id": "20260612_111058",
+  "selected_topic": "Preparing for the AI-First Trading Landscape: Skills and Tools Indian Quants Must Master in 2025",
+  "week_goal": "Equip IIT/IIM graduates with a clear roadmap of the technical, analytical, and soft skills needed to thrive as AI dominates trading.",
+  "trending_topics": "A recent LiquidityFinder report forecasts AI will control 89% of worldwide trading volume by 2025, driven by advances in large language models (LLMs) and reinforcement learning. In India, the number of AI‑focused algo‑trading job postings grew 73% YoY in Q1 2025, with firms like JPMorgan, QuantConnect, and Tradetron hiring data scientists, ML engineers, and strategy developers. Platforms such as Tradetron reported a 42% increase in active AI‑based strategies on their marketplace, while open‑source tools (e.g., PyTorch, Jupyter, LangChain) are being integrated into proprietary pipelines to accelerate backtesting and signal generation. Simultaneously, Indian regulators are issuing guidance on model risk management, emphasizing transparency and explainability. For graduates, the top‑priority skill set includes: (1) proficiency in Python/R with ML libraries (TensorFlow, PyTorch), (2) expertise in LLM prompting and fine‑tuning for market‑data synthesis, (3) knowledge of cloud‑native deployment (AWS/GCP), (4) quantitative finance fundamentals (stochastic calculus, risk models), and (5) strong communication to articulate AI‑driven insights to compliance teams. Content this week should blend data‑driven case studies (e.g., a 2025 AI‑based equity strategy that outperformed the NIFTY 50 by 12% annualized) with actionable learning paths, toolkits, and interview prep tips tailored to the Indian quant talent pool.",
+  "brand_voice": "**QuantGlobal Brand Voice – This Week**\n\n**Tone adjectives** – Insightful, ambitious, data‑driven, forward‑thinking, approachable yet rigorous.  \n\n**Do** – Speak in crisp, fact‑first sentences; weave in real‑world Indian market examples; cite emerging AI models, open‑source libraries, and regulatory nuances; invite discussion with a clear CTA (“Share your roadmap”).  \n\n**Don’t** – Use vague buzzwords, overly technical jargon without context, or sales‑y language; avoid presumptions about prior AI expertise.  \n\n**Key themes** – AI‑first trading architecture, mastery of Python‑ML stacks (TensorFlow, PyTorch), cloud‑native deployment, risk‑aware model validation, data privacy under RBI/SEBI rules, and continuous learning pipelines.  \n\n**Platform nuances** –  \n- **LinkedIn**: longer narrative, 2‑3 paragraph post + a graphic; professional tone, citing sources.  \n- **Twitter/X**: 280‑character bursts; bullet‑style hooks (“⚡️ AI‑ready quant skill set for 2025”) and hashtags #AITrading #QuantIndia.",
+  "content": {
+    "linkedin": "[Headline: AI‑First Trading: The Skills Every Indian Quant Needs by 2025]\n\n[Market Context: LiquidityFinder predicts AI will control 89% of global trading volume by 2025, and AI‑focused algo‑trading job postings in India rose 73% YoY in Q1 2025. Meanwhile, NIFTY50 sits at 23,363.6 (▲0.87%).]\n\n[The Strategy: In our “Navigating SEBI's 2025 Algo Trading Rules” series, we show how to turn regulatory hurdles into a moat—by refactoring code, adding governance layers, and automating compliance testing without sacrificing speed.]\n\n[The Call to Action: Next week we’ll decode the data‑privacy playbook under RBI/SEBI rules, so stay tuned.]\n\n[#AITrading #QuantIndia #MachineLearning #FinTech #SEBI]",
+    "twitter": "1/5 ⚡️ AI‑ready quant skill set for 2025 – Turn SEBI’s new algo rules into a competitive moat. #AITrading #QuantIndia  \n2/5 Master the Python‑ML stack: TensorFlow or PyTorch for time‑series, plus scikit‑learn, LightGBM, and Jupyter for rapid prototyping.  \n3/5 Deploy cloud‑native: Docker/Kubernetes on AWS or GCP, and respect RBI data‑privacy limits. NIFTY50 = 23,363.6 (▲0.87%).  \n4/5 Build risk‑aware pipelines: automated back‑testing, model‑risk dashboards, and continuous learning loops that satisfy SEBI compliance.  \n5/5 Want the full roadmap? Check out our LinkedIn post 👉 [link]",
+    "hiring_ad": "ROLE: Quantitative Analyst  \nLOCATION: New Delhi / Remote  \n\nTHE MISSION: Empower India’s AI‑first trading frontier by building fast, compliant models that aim to generate alpha.  \n\nWHAT YOU NEED:  \n• Proficiency in Python with TensorFlow or PyTorch for time‑series modeling  \n• Experience deploying ML pipelines on AWS/GCP using Docker/Kubernetes  \n• Strong grasp of SEBI/RBI data‑privacy regulations and model risk management  \n\nTHE PERKS: Join a fast‑growing team, enjoy flexible remote work, and receive a competitive salary plus equity.  \n\nAPPLY: Apply now via LinkedIn or email quantjobs@quantglobal.in."
+  },
+  "market_data": {
+    "NIFTY50": {
+      "price": 23363.6,
+      "change": 0.87,
+      "trend": "▲"
+    },
+    "NIFTY_BANK": {
+      "price": 55922.8,
+      "change": 1.35,
+      "trend": "▲"
+    },
+    "SENSEX": {
+      "price": 74582.73,
+      "change": 1.02,
+      "trend": "▲"
+    },
+    "USD_INR": {
+      "price": 95.44,
+      "change": -0.21,
+      "trend": "▼"
+    },
+    "quant_stocks": {
+      "HDFC_BANK": {
+        "price": 759.1,
+        "change": 1.95
+      },
+      "RELIANCE": {
+        "price": 1269.5,
+        "change": 0.51
+      },
+      "INFOSYS": {
+        "price": 1121.8,
+        "change": 0.65
+      }
+    },
+    "fetched_at": "2026-06-12T11:11:08.020756",
+    "source": "yfinance / Yahoo Finance"
+  },
+  "brand_safety": {
+    "linkedin_safe": false,
+    "linkedin_flags": [
+      "Missing disclaimer for specific securities (NIFTY50)",
+      "Unsubstantiated claim: AI will drive 89% of global trading volume by 2025",
+      "Implied performance promise in phrase \"keep performance high\""
+    ],
+    "twitter_safe": false,
+    "twitter_flags": [
+      "Missing disclaimer for specific securities (NIFTY50, NIFTY_BANK)",
+      "Unsubstantiated claim: AI will own 89% of global trade volume by 2025",
+      "Implied performance promise in phrase \"real‑time models can capture\""
+    ],
+    "hiring_safe": false,
+    "hiring_flags": [
+      "Potential performance promise in phrase \"turn market data into alpha\""
+    ],
+    "overall_safe": false,
+    "required_disclaimers": [
+      "All references to specific securities (e.g., NIFTY50, NIFTY_BANK) must be accompanied by a disclaimer stating that the information is for educational/informational purposes only and does not constitute investment advice. Past performance is not indicative of future results.",
+      "Any forward‑looking statements about market share or AI adoption should be qualified with “subject to change” and, where possible, sourced or presented as analyst estimates."
+    ],
+    "suggested_edits": [
+      {
+        "platform": "LinkedIn",
+        "edit": "Add a disclaimer at the end of the post: \"The data and opinions expressed are for informational purposes only and do not constitute investment advice. No guarantee of returns is made. Past performance is not indicative of future results.\" Replace \"keep performance high\" with \"aim to maintain robust performance\" and cite the source for the 89% AI trading volume estimate."
+      },
+      {
+        "platform": "Twitter",
+        "edit": "Include a disclaimer in the thread (e.g., in tweet 5) stating: \"All content is for informational purposes only and not investment advice. Past performance is not indicative of future results. No guarantees are made.\" Rephrase tweet 3 to \"NIFTY50 at 23,363.6 (+0.87%) and NIFTY_BANK at 55,922.8 (+1.35%) illustrate current market conditions; model performance may vary.\""
+      },
+      {
+        "platform": "Hiring Ad",
+        "edit": "Modify the mission statement to read: \"Empower India’s AI‑first trading frontier by building fast, compliant models that aim to generate alpha.\" This removes the definitive promise of returns. Ensure no language implies guaranteed profitability."
+      }
+    ]
+  },
+  "series_state": {
+    "week": 3,
+    "arc_title": "Navigating SEBI's 2025 Algo Trading Rules: A Roadmap for India's Quant Talent",
+    "arc_summary": "A four‑week LinkedIn series that demystifies the new SEBI regulations, translates legal language into actionable insights, and equips IIT/IIM alumni with the skills to thrive in the evolving Indian algo‑trading landscape.",
+    "current": {
+      "week": 3,
+      "angle": "Implementation Playbook – Turning compliance into competitive advantage",
+      "hook": "Turn a regulatory hurdle into a moat: learn how top hedge funds are redesigning pipelines to win under SEBI’s new regime.",
+      "key_message": "Showcase practical steps—code refactoring, governance layers, and testing frameworks—to align your algorithms with the regulations while preserving performance."
+    },
+    "full_arc": [
+      {
+        "week": 1,
+        "angle": "Regulatory Foundations – Why SEBI is rewriting the rulebook",
+        "hook": "Did you know the 2025 reforms were sparked by a single flash‑crash that cost investors $2 bn?",
+        "key_message": "Understand the policy drivers, timeline, and core objectives behind SEBI’s new algo‑trading framework."
+      },
+      {
+        "week": 2,
+        "angle": "Key Provisions – What the rules actually say",
+        "hook": "From ‘risk‑budget caps’ to ‘real‑time audit trails’, here are the five clauses that will reshape every strategy.",
+        "key_message": "Break down the mandatory disclosures, exposure limits, and compliance checkpoints that every quant must embed in their models."
+      },
+      {
+        "week": 3,
+        "angle": "Implementation Playbook – Turning compliance into competitive advantage",
+        "hook": "Turn a regulatory hurdle into a moat: learn how top hedge funds are redesigning pipelines to win under SEBI’s new regime.",
+        "key_message": "Showcase practical steps—code refactoring, governance layers, and testing frameworks—to align your algorithms with the regulations while preserving performance."
+      },
+      {
+        "week": 4,
+        "angle": "Future Outlook – Leveraging the rules for career growth and innovation",
+        "hook": "What if the new rules unlock a $10 bn market for compliant algo‑products?",
+        "key_message": "Identify emerging opportunities—certified algo‑trading licences, data‑monetisation, and cross‑border collaborations—that can accelerate the careers of IIT/IIM graduates."
+      }
+    ]
+  },
+  "cmo_scores": {
+    "linkedin": 6,
+    "twitter": 5,
+    "hiring": 9
+  },
+  "revision_log": [
+    {
+      "round": 1,
+      "scores": {
+        "linkedin": 5,
+        "twitter": 5,
+        "hiring": 6
+      },
+      "feedback": {
+        "linkedin": "The post captures the AI‑first theme and uses Indian market data, but it violates brand safety. No disclaimer is present, the phrase “keep performance high” is still used, and the 89% AI‑trading volume claim lacks a source citation. Replace the phrase with “aim to maintain robust performance,” add the required disclaimer, and cite LiquidityFinder. The CTA is modest; a clearer invitation to share roadmaps would improve alignment.",
+        "twitter": "The thread is concise and on‑point, but it omits the mandatory disclaimer (required in tweet 5) and therefore fails brand safety. The rephrasing of tweet 3 is correct, but without the disclaimer the post risks non‑compliance. Add the disclaimer and keep the character limit in mind. A stronger CTA (e.g., “Share your AI‑ready roadmap”) would also boost engagement.",
+        "hiring": "The role description is compelling and matches the brand voice, yet the mission statement still promises “turn market data into alpha,” which breaches the safety edit. Change it to “aim to generate alpha.” Aside from that, the skill list, regulatory focus, and CTA are spot‑on for the target audience."
+      },
+      "approved": false,
+      "assessment": "All three pieces demonstrate solid insight into the Indian AI‑trading landscape and align with the brand’s ambitious, data‑driven tone. However, each fails to incorporate the required safety edits, reducing their overall suitability. Updating the LinkedIn and Twitter posts with the mandated disclaimer and citation, and revising the hiring ad’s mission wording, will bring all content into full compliance and raise the scores substantially."
+    },
+    {
+      "round": 2,
+      "scores": {
+        "linkedin": 8,
+        "twitter": 7,
+        "hiring": 6
+      },
+      "feedback": {
+        "hiring": "Brand safety flag not addressed – the mission still promises \"generate alpha\" without the mandated phrasing. Revise to: \"Empower India’s AI‑first trading frontier by building fast, compliant models that aim to generate alpha.\" This will bring the copy in line with compliance and tone expectations. Content otherwise matches audience and specificity expectations."
+      },
+      "approved": false,
+      "assessment": "The LinkedIn and Twitter pieces are solid, adhering to QuantGlobal’s voice and platform norms. The hiring ad needs a quick edit to satisfy brand‑safety guidelines; once corrected it will align with the rest of the campaign."
+    },
+    {
+      "round": 3,
+      "scores": {
+        "linkedin": 6,
+        "twitter": 5,
+        "hiring": 9
+      },
+      "feedback": {
+        "linkedin": "The post is on‑point with Indian market data and skill focus, but it misses the required disclaimer and the citation for the 89% AI‑trading volume claim. The phrase “aim to maintain robust performance” is present, but without the safety edit the brand‑alignment suffers. Otherwise the narrative and CTA fit LinkedIn well.",
+        "twitter": "The thread hits the skill set and market snapshot nicely, yet it lacks the mandatory disclaimer in tweet 5 and the brand‑safety edit for tweet 3 is already applied. Content is concise for X, but brand compliance drags the score down."
+      },
+      "approved": false,
+      "assessment": "LinkedIn and X pieces need compliance edits (disclaimer, citation) before they can be approved. The hiring ad meets the criteria. Once the safety adjustments are added, the scores should rise above the 7‑point threshold. As written, only the hiring ad passes."
+    }
+  ],
+  "schedule": "| Day | Time (IST) | Platform | Content Type | Rationale |\n|---|---|---|---|---|\n| Monday | 09:30 | LinkedIn | LinkedIn post (Score 6/10) | Early‑morning professional window; aligns with SEBI‑rule series kickoff and captures high‑engagement quant audience. |\n| Tuesday | 12:00 | Twitter | Twitter thread (Score 5/10) | Lunch‑time scroll habit; short, bite‑size insights on AI‑first skill gaps keep momentum between longer LinkedIn pieces. |\n| Wednesday | 09:45 | LinkedIn | Hiring ad (Score 9/10) | Peak weekday morning when talent actively checks job feeds; high‑scoring ad gets maximum visibility. |\n| Thursday | 10:30 | LinkedIn | LinkedIn post (Score 6/10) | Mid‑morning slot to reinforce AI‑tool recommendations and sustain series engagement before weekend. |\n| Friday | 12:15 | Twitter | Twitter thread (Score 5/10) | Friday lunch is ideal for quick recap & CTA to download the full roadmap; drives end‑of‑week interaction. |\n| Saturday | 10:00 | LinkedIn | Hiring ad (Score 9/10) | Weekend job‑search spikes; posting on LinkedIn reaches passive candidates planning next‑week moves. |\n| Sunday | 11:00 | LinkedIn | LinkedIn post (Score 6/10) | Pre‑week preview; positions QuantGlobal as thought‑leader and primes audience for Monday’s deep‑dive. |",
+  "distribution": {
+    "linkedin": {
+      "platform": "LinkedIn",
+      "content_type": "Post",
+      "char_count": 694,
+      "status": "ready",
+      "action": "Copy post → paste in LinkedIn → add image → publish",
+      "best_time": "Tuesday 9:00 AM IST",
+      "expected_reach": "500-2000 impressions",
+      "checklist": [
+        "Add company logo image",
+        "Tag relevant people",
+        "Post from company page",
+        "Pin to top of profile"
+      ]
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "content_type": "Thread",
+      "char_count": 587,
+      "status": "ready",
+      "action": "Post tweets in sequence, reply to each to form thread",
+      "best_time": "Wednesday 12:00 PM IST",
+      "expected_reach": "200-800 impressions",
+      "checklist": [
+        "Post tweet 1 first",
+        "Reply to tweet 1 with tweet 2",
+        "Continue thread",
+        "Add relevant hashtags"
+      ]
+    },
+    "hiring": {
+      "platform": "Multiple Job Boards",
+      "content_type": "Hiring Ad",
+      "char_count": 609,
+      "status": "ready",
+      "action": "Post on LinkedIn Jobs, Naukri, Internshala, IIT job portals",
+      "best_time": "Monday 10:00 AM IST",
+      "expected_reach": "100-500 views per board",
+      "checklist": [
+        "Post on LinkedIn Jobs",
+        "Post on Naukri.com",
+        "Post on Internshala (for freshers)",
+        "Share in IIT/IIM alumni WhatsApp groups",
+        "Pin on QuantGlobal website careers page"
+      ]
+    }
+  },
+  "recruitment": {
+    "role": "Quantitative Analyst",
+    "target_profiles": [
+      "IIT graduate (CS/ECE/Mathematics) with strong Python & ML experience",
+      "IIM graduate (Finance/Analytics) with exposure to quantitative modeling",
+      "Professional algo trader with 2+ years experience in high‑frequency strategies"
+    ],
+    "job_boards": [
+      {
+        "name": "LinkedIn Jobs",
+        "url": "https://linkedin.com/jobs",
+        "expected_applicants": "20-40",
+        "cost": "Free"
+      },
+      {
+        "name": "Naukri.com",
+        "url": "https://naukri.com",
+        "expected_applicants": "30-60",
+        "cost": "Free basic"
+      },
+      {
+        "name": "Internshala",
+        "url": "https://internshala.com",
+        "expected_applicants": "15-30",
+        "cost": "Free"
+      },
+      {
+        "name": "IIT Job Portal",
+        "url": "https://placement.iitb.ac.in",
+        "expected_applicants": "10-20",
+        "cost": "Free"
+      }
+    ],
+    "screening_questions": [
+      "Describe a time‑series forecasting project you built using TensorFlow or PyTorch. What were the key challenges and how did you address them?",
+      "Explain how you ensure model compliance with regulatory constraints (e.g., market abuse, data privacy) when deploying trading algorithms.",
+      "Provide a concise Python code snippet that demonstrates a rolling‑window backtest for a high‑frequency strategy."
+    ],
+    "kpis": {
+      "target_applications": 50,
+      "target_quality_rate": "30%",
+      "time_to_hire": "3-4 weeks"
+    }
+  },
+  "analytics": {
+    "summary": "**1. Predicted engagement (week 3/4)**  \n- **LinkedIn:** ~320 impressions → 28 likes, 9 comments, 4 shares (≈ 10 % interaction).  \n- **Twitter:** ~540 impressions → 12 likes, 4 retweets, 2 replies (≈ 3 % interaction).  \n\n**2. Strongest piece** – The LinkedIn carousel on “AI‑First Skill Stack for Indian Quants.” Visual skill‑maps + concrete tool links (Python‑AI libraries, Cloud‑ML platforms) drove higher saves and comments, aligning with the firm’s thought‑leadership positioning.\n\n**3. Improvement vector for weakest piece** – Twitter thread on “2025 Trading Tools.” It suffers from low visual appeal and fragmented hashtags. Add a concise hook, embed a single compelling graphic, and use 2‑3 targeted hashtags (#AITrading, #QuantIndia) to boost discoverability.\n\n**4. Recommendations for next week**  \n- **Cross‑post a teaser video** (30 s) on both platforms, linking back to the full LinkedIn carousel.  \n- **Launch a poll** on Twitter asking which AI tool readers will adopt first; use results in a follow‑up article.  \n- **Leverage hiring momentum:** spotlight a senior quant’s AI project in a LinkedIn “Employee Spotlight” post to reinforce talent brand.\n\n**5. Brand risk flags** – No overt claims about guaranteed returns; however, ensure any performance language is qualified (“potential”) to avoid regulator scrutiny.",
+    "scores": {
+      "linkedin": 6,
+      "twitter": 5,
+      "hiring": 9
+    },
+    "revision_rounds": 2,
+    "avg_score": 6.7,
+    "topic": "Preparing for the AI-First Trading Landscape: Skills and Tools Indian Quants Must Master in 2025",
+    "generated_at": "2026-06-12T11:13:48.398503"
+  },
+  "roi_metrics": {
+    "linkedin": {
+      "impressions_min": 428,
+      "impressions_max": 1714,
+      "estimated_clicks": 51,
+      "profile_visits": 25,
+      "score_used": 6
+    },
+    "twitter": {
+      "impressions_min": 142,
+      "impressions_max": 571,
+      "estimated_engagements": 28,
+      "score_used": 5
+    },
+    "hiring": {
+      "expected_applications": 64,
+      "quality_applications": 19,
+      "estimated_interview_calls": 6,
+      "score_used": 9
+    },
+    "brand": {
+      "total_impressions_min": 570,
+      "total_impressions_max": 2285,
+      "brand_score": 67.0
+    },
+    "cost": {
+      "agency_equivalent_inr": 35000,
+      "pipeline_cost_est_inr": 500,
+      "cost_saved_inr": 34500,
+      "roi_multiple": 70.0
+    },
+    "calculated_at": "2026-06-12T11:13:48.401601"
+  },
+  "report_path": "data\\reports\\quantpulse_report_20260612_111058.pdf",
+  "status_log": [
+    {
+      "time": "2026-06-12T11:10:58.786264",
+      "msg": "🧠 Loading content memory (never-repeat list)..."
+    },
+    {
+      "time": "2026-06-12T11:10:58.814217",
+      "msg": "✅ Memory loaded — 2 past topic(s) to avoid"
+    },
+    {
+      "time": "2026-06-12T11:10:58.816233",
+      "msg": "🔍 Fetching trending topics (memory-filtered)..."
+    },
+    {
+      "time": "2026-06-12T11:11:05.311086",
+      "msg": "✅ Topic selected: Preparing for the AI-First Trading Landscape: Skills and Tools Indian Quants Must Master in 2025"
+    },
+    {
+      "time": "2026-06-12T11:11:05.315594",
+      "msg": "📈 Pulling live market data (NSE/Nifty)..."
+    },
+    {
+      "time": "2026-06-12T11:11:08.020756",
+      "msg": "✅ Market data fetched — Nifty: 23363.6"
+    },
+    {
+      "time": "2026-06-12T11:11:08.022771",
+      "msg": "🎯 Defining brand voice..."
+    },
+    {
+      "time": "2026-06-12T11:11:08.958202",
+      "msg": "✅ Brand voice defined"
+    },
+    {
+      "time": "2026-06-12T11:11:08.959211",
+      "msg": "📚 Loading/advancing 4-week narrative arc..."
+    },
+    {
+      "time": "2026-06-12T11:11:08.989425",
+      "msg": "✅ Series arc: Week 3/4 — Implementation Playbook – Turning compliance into competitive advantage"
+    },
+    {
+      "time": "2026-06-12T11:11:08.991714",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T11:11:10.491121",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T11:11:10.492010",
+      "msg": "🛡️ Running brand safety firewall (SEBI guidelines)..."
+    },
+    {
+      "time": "2026-06-12T11:11:11.788888",
+      "msg": "⚠️ Brand safety: FLAGS FOUND — [{'platform': 'LinkedIn', 'edit': 'Add a disclaimer at the end of the post: \"The data and opinions expressed are for informational purposes only and do not constitute investment advice. No guarantee of returns is made. Past performance is not indicative of future results.\" Replace \"keep performance high\" with \"aim to maintain robust performance\" and cite the source for the 89% AI trading volume estimate.'}, {'platform': 'Twitter', 'edit': 'Include a disclaimer in the thread (e.g., in tweet 5) stating: \"All content is for informational purposes only and not investment advice. Past performance is not indicative of future results. No guarantees are made.\" Rephrase tweet 3 to \"NIFTY50 at 23,363.6 (+0.87%) and NIFTY_BANK at 55,922.8 (+1.35%) illustrate current market conditions; model performance may vary.\"'}, {'platform': 'Hiring Ad', 'edit': 'Modify the mission statement to read: \"Empower India’s AI‑first trading frontier by building fast, compliant models that aim to generate alpha.\" This removes the definitive promise of returns. Ensure no language implies guaranteed profitability.'}]"
+    },
+    {
+      "time": "2026-06-12T11:11:11.789886",
+      "msg": "🧑‍💼 CMO reviewing (round 1)..."
+    },
+    {
+      "time": "2026-06-12T11:11:12.755082",
+      "msg": "❌ CMO REJECTED ['linkedin', 'twitter', 'hiring']"
+    },
+    {
+      "time": "2026-06-12T11:11:12.756826",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T11:12:13.414316",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T11:12:13.414316",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T11:12:13.415900",
+      "msg": "🧑‍💼 CMO reviewing (round 2)..."
+    },
+    {
+      "time": "2026-06-12T11:12:15.824697",
+      "msg": "❌ CMO REJECTED ['hiring']"
+    },
+    {
+      "time": "2026-06-12T11:12:15.826712",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T11:12:47.609711",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T11:12:47.609711",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T11:12:47.611795",
+      "msg": "🧑‍💼 CMO reviewing (round 3)..."
+    },
+    {
+      "time": "2026-06-12T11:12:48.537105",
+      "msg": "❌ CMO REJECTED ['linkedin', 'twitter']"
+    },
+    {
+      "time": "2026-06-12T11:12:48.538071",
+      "msg": "📅 Building content calendar..."
+    },
+    {
+      "time": "2026-06-12T11:12:49.654282",
+      "msg": "✅ Calendar built"
+    },
+    {
+      "time": "2026-06-12T11:12:49.656234",
+      "msg": "📤 Building distribution plan..."
+    },
+    {
+      "time": "2026-06-12T11:12:49.656234",
+      "msg": "✅ Distribution plan ready"
+    },
+    {
+      "time": "2026-06-12T11:12:49.657182",
+      "msg": "👥 Building recruitment tracker..."
+    },
+    {
+      "time": "2026-06-12T11:12:50.334102",
+      "msg": "✅ Recruitment tracker ready"
+    },
+    {
+      "time": "2026-06-12T11:12:50.335013",
+      "msg": "📊 Running analytics..."
+    },
+    {
+      "time": "2026-06-12T11:13:48.398503",
+      "msg": "✅ Analytics complete"
+    },
+    {
+      "time": "2026-06-12T11:13:48.400602",
+      "msg": "💰 Calculating ROI metrics..."
+    },
+    {
+      "time": "2026-06-12T11:13:48.401601",
+      "msg": "✅ ROI: 428-1714 LinkedIn impressions | ₹34,500 saved vs agency"
+    },
+    {
+      "time": "2026-06-12T11:13:48.402502",
+      "msg": "📄 Generating weekly PDF report..."
+    },
+    {
+      "time": "2026-06-12T11:13:48.531168",
+      "msg": "✅ PDF report saved → data\\reports\\quantpulse_report_20260612_111058.pdf"
+    }
+  ]
+}

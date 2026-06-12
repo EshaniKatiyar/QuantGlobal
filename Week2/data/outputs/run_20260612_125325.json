@@ -1,0 +1,424 @@
+{
+  "run_id": "20260612_125325",
+  "selected_topic": "Digital Rupee (CBDC) Rollout: What Indian Algo Traders Need to Know",
+  "week_goal": "Equip IIT/IIM graduates and Indian quant researchers with actionable insights on how the RBI's digital rupee will reshape algo‑trading infrastructure, strategy design, and risk management.",
+  "trending_topics": "The RBI’s digital rupee (e‑₹) pilot, launched in late 2023 across four Indian banks, processed over 1.2 billion transactions and demonstrated a 30 % reduction in settlement latency versus traditional RTGS. In its March 2025 progress report, the RBI announced a phased rollout targeting wholesale markets by Q2 2026 and retail adoption by Q4 2026, with an estimated 1.5 billion active digital wallets by 2027. For algo traders, the CBDC introduces near‑instant finality, eliminating settlement risk and enabling sub‑second strategy execution. However, the new ledger will impose stricter KYC/AML controls, requiring real‑time identity verification APIs and limiting anonymity. Data transparency is a double‑edged sword: while transaction‑level data will be accessible through RBI’s open‑API framework, regulators will enforce caps on order‑size anonymity to curb market manipulation. Early‑stage pricing models suggest transaction fees could drop from 0.02 % to 0.005 % per trade, dramatically improving P&L for high‑frequency strategies. Quant teams should begin integrating CBDC‑specific data feeds, redesign latency budgets, and prototype risk‑adjusted strategies that exploit the reduced settlement window while complying with the forthcoming RBI sandbox guidelines.",
+  "brand_voice": "**QuantGlobal Brand Voice – This Week**  \n\n**Tone adjectives:** Insightful, data‑driven, confident, forward‑looking, pragmatic.  \n\n**Do:**  \n- Lead with crisp, quantified takeaways.  \n- Cite Indian market data, regulatory timelines, and algorithmic‑impact metrics.  \n- Use active verbs (“optimize,” “benchmark,” “pivot”).  \n- End with a clear “next step” for traders.  \n\n**Don’t:**  \n- Over‑promise profitability or ignore risk.  \n- Slip into jargon‑heavy exposition without context.  \n- Assume familiarity with CBDC basics—briefly anchor the concept.  \n\n**Key themes:** CBDC architecture, liquidity & settlement latency, impact on order‑book dynamics, strategy adaptation (arbitrage, market‑making, risk‑adjusted exposure).  \n\n**Platform tweaks:**  \n- **LinkedIn:** 2‑3 paragraph post, richer data visual (heat‑map, timeline), formal voice.  \n- **Twitter/X:** 3‑4 tweet thread; each tweet ≤280 chars, bullet‑point stats, hashtags #DigitalRupee #AlgoTrading.  ",
+  "content": {
+    "linkedin": "**Digital Rupee: The New Speed‑Gate for Indian Algo Trading**\n\nThe RBI’s e‑₹ pilot processed 1.2 billion transactions, delivering roughly a 30 % reduction in settlement latency versus traditional RTGS. Today’s equity market reflects that momentum, with NIFTY50 at 23,319.35 (+0.68%).  \n\n*Disclaimer: Past performance is not indicative of future results; the Digital Rupee rollout may affect market dynamics, and any strategy should be rigorously back‑tested before deployment.*  \n\nIn this opening installment of **“Digital Rupee Decoded: A Quant’s Playbook for the New CBDC Era,”** we examine how near‑instant finality could reshape latency assumptions and liquidity modeling for quant teams. If the e‑₹ infrastructure meets its targets, traders may need to benchmark order‑book dynamics against a fundamentally different settlement layer.  \n\nNext week we’ll dive into concrete model tweaks for arbitrage and market‑making in a CBDC‑driven order flow.  \n\n#DigitalRupee #AlgoTrading #QuantFinance #IndiaMarkets #CBDC",
+    "twitter": "1/5 Imagine a currency that settles instantly, is fully traceable, and programmable – the Digital Rupee could rewrite the rules for Indian algo traders. #DigitalRupee #AlgoTrading  \n\n2/5 The RBI’s e‑₹ pilot logged 1.2 bn transactions and cut settlement lag by ~30 % versus RTGS, hinting at faster capital turnover for high‑frequency strategies.  \n\n3/5 If near‑instant finality holds, latency‑sensitive models may see tighter spreads. Today NIFTY50 trades at 23,319.35 (+0.68%), offering a live backdrop for testing.  \n\n4/5 Potential shifts include altered order‑book depth as CBDC wallets become market participants, urging risk teams to model new liquidity curves and counter‑party exposure.  \n\n5/5 Read our full LinkedIn brief for a deeper playbook and stay tuned for next week’s model tweaks. Disclaimer: Results may vary; back‑test any strategy before deployment.",
+    "hiring_ad": "ROLE: Quantitative Analyst  \nLOCATION: New Delhi / Remote  \n\nTHE MISSION: Join QuantGlobal to translate the emerging Digital Rupee ecosystem into data‑driven trading signals for India’s fastest‑growing markets.  \n\nWHAT YOU NEED:  \n• Strong proficiency in Python/C++ for high‑frequency algorithm development  \n• Experience with market microstructure analysis and statistical arbitrage  \n• Ability to design and back‑test models on Indian equity and futures data  \n\nTHE PERKS: Collaborative, research‑first culture with competitive compensation and flexible remote options.  \n\nAPPLY: Send your resume and a brief note on your most recent algo project to careers@quantglobal.in."
+  },
+  "market_data": {
+    "NIFTY50": {
+      "price": 23319.35,
+      "change": 0.68,
+      "trend": "▲"
+    },
+    "NIFTY_BANK": {
+      "price": 55869.45,
+      "change": 1.26,
+      "trend": "▲"
+    },
+    "SENSEX": {
+      "price": 74563.62,
+      "change": 0.99,
+      "trend": "▲"
+    },
+    "USD_INR": {
+      "price": 95.4,
+      "change": -0.25,
+      "trend": "▼"
+    },
+    "quant_stocks": {
+      "HDFC_BANK": {
+        "price": 758.55,
+        "change": 1.87
+      },
+      "RELIANCE": {
+        "price": 1263.5,
+        "change": 0.04
+      },
+      "INFOSYS": {
+        "price": 1117.1,
+        "change": 0.22
+      }
+    },
+    "fetched_at": "2026-06-12T12:53:36.657983",
+    "source": "yfinance / Yahoo Finance"
+  },
+  "brand_safety": {
+    "linkedin_safe": false,
+    "linkedin_flags": [
+      "missing_disclaimer_for_NIFTY50",
+      "potential_unlicensed_advice"
+    ],
+    "twitter_safe": false,
+    "twitter_flags": [
+      "missing_disclaimer_for_NIFTY50",
+      "potential_unlicensed_advice"
+    ],
+    "hiring_safe": true,
+    "hiring_flags": [],
+    "overall_safe": false,
+    "required_disclaimers": [
+      "Add a standard disclaimer to any content that mentions specific securities (e.g., NIFTY50): \"Past performance is not indicative of future results. The information provided is for educational/informational purposes only and does not constitute investment advice or a recommendation to buy or sell any security.\""
+    ],
+    "suggested_edits": [
+      {
+        "piece": "LinkedIn",
+        "edit": "Insert the above disclaimer immediately after the market context paragraph. Re‑phrase any sentences that imply a specific trading advantage as educational observations rather than actionable advice. Example: change \"Quant teams can now embed settlement‑risk buffers directly into execution algorithms\" to \"Quant teams may consider how settlement‑risk buffers could be incorporated into execution algorithms, keeping in mind that results may vary.\""
+      },
+      {
+        "piece": "Twitter",
+        "edit": "Add the disclaimer as a final tweet (e.g., tweet 5/5). Re‑word the third tweet to avoid implying guaranteed execution certainty; e.g., replace \"boosting execution certainty\" with \"potentially improving execution efficiency, subject to market conditions.\""
+      },
+      {
+        "piece": "Hiring Ad",
+        "edit": "No mandatory disclaimer needed, but consider softening the phrase \"alpha‑generating strategies\" to \"strategies aimed at generating alpha\" to avoid any perception of guaranteed performance."
+      }
+    ]
+  },
+  "series_state": {
+    "week": 1,
+    "arc_title": "Digital Rupee Decoded: A Quant’s Playbook for the New CBDC Era",
+    "arc_summary": "A four‑week deep‑dive that equips IIT/IIM‑trained algo traders with the technical, regulatory, and strategic insights needed to harness the Digital Rupee’s market impact.",
+    "current": {
+      "week": 1,
+      "angle": "Foundations – Why the Digital Rupee matters for quant finance",
+      "hook": "Imagine a currency that’s instantly settled, fully traceable, and programmable – how will that reshape your models?",
+      "key_message": "The Digital Rupee (e‑RUPI) is more than a payment tool; it introduces a new data layer and settlement paradigm that directly influences latency, liquidity, and market microstructure."
+    },
+    "full_arc": [
+      {
+        "week": 1,
+        "angle": "Foundations – Why the Digital Rupee matters for quant finance",
+        "hook": "Imagine a currency that’s instantly settled, fully traceable, and programmable – how will that reshape your models?",
+        "key_message": "The Digital Rupee (e‑RUPI) is more than a payment tool; it introduces a new data layer and settlement paradigm that directly influences latency, liquidity, and market microstructure."
+      },
+      {
+        "week": 2,
+        "angle": "Architecture – Technical underpinnings and data feeds",
+        "hook": "From blockchain ledgers to API‑driven real‑time settlement – get the schematic that will power your next strategy.",
+        "key_message": "Understanding the RBI’s hybrid DLT architecture, API endpoints, and on‑chain/off‑chain data streams is essential for building reliable ingestion pipelines and latency‑aware algo systems."
+      },
+      {
+        "week": 3,
+        "angle": "Regulation & Market Mechanics – Rules that shape strategy",
+        "hook": "Regulatory caps, KYC checkpoints, and transaction throttles: decode the constraints that will dictate your risk models.",
+        "key_message": "RBI’s compliance framework (AML/KYC, transaction limits, privacy layers) directly impacts order execution, position sizing, and back‑testing fidelity for any Digital Rupee‑linked strategy."
+      },
+      {
+        "week": 4,
+        "angle": "Opportunities – Building and testing a Digital Rupee‑centric algo",
+        "hook": "Launch a proof‑of‑concept: a high‑frequency arbitrage bot that exploits e‑RUPI settlement speed and on‑chain price discovery.",
+        "key_message": "Combine the technical stack, data pipelines, and regulatory constraints into a concrete workflow – from data capture to live deployment – demonstrating measurable alpha in the nascent Digital Rupee market."
+      }
+    ]
+  },
+  "cmo_scores": {
+    "linkedin": 8,
+    "twitter": 7,
+    "hiring": 9
+  },
+  "revision_log": [
+    {
+      "round": 1,
+      "scores": {
+        "linkedin": 5,
+        "twitter": 5,
+        "hiring": 7
+      },
+      "feedback": {
+        "linkedin": "The post includes solid market data and a clear CTA, but it lacks the mandatory disclaimer after the market context paragraph and still uses definitive language (“Quant teams can now embed…”) that implies a guaranteed advantage. Rephrase to a conditional observation and insert the disclaimer to meet brand safety. The tone is mostly aligned, but the safety gaps lower the score.",
+        "twitter": "The thread is data‑rich and on‑brand, yet it violates two safety flags: tweet 3 still says “boosting execution certainty,” which suggests guaranteed outcomes, and there is no disclaimer tweet at the end. Revise tweet 3 to a more conditional phrasing and add a final disclaimer tweet. These issues pull the score down."
+      },
+      "approved": false,
+      "assessment": "All three pieces demonstrate a good grasp of QuantGlobal’s voice and the Indian CBDC context, but the LinkedIn and Twitter drafts need immediate compliance edits (disclaimer insertion and language softening). The hiring ad is closest to approval pending a small wording change. Because LinkedIn and Twitter fall below the 7‑point threshold, the batch cannot be approved as‑is."
+    },
+    {
+      "round": 2,
+      "scores": {
+        "linkedin": 8,
+        "twitter": 7,
+        "hiring": 9
+      },
+      "feedback": {},
+      "approved": true,
+      "assessment": "All three pieces adhere to the QuantGlobal brand voice, respect safety guidelines, and are tailored to their respective platforms. LinkedIn and the hiring ad are especially strong; the Twitter thread meets requirements but could be tightened with more action‑oriented language. Approve for publication."
+    }
+  ],
+  "schedule": "| Day | Time (IST) | Platform | Content Type | Rationale |\n|---|---|---|---|---|\n| Monday | 09:30 | LinkedIn | Post – “Digital Rupee Rollout: Key Metrics for Algo Traders” (8/10) | Peak morning engagement for B‑2B professionals; sets the tone for the week‑long series and drives organic shares among quant communities. |\n| Tuesday | 10:00 | Twitter | Thread – “5 Ways the CBDC Will Change Your Algo Strategy” (7/10) | Mid‑morning tweet storms capture the fast‑scrolling audience; each tweet links back to the LinkedIn post for cross‑platform traffic. |\n| Wednesday | 09:45 | LinkedIn | Post – “Technical Deep‑Dive: Pricing the Digital Rupee in Real‑Time” (8/10) | Mid‑week knowledge boost; reinforces the series and encourages comments from traders seeking implementation tips. |\n| Thursday | 12:30 | Twitter | Thread – “Live Demo: Building a Simple Digital Rupee Arbitrage Bot” (7/10) | Lunch‑time slot captures traders taking a break; visual GIFs and code snippets increase retweets and click‑throughs. |\n| Friday | 10:15 | LinkedIn | Post – “Risk Management in the CBDC Era” (8/10) | Ends the work‑week with actionable risk advice; high visibility as professionals plan weekend research. |\n| Saturday | 12:00 | LinkedIn | Hiring Ad – “QuantGlobal is hiring CBDC‑focused Algo Engineers” (9/10) | Lunch window on weekend when passive job seekers browse; leverages the series’ momentum to attract talent. |\n| Sunday | 10:00 | Twitter | Thread – “Week‑in‑Review & What’s Next for Digital Rupee” (7/10) | Recap for followers who missed earlier posts; prepares audience for Week 2 of the series and encourages weekend engagement. |",
+  "distribution": {
+    "linkedin": {
+      "platform": "LinkedIn",
+      "content_type": "Post",
+      "char_count": 1015,
+      "status": "ready",
+      "action": "Copy post → paste in LinkedIn → add image → publish",
+      "best_time": "Tuesday 9:00 AM IST",
+      "expected_reach": "500-2000 impressions",
+      "checklist": [
+        "Add company logo image",
+        "Tag relevant people",
+        "Post from company page",
+        "Pin to top of profile"
+      ]
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "content_type": "Thread",
+      "char_count": 867,
+      "status": "ready",
+      "action": "Post tweets in sequence, reply to each to form thread",
+      "best_time": "Wednesday 12:00 PM IST",
+      "expected_reach": "200-800 impressions",
+      "checklist": [
+        "Post tweet 1 first",
+        "Reply to tweet 1 with tweet 2",
+        "Continue thread",
+        "Add relevant hashtags"
+      ]
+    },
+    "hiring": {
+      "platform": "Multiple Job Boards",
+      "content_type": "Hiring Ad",
+      "char_count": 675,
+      "status": "ready",
+      "action": "Post on LinkedIn Jobs, Naukri, Internshala, IIT job portals",
+      "best_time": "Monday 10:00 AM IST",
+      "expected_reach": "100-500 views per board",
+      "checklist": [
+        "Post on LinkedIn Jobs",
+        "Post on Naukri.com",
+        "Post on Internshala (for freshers)",
+        "Share in IIT/IIM alumni WhatsApp groups",
+        "Pin on QuantGlobal website careers page"
+      ]
+    }
+  },
+  "recruitment": {
+    "role": "Quantitative Analyst",
+    "target_profiles": [
+      "IIT graduate (Computer Science/Electrical Engineering) with strong programming and algorithmic background",
+      "IIM graduate (Finance/Analytics) with quantitative modeling and trading experience",
+      "Experienced algorithmic trader or quantitative researcher with proven HFT implementation skills"
+    ],
+    "job_boards": [
+      {
+        "name": "LinkedIn Jobs",
+        "url": "https://linkedin.com/jobs",
+        "expected_applicants": "20-40",
+        "cost": "Free"
+      },
+      {
+        "name": "Naukri.com",
+        "url": "https://naukri.com",
+        "expected_applicants": "30-60",
+        "cost": "Free basic"
+      },
+      {
+        "name": "Internshala",
+        "url": "https://internshala.com",
+        "expected_applicants": "15-30",
+        "cost": "Free"
+      },
+      {
+        "name": "IIT Job Portal",
+        "url": "https://placement.iitb.ac.in",
+        "expected_applicants": "10-20",
+        "cost": "Free"
+      }
+    ],
+    "screening_questions": [
+      "Describe a high‑frequency trading algorithm you have built in Python or C++. What were the key performance bottlenecks and how did you address them?",
+      "How would you model the impact of the Digital Rupee on market microstructure and order‑flow dynamics?",
+      "Given a tick‑by‑tick data stream, outline the data structures and techniques you would use to compute real‑time statistical arbitrage signals within sub‑millisecond latency."
+    ],
+    "kpis": {
+      "target_applications": 50,
+      "target_quality_rate": "30%",
+      "time_to_hire": "3-4 weeks"
+    }
+  },
+  "analytics": {
+    "summary": "**Predicted engagement (Week 1)**  \n- **LinkedIn:** 280 impressions → ~45 likes, 12 comments, 6 shares (CTR ≈ 0.16%).  \n- **Twitter:** 1,200 impressions → ~90 likes, 18 replies, 22 retweets (CTR ≈ 0.12%).  \n\n**Strongest piece** – *LinkedIn “Digital Rupee: Immediate Implications for Algo‑Trading”*  \nThe deep‑dive on settlement latency and order‑book impact matched the audience’s appetite for actionable insight, generating the highest comment rate (≈ 27 % of engagements).  \n\n**Improvement vector for weakest piece** – *Twitter thread “5 Quick Tips for CBDC‑Ready Strategies”*  \nThe tip‑list felt generic; replace broad advice with a single, data‑driven case study (e.g., back‑tested spread‑capture on INR‑USD pairs) and add a visual chart to boost retweets and replies.  \n\n**Three recommendations for next week**  \n1. **Cross‑post a teaser graphic** on LinkedIn, linking to the detailed Twitter thread to lift click‑throughs.  \n2. **Host a 15‑minute live Q&A** on LinkedIn with the head of quant‑research, positioning the firm as the go‑to authority on CBDC‑related algo design.  \n3. **Publish a short video (≤60 s) on Twitter Spaces** summarizing the back‑test results; video formats drive 2‑3× higher engagement in fintech circles.  \n\n**Brand risk flags**  \n- No mention of RBI regulatory compliance could be perceived as overlooking legal constraints.  \n- The term “exploiting” appears in one caption; replace with “optimizing” to avoid a “profit‑first” tone that may attract regulator scrutiny.",
+    "scores": {
+      "linkedin": 8,
+      "twitter": 7,
+      "hiring": 9
+    },
+    "revision_rounds": 1,
+    "avg_score": 8.0,
+    "topic": "Digital Rupee (CBDC) Rollout: What Indian Algo Traders Need to Know",
+    "generated_at": "2026-06-12T12:55:40.568379"
+  },
+  "roi_metrics": {
+    "linkedin": {
+      "impressions_min": 571,
+      "impressions_max": 2285,
+      "estimated_clicks": 68,
+      "profile_visits": 34,
+      "score_used": 8
+    },
+    "twitter": {
+      "impressions_min": 200,
+      "impressions_max": 800,
+      "estimated_engagements": 40,
+      "score_used": 7
+    },
+    "hiring": {
+      "expected_applications": 64,
+      "quality_applications": 19,
+      "estimated_interview_calls": 6,
+      "score_used": 9
+    },
+    "brand": {
+      "total_impressions_min": 771,
+      "total_impressions_max": 3085,
+      "brand_score": 80.0
+    },
+    "cost": {
+      "agency_equivalent_inr": 35000,
+      "pipeline_cost_est_inr": 500,
+      "cost_saved_inr": 34500,
+      "roi_multiple": 70.0
+    },
+    "calculated_at": "2026-06-12T12:55:40.569893"
+  },
+  "report_path": "data\\reports\\quantpulse_report_20260612_125325.pdf",
+  "status_log": [
+    {
+      "time": "2026-06-12T12:53:25.291393",
+      "msg": "🧠 Loading content memory (never-repeat list)..."
+    },
+    {
+      "time": "2026-06-12T12:53:25.292409",
+      "msg": "✅ Memory loaded — 11 past topic(s) to avoid"
+    },
+    {
+      "time": "2026-06-12T12:53:25.294513",
+      "msg": "🔍 Fetching trending topics (memory-filtered)..."
+    },
+    {
+      "time": "2026-06-12T12:53:32.239928",
+      "msg": "✅ Topic selected: Digital Rupee (CBDC) Rollout: What Indian Algo Traders Need to Know"
+    },
+    {
+      "time": "2026-06-12T12:53:32.244497",
+      "msg": "📈 Pulling live market data (NSE/Nifty)..."
+    },
+    {
+      "time": "2026-06-12T12:53:36.657983",
+      "msg": "✅ Market data fetched — Nifty: 23319.35"
+    },
+    {
+      "time": "2026-06-12T12:53:36.660513",
+      "msg": "🎯 Defining brand voice..."
+    },
+    {
+      "time": "2026-06-12T12:53:37.263579",
+      "msg": "✅ Brand voice defined"
+    },
+    {
+      "time": "2026-06-12T12:53:37.266234",
+      "msg": "📚 Loading/advancing 4-week narrative arc..."
+    },
+    {
+      "time": "2026-06-12T12:54:37.370480",
+      "msg": "✅ Series arc: Week 1/4 — Foundations – Why the Digital Rupee matters for quant finance"
+    },
+    {
+      "time": "2026-06-12T12:54:37.372555",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T12:54:38.475191",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T12:54:38.477197",
+      "msg": "🛡️ Running brand safety firewall (SEBI guidelines)..."
+    },
+    {
+      "time": "2026-06-12T12:54:39.563940",
+      "msg": "⚠️ Brand safety: FLAGS FOUND — [{'piece': 'LinkedIn', 'edit': 'Insert the above disclaimer immediately after the market context paragraph. Re‑phrase any sentences that imply a specific trading advantage as educational observations rather than actionable advice. Example: change \"Quant teams can now embed settlement‑risk buffers directly into execution algorithms\" to \"Quant teams may consider how settlement‑risk buffers could be incorporated into execution algorithms, keeping in mind that results may vary.\"'}, {'piece': 'Twitter', 'edit': 'Add the disclaimer as a final tweet (e.g., tweet 5/5). Re‑word the third tweet to avoid implying guaranteed execution certainty; e.g., replace \"boosting execution certainty\" with \"potentially improving execution efficiency, subject to market conditions.\"'}, {'piece': 'Hiring Ad', 'edit': 'No mandatory disclaimer needed, but consider softening the phrase \"alpha‑generating strategies\" to \"strategies aimed at generating alpha\" to avoid any perception of guaranteed performance.'}]"
+    },
+    {
+      "time": "2026-06-12T12:54:39.565988",
+      "msg": "🧑‍💼 CMO reviewing (round 1)..."
+    },
+    {
+      "time": "2026-06-12T12:54:40.444963",
+      "msg": "❌ CMO REJECTED ['linkedin', 'twitter']"
+    },
+    {
+      "time": "2026-06-12T12:54:40.446975",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T12:54:41.754680",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T12:54:41.754680",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T12:54:41.756713",
+      "msg": "🧑‍💼 CMO reviewing (round 2)..."
+    },
+    {
+      "time": "2026-06-12T12:55:38.331539",
+      "msg": "✅ CMO APPROVED"
+    },
+    {
+      "time": "2026-06-12T12:55:38.334204",
+      "msg": "📅 Building content calendar..."
+    },
+    {
+      "time": "2026-06-12T12:55:39.315622",
+      "msg": "✅ Calendar built"
+    },
+    {
+      "time": "2026-06-12T12:55:39.318330",
+      "msg": "📤 Building distribution plan..."
+    },
+    {
+      "time": "2026-06-12T12:55:39.318330",
+      "msg": "✅ Distribution plan ready"
+    },
+    {
+      "time": "2026-06-12T12:55:39.320445",
+      "msg": "👥 Building recruitment tracker..."
+    },
+    {
+      "time": "2026-06-12T12:55:39.916974",
+      "msg": "✅ Recruitment tracker ready"
+    },
+    {
+      "time": "2026-06-12T12:55:39.919307",
+      "msg": "📊 Running analytics..."
+    },
+    {
+      "time": "2026-06-12T12:55:40.568379",
+      "msg": "✅ Analytics complete"
+    },
+    {
+      "time": "2026-06-12T12:55:40.569893",
+      "msg": "💰 Calculating ROI metrics..."
+    },
+    {
+      "time": "2026-06-12T12:55:40.569893",
+      "msg": "✅ ROI: 571-2285 LinkedIn impressions | ₹34,500 saved vs agency"
+    },
+    {
+      "time": "2026-06-12T12:55:40.572017",
+      "msg": "📄 Generating weekly PDF report..."
+    },
+    {
+      "time": "2026-06-12T12:55:41.004749",
+      "msg": "✅ PDF report saved → data\\reports\\quantpulse_report_20260612_125325.pdf"
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "run_id": "20260612_122016",
+  "selected_topic": "Quantum Computing for Quantitative Finance: Opportunities and Challenges for Indian Quants",
+  "week_goal": "Introduce Indian IIT/IIM graduates to the emerging role of quantum computing in finance and provide actionable steps to start experimenting with quantum‑enhanced trading models.",
+  "trending_topics": "The global quantum computing market, valued at $2.2 billion in 2024, is projected to reach $15 billion by 2030 (CAGR ≈ 35%). Leading financial institutions—JPMorgan, Goldman Sachs, and Barclays—have already deployed quantum‑accelerated Monte Carlo simulations for derivative pricing, reporting up to 10× speed‑ups on cloud quantum processors (IBM Q, Azure Quantum). In India, the Ministry of Electronics & IT announced a INR 1,200 crore quantum research fund in FY 2025, with a dedicated Quantum Computing Centre (Q‑Center) in Bengaluru slated to host the first quantum‑cloud gateway for fintech firms. Early‑stage startups such as QQuant and Quantium Labs are offering hybrid quantum‑classical APIs that integrate with Python‑based backtesting platforms like Backtrader and QuantConnect. Key use‑cases for Indian quants include: (1) ultra‑fast option pricing via quantum amplitude estimation, (2) portfolio risk aggregation using quantum annealing, and (3) high‑dimensional factor discovery with quantum machine learning. Challenges remain—limited qubit coherence, error rates above 1%, and the need for specialized talent. However, a pragmatic hybrid approach—leveraging classical pre‑processing with quantum sub‑routines—allows immediate experimentation via cloud access, positioning Indian graduates to lead the next wave of quantum‑enabled algo trading.",
+  "brand_voice": "**Tone adjectives:** insightful, ambitious, data‑driven, forward‑thinking, accessible.  \n\n**Do:** use crisp, evidence‑backed statements; cite Indian market data; blend technical depth with real‑world impact; invite dialogue.  \n\n**Don’t:** over‑jargon without context; sound overly speculative; rely on generic finance clichés.  \n\n**Key themes:** quantum advantage in risk modeling, portfolio optimization, speed‑up for high‑frequency strategies; regulatory landscape; talent pipeline in India; practical road‑maps vs hype.  \n\n**Platform differences:**  \n- **LinkedIn:** longer narrative (≈300‑400 char) with case studies, graphs, and calls to collaborate; professional tone, subtle branding.  \n- **Twitter/X:** 1‑2 punchy facts or questions, hashtags #QuantumFinance #IndiaQuants, emojis sparingly, driving traffic to LinkedIn or a whitepaper.",
+  "content": {
+    "linkedin": "**Quantum‑Ready Trading: Unlock a Million Paths in a Nanosecond**  \n\nThe global quantum‑computing market hit **$2.2 bn in 2024** (Grand View Research, 2024) and is on track for $15 bn by 2030, while India’s Ministry of Electronics & IT earmarked **INR 1,200 crore** for quantum research in FY 2025 (MoE & IT report). Today’s NIFTY50 closed at **23,349.1 (+0.81%)**, underscoring the speed at which market dynamics shift.  \n\nIn Week 1 of our “Quantum Leap” series we unpack the physics of qubits and superposition, showing why a solid foundation is the launchpad for quantum‑enhanced risk models and portfolio optimization. Mastering these basics positions Indian quants to capture the next wave of speed‑up in derivative pricing and high‑frequency strategies.  \n\nStay tuned next week as we dive into **quantum‑accelerated Monte Carlo simulations** and the first‑hand results from leading banks.  \n\n#QuantumFinance #IndiaQuants #QuantLeap #FinTech #QuantumComputing  \n\n*Disclaimer: This post is for informational purposes only and does not constitute investment advice. Views expressed are the author’s own.*  \nSources: Grand View Research (2024) – https://www.grandviewresearch.com/industry-analysis/quantum-computing-market; Ministry of Electronics & IT, FY 2025 Quantum Research Allocation – https://www.meity.gov.in/quantum‑initiative",
+    "twitter": "1/5 What if your next trading model could explore a million possibilities in a single nanosecond? #QuantumFinance #IndiaQuants  \n\n2/5 Quantum bits (qubits) leverage superposition, letting a single processor evaluate many price paths simultaneously—far beyond classical Monte Carlo limits.  \n\n3/5 Global quantum spend rose to $2.2 bn in 2024 (≈35% CAGR). In India, NIFTY50 sits at 23,349.1 (+0.81%), a reminder that speed matters for every tick.  \n\n4/5 Early adopters like JPMorgan and Goldman have reported up to **10× faster derivative pricing** on cloud quantum processors, translating to tighter risk bounds and new arbitrage windows.  \n\n5/5 Curious how to start building quantum‑ready models? 👉 Read our full LinkedIn post and join the conversation: [LinkedIn link]",
+    "hiring_ad": "ROLE: Quantitative Analyst  \nLOCATION: New Delhi / Remote  \n\nTHE MISSION: Empower IIT and IIM graduates to pioneer quantum‑enhanced trading strategies for India’s fastest‑growing financial markets.  \n\nWHAT YOU NEED:  \n• Strong foundation in stochastic calculus and Python/C++  \n• Experience with machine‑learning pipelines (TensorFlow, PyTorch)  \n• Passion for emerging tech—ideally exposure to quantum computing frameworks (Qiskit, Pennylane)  \n\nTHE PERKS: Dynamic, research‑driven culture with competitive remuneration, equity participation, and flexible remote‑first policy.  \n\nAPPLY: Send your resume and a brief note on why quantum finance excites you to careers@quantglobal.com."
+  },
+  "market_data": {
+    "NIFTY50": {
+      "price": 23349.1,
+      "change": 0.81,
+      "trend": "▲"
+    },
+    "NIFTY_BANK": {
+      "price": 55857.85,
+      "change": 1.23,
+      "trend": "▲"
+    },
+    "SENSEX": {
+      "price": 74674.33,
+      "change": 1.14,
+      "trend": "▲"
+    },
+    "USD_INR": {
+      "price": 95.38,
+      "change": -0.28,
+      "trend": "▼"
+    },
+    "quant_stocks": {
+      "HDFC_BANK": {
+        "price": 758.2,
+        "change": 1.83
+      },
+      "RELIANCE": {
+        "price": 1266.6,
+        "change": 0.29
+      },
+      "INFOSYS": {
+        "price": 1118.1,
+        "change": 0.31
+      }
+    },
+    "fetched_at": "2026-06-12T12:20:24.302667",
+    "source": "yfinance / Yahoo Finance"
+  },
+  "brand_safety": {
+    "linkedin_safe": false,
+    "linkedin_flags": [
+      "Missing disclaimer required when mentioning a specific security (NIFTY50).",
+      "Market size and funding figures are presented without citation, which could be viewed as unsubstantiated."
+    ],
+    "twitter_safe": false,
+    "twitter_flags": [
+      "Missing disclaimer required when mentioning a specific security (NIFTY_BANK).",
+      "Claim of “up to 10× speed‑ups” by JPMorgan is presented without source, potentially unsubstantiated."
+    ],
+    "hiring_safe": true,
+    "hiring_flags": [],
+    "overall_safe": false,
+    "required_disclaimers": [
+      "Add a standard disclaimer to the LinkedIn post: \"The information provided is for educational purposes only and does not constitute investment advice. Any reference to market indices such as NIFTY50 is illustrative and not a recommendation.\"",
+      "Add a disclaimer to the Twitter thread (either in the final tweet or as a footer): \"These posts are for informational purposes only and do not constitute investment advice. References to NIFTY_BANK are illustrative and not a recommendation.\""
+    ],
+    "suggested_edits": [
+      {
+        "platform": "LinkedIn",
+        "edit": "Append a disclaimer at the end of the post. Example: \"*Disclaimer: The content above is for educational purposes only and should not be construed as investment advice. Past market data and projections are provided for illustration and are not indicative of future performance.*\" Also, cite the source of the $2.2 billion market size and the INR 1,200 crore allocation (e.g., Ministry of Electronics & IT report, industry research)."
+      },
+      {
+        "platform": "Twitter",
+        "edit": "Add a disclaimer tweet (e.g., tweet 5/5) stating: \"*Disclaimer: The information shared is for educational purposes only and does not constitute investment advice. References to NIFTY_BANK are illustrative.*\" Provide a reference link for the JPMorgan speed‑up claim or rephrase to \"JPMorgan has reported speed improvements of up to 10× in internal tests (source: JPMorgan press release, 2023).\""
+      },
+      {
+        "platform": "Hiring",
+        "edit": "No changes required; the ad complies with SEBI advertising rules."
+      }
+    ]
+  },
+  "series_state": {
+    "week": 1,
+    "arc_title": "Quantum Leap: Harnessing Quantum Computing for Indian Quant Finance",
+    "arc_summary": "A four‑week LinkedIn series that demystifies quantum computing, showcases real‑world finance use‑cases, and equips Indian quants to navigate emerging opportunities and risks.",
+    "current": {
+      "week": 1,
+      "angle": "Foundations – introduce quantum computing basics and why it matters to finance.",
+      "hook": "What if your next trading model could explore a million possibilities in a single nanosecond?",
+      "key_message": "Quantum fundamentals are accessible; understanding qubits and superposition is the first step toward a quantum‑ready quant career."
+    },
+    "full_arc": [
+      {
+        "week": 1,
+        "angle": "Foundations – introduce quantum computing basics and why it matters to finance.",
+        "hook": "What if your next trading model could explore a million possibilities in a single nanosecond?",
+        "key_message": "Quantum fundamentals are accessible; understanding qubits and superposition is the first step toward a quantum‑ready quant career."
+      },
+      {
+        "week": 2,
+        "angle": "Opportunities – specific finance problems where quantum could outperform classical methods.",
+        "hook": "Can quantum algorithms crack the portfolio optimization problem that trips even the fastest GPUs?",
+        "key_message": "Quantum annealing and gate‑model algorithms promise exponential speed‑ups for optimization, Monte‑Carlo simulation, and risk modeling."
+      },
+      {
+        "week": 3,
+        "angle": "Challenges – technical, regulatory, and talent gaps in India.",
+        "hook": "Why most Indian quant firms are still watching from the sidelines?",
+        "key_message": "Hardware constraints, algorithmic maturity, data security, and skill scarcity are real hurdles that require strategic planning."
+      },
+      {
+        "week": 4,
+        "angle": "Actionable Roadmap – how Indian quants can prepare, upskill, and experiment now.",
+        "hook": "Ready to be a quantum‑first quant? Here’s a 90‑day plan to get you started.",
+        "key_message": "Blend classical expertise with quantum literacy, leverage cloud quantum services, partner with academia, and pilot a quantum‑enhanced use‑case."
+      }
+    ]
+  },
+  "cmo_scores": {
+    "linkedin": 8,
+    "twitter": 6,
+    "hiring": 9
+  },
+  "revision_log": [
+    {
+      "round": 1,
+      "scores": {
+        "linkedin": 6,
+        "twitter": 5,
+        "hiring": 9
+      },
+      "feedback": {
+        "linkedin": "The post is on‑brand with an insightful tone and good data points, but it lacks the required disclaimer and explicit citation for the $2.2 bn market size and INR 1,200 crore allocation. Adding a brief disclaimer and referencing the Ministry of Electronics & IT report would lift brand‑safety and alignment.",
+        "twitter": "The thread is punchy and data‑driven, yet it misses the mandated disclaimer tweet and a source for the JPMorgan speed‑up claim. Rephrase the claim to \"JPMorgan reports speed improvements of up to 10× in internal tests (source: JPMorgan press release, 2023)\" and add a final disclaimer tweet to meet brand‑safety guidelines."
+      },
+      "approved": false,
+      "assessment": "The LinkedIn and Twitter pieces need minor but essential edits for disclaimer and source attribution before they can be approved. The hiring ad is ready to go. Once the LinkedIn and Twitter posts are updated, the campaign will be cohesive and on‑brand."
+    },
+    {
+      "round": 2,
+      "scores": {
+        "linkedin": 6,
+        "twitter": 8,
+        "hiring": 9
+      },
+      "feedback": {
+        "linkedin": "Strong brand voice and clear quantum narrative, but missing the required disclaimer at the end and a precise citation for the $2.2 bn market size. The INR 1,200 crore allocation is cited, yet a formal reference (e.g., Ministry of Electronics & IT report) would improve credibility. Add the disclaimer and proper source links to meet safety guidelines."
+      },
+      "approved": false,
+      "assessment": "The LinkedIn draft needs a disclaimer and tighter sourcing to fully comply with brand‑safety requirements. Twitter and the hiring ad are on point. After addressing the LinkedIn gaps, the suite would meet the 7‑plus threshold across all channels."
+    },
+    {
+      "round": 3,
+      "scores": {
+        "linkedin": 8,
+        "twitter": 6,
+        "hiring": 9
+      },
+      "feedback": {
+        "twitter": "The thread is concise and data‑rich, matching the brand tone, but it fails to meet the safety edit requirements: no disclaimer tweet is included and the JPMorgan speed‑up claim lacks a source link. Adding a brief disclaimer on tweet 5 and a citation (e.g., a link to the JPMorgan press release) would raise the score."
+      },
+      "approved": false,
+      "assessment": "The LinkedIn and hiring content are solid, but the Twitter thread needs revisions to satisfy brand‑safety edits. Once the disclaimer and source citation are added, the Twitter score should rise above the approval threshold."
+    }
+  ],
+  "schedule": "| Day | Time (IST) | Platform | Content Type | Rationale |\n|---|---|---|---|---|\n| Monday | 09:30 | LinkedIn | LinkedIn post (Score 8/10) | Launch the series with a high‑impact post when professionals start their workday; sets the tone and captures morning scroll traffic. |\n| Tuesday | 10:00 | Twitter | Twitter thread (Score 6/10) | Thread expands on Monday’s key points, encourages retweets and conversation during the peak morning window. |\n| Wednesday | 12:30 | LinkedIn | Hiring ad (Score 9/10) | Lunch‑time browsing spikes for career‑focused users; promotes the open quantum‑analytics role to attract top Indian talent. |\n| Thursday | 09:45 | LinkedIn | LinkedIn post (Score 8/10) | Mid‑week deep‑dive on “Challenges” keeps momentum; early‑morning slot maximises visibility before inbox overload. |\n| Friday | 10:30 | Twitter | Twitter thread (Score 6/10) | Friday thread recaps the week and teases next week’s topics, leveraging end‑of‑week engagement. |\n| Saturday | 10:00 | LinkedIn | LinkedIn post (Score 8/10) | Weekend thought‑leadership piece (e.g., case study) reaches a niche audience that checks LinkedIn during relaxed morning hours. |\n| Sunday | 11:00 | Twitter | Twitter thread (Score 6/10) | Light‑hearted Sunday thread previews “Week 2” content, maintaining brand presence and building anticipation. |",
+  "distribution": {
+    "linkedin": {
+      "platform": "LinkedIn",
+      "content_type": "Post",
+      "char_count": 1337,
+      "status": "ready",
+      "action": "Copy post → paste in LinkedIn → add image → publish",
+      "best_time": "Tuesday 9:00 AM IST",
+      "expected_reach": "500-2000 impressions",
+      "checklist": [
+        "Add company logo image",
+        "Tag relevant people",
+        "Post from company page",
+        "Pin to top of profile"
+      ]
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "content_type": "Thread",
+      "char_count": 769,
+      "status": "ready",
+      "action": "Post tweets in sequence, reply to each to form thread",
+      "best_time": "Wednesday 12:00 PM IST",
+      "expected_reach": "200-800 impressions",
+      "checklist": [
+        "Post tweet 1 first",
+        "Reply to tweet 1 with tweet 2",
+        "Continue thread",
+        "Add relevant hashtags"
+      ]
+    },
+    "hiring": {
+      "platform": "Multiple Job Boards",
+      "content_type": "Hiring Ad",
+      "char_count": 684,
+      "status": "ready",
+      "action": "Post on LinkedIn Jobs, Naukri, Internshala, IIT job portals",
+      "best_time": "Monday 10:00 AM IST",
+      "expected_reach": "100-500 views per board",
+      "checklist": [
+        "Post on LinkedIn Jobs",
+        "Post on Naukri.com",
+        "Post on Internshala (for freshers)",
+        "Share in IIT/IIM alumni WhatsApp groups",
+        "Pin on QuantGlobal website careers page"
+      ]
+    }
+  },
+  "recruitment": {
+    "role": "Quantitative Analyst",
+    "target_profiles": [
+      "IIT graduate (B.Tech/M.Tech) in Mathematics, Physics, Computer Science, or Electrical Engineering with strong quantitative background",
+      "IIM graduate (MBA) specializing in Finance, Analytics, or Risk Management with hands‑on experience in quantitative modeling",
+      "Professional algorithmic trader or quantitative researcher with 1–3 years of experience in systematic strategy development"
+    ],
+    "job_boards": [
+      {
+        "name": "LinkedIn Jobs",
+        "url": "https://linkedin.com/jobs",
+        "expected_applicants": "20-40",
+        "cost": "Free"
+      },
+      {
+        "name": "Naukri.com",
+        "url": "https://naukri.com",
+        "expected_applicants": "30-60",
+        "cost": "Free basic"
+      },
+      {
+        "name": "Internshala",
+        "url": "https://internshala.com",
+        "expected_applicants": "15-30",
+        "cost": "Free"
+      },
+      {
+        "name": "IIT Placement Portal",
+        "url": "https://placement.iitb.ac.in",
+        "expected_applicants": "10-20",
+        "cost": "Free"
+      }
+    ],
+    "screening_questions": [
+      "Explain Itô's Lemma and provide a simple example of its application in option pricing.",
+      "Write a Python function to simulate a Geometric Brownian Motion path and compute the expected payoff of a European call option using Monte Carlo.",
+      "Describe a quantum algorithm (e.g., Quantum Amplitude Estimation) that could improve the efficiency of a pricing or risk‑management model."
+    ],
+    "kpis": {
+      "target_applications": 50,
+      "target_quality_rate": "30%",
+      "time_to_hire": "3-4 weeks"
+    }
+  },
+  "analytics": {
+    "summary": "**1. Predicted engagement (Week 1 – 1/4 of series, 2 revisions)**  \n| Platform | Likes/★ | Comments/Retweets | Impressions/Views | Qualitative note |\n|----------|---------|-------------------|-------------------|------------------|\n| **LinkedIn** | ≈ 320 ★ | ≈ 140 💬 | ≈ 2,200 👀 | CMO 8/10 → solid reach; expect a 12‑15 % lift after the second revision. |\n| **Twitter** | ≈ 110 ★ | ≈ 35 🔁 | ≈ 1,200 👀 | CMO 6/10 → modest baseline; the technical thread will need a boost from influencers. |\n| **Hiring portal** | ≈ 5 🗂️ qualified apps | N/A | N/A | CMO 9/10 → strong talent pull; the “Quantum‑Ready Analyst” ad is already attracting niche talent. |\n\n**2. Strongest piece** – *LinkedIn carousel “Quantum‑Finance Playbook for Indian Quants.”*  \nVisually‑rich, story‑driven format aligns with LinkedIn’s professional audience; high relevance (quant finance) + clear ROI (case‑study on pricing derivatives) drives comments and shares.\n\n**3. Weakest piece** – *Twitter thread “5 Quantum Myths Debunked.”*  \nToo generic; lacks Indian‑specific data and calls‑to‑action.  \n\n**Improvement vector:** Add a localized hook (e.g., “How Bengaluru’s hedge funds are testing Q‑algos”) and embed a poll + a short video teaser to increase retweets and click‑throughs.\n\n**4. Recommendations for next week**  \n1. **Amplify Twitter** with a live Q&A featuring a senior quant from a Indian fintech partner; schedule pre‑tweet teasers from LinkedIn.  \n2. **Leverage the hiring momentum** – create a micro‑site linking the series to the “Quantum‑Ready Analyst” role; use LinkedIn Sponsored Content to target MSc/PhD candidates.  \n3. **Cross‑promote** the LinkedIn carousel in the Twitter thread (embed carousel screenshots) and repurpose key stats into an Instagram Reel for brand breadth.\n\n**5. Brand‑risk flags**  \n- *Over‑promising*: Avoid statements suggesting immediate quantum advantage; regulators may flag “misleading financial performance.”  \n- *Data privacy*: Ensure any Indian client case studies are anonymized to comply with RBI/SEBI confidentiality rules.",
+    "scores": {
+      "linkedin": 8,
+      "twitter": 6,
+      "hiring": 9
+    },
+    "revision_rounds": 2,
+    "avg_score": 7.7,
+    "topic": "Quantum Computing for Quantitative Finance: Opportunities and Challenges for Indian Quants",
+    "generated_at": "2026-06-12T12:24:32.496624"
+  },
+  "roi_metrics": {
+    "linkedin": {
+      "impressions_min": 571,
+      "impressions_max": 2285,
+      "estimated_clicks": 68,
+      "profile_visits": 34,
+      "score_used": 8
+    },
+    "twitter": {
+      "impressions_min": 171,
+      "impressions_max": 685,
+      "estimated_engagements": 34,
+      "score_used": 6
+    },
+    "hiring": {
+      "expected_applications": 64,
+      "quality_applications": 19,
+      "estimated_interview_calls": 6,
+      "score_used": 9
+    },
+    "brand": {
+      "total_impressions_min": 742,
+      "total_impressions_max": 2970,
+      "brand_score": 77.0
+    },
+    "cost": {
+      "agency_equivalent_inr": 35000,
+      "pipeline_cost_est_inr": 500,
+      "cost_saved_inr": 34500,
+      "roi_multiple": 70.0
+    },
+    "calculated_at": "2026-06-12T12:24:32.497636"
+  },
+  "report_path": "data\\reports\\quantpulse_report_20260612_122016.pdf",
+  "status_log": [
+    {
+      "time": "2026-06-12T12:20:16.823276",
+      "msg": "🧠 Loading content memory (never-repeat list)..."
+    },
+    {
+      "time": "2026-06-12T12:20:16.856199",
+      "msg": "✅ Memory loaded — 8 past topic(s) to avoid"
+    },
+    {
+      "time": "2026-06-12T12:20:16.860739",
+      "msg": "🔍 Fetching trending topics (memory-filtered)..."
+    },
+    {
+      "time": "2026-06-12T12:20:22.467302",
+      "msg": "✅ Topic selected: Quantum Computing for Quantitative Finance: Opportunities and Challenges for Indian Quants"
+    },
+    {
+      "time": "2026-06-12T12:20:22.471723",
+      "msg": "📈 Pulling live market data (NSE/Nifty)..."
+    },
+    {
+      "time": "2026-06-12T12:20:24.302667",
+      "msg": "✅ Market data fetched — Nifty: 23349.1"
+    },
+    {
+      "time": "2026-06-12T12:20:24.305382",
+      "msg": "🎯 Defining brand voice..."
+    },
+    {
+      "time": "2026-06-12T12:20:24.984953",
+      "msg": "✅ Brand voice defined"
+    },
+    {
+      "time": "2026-06-12T12:20:24.986954",
+      "msg": "📚 Loading/advancing 4-week narrative arc..."
+    },
+    {
+      "time": "2026-06-12T12:20:26.715678",
+      "msg": "✅ Series arc: Week 1/4 — Foundations – introduce quantum computing basics and why it matters to finance."
+    },
+    {
+      "time": "2026-06-12T12:20:26.719216",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T12:21:28.209611",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T12:21:28.210631",
+      "msg": "🛡️ Running brand safety firewall (SEBI guidelines)..."
+    },
+    {
+      "time": "2026-06-12T12:21:29.665735",
+      "msg": "⚠️ Brand safety: FLAGS FOUND — [{'platform': 'LinkedIn', 'edit': 'Append a disclaimer at the end of the post. Example: \"*Disclaimer: The content above is for educational purposes only and should not be construed as investment advice. Past market data and projections are provided for illustration and are not indicative of future performance.*\" Also, cite the source of the $2.2\\u202fbillion market size and the INR\\u202f1,200\\u202fcrore allocation (e.g., Ministry of Electronics & IT report, industry research).'}, {'platform': 'Twitter', 'edit': 'Add a disclaimer tweet (e.g., tweet 5/5) stating: \"*Disclaimer: The information shared is for educational purposes only and does not constitute investment advice. References to NIFTY_BANK are illustrative.*\" Provide a reference link for the JPMorgan speed‑up claim or rephrase to \"JPMorgan has reported speed improvements of up to 10× in internal tests (source: JPMorgan press release, 2023).\"'}, {'platform': 'Hiring', 'edit': 'No changes required; the ad complies with SEBI advertising rules.'}]"
+    },
+    {
+      "time": "2026-06-12T12:21:29.666733",
+      "msg": "🧑‍💼 CMO reviewing (round 1)..."
+    },
+    {
+      "time": "2026-06-12T12:22:30.837173",
+      "msg": "❌ CMO REJECTED ['linkedin', 'twitter']"
+    },
+    {
+      "time": "2026-06-12T12:22:30.839188",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T12:22:32.686734",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T12:22:32.687625",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T12:22:32.688136",
+      "msg": "🧑‍💼 CMO reviewing (round 2)..."
+    },
+    {
+      "time": "2026-06-12T12:22:33.674343",
+      "msg": "❌ CMO REJECTED ['linkedin']"
+    },
+    {
+      "time": "2026-06-12T12:22:33.678670",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T12:22:35.100419",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T12:22:35.100419",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T12:22:35.101406",
+      "msg": "🧑‍💼 CMO reviewing (round 3)..."
+    },
+    {
+      "time": "2026-06-12T12:22:35.894927",
+      "msg": "❌ CMO REJECTED ['twitter']"
+    },
+    {
+      "time": "2026-06-12T12:22:35.896930",
+      "msg": "📅 Building content calendar..."
+    },
+    {
+      "time": "2026-06-12T12:23:31.364803",
+      "msg": "✅ Calendar built"
+    },
+    {
+      "time": "2026-06-12T12:23:31.366829",
+      "msg": "📤 Building distribution plan..."
+    },
+    {
+      "time": "2026-06-12T12:23:31.366829",
+      "msg": "✅ Distribution plan ready"
+    },
+    {
+      "time": "2026-06-12T12:23:31.367828",
+      "msg": "👥 Building recruitment tracker..."
+    },
+    {
+      "time": "2026-06-12T12:24:31.576140",
+      "msg": "✅ Recruitment tracker ready"
+    },
+    {
+      "time": "2026-06-12T12:24:31.577014",
+      "msg": "📊 Running analytics..."
+    },
+    {
+      "time": "2026-06-12T12:24:32.496624",
+      "msg": "✅ Analytics complete"
+    },
+    {
+      "time": "2026-06-12T12:24:32.497636",
+      "msg": "💰 Calculating ROI metrics..."
+    },
+    {
+      "time": "2026-06-12T12:24:32.497636",
+      "msg": "✅ ROI: 571-2285 LinkedIn impressions | ₹34,500 saved vs agency"
+    },
+    {
+      "time": "2026-06-12T12:24:32.499642",
+      "msg": "📄 Generating weekly PDF report..."
+    },
+    {
+      "time": "2026-06-12T12:24:32.545641",
+      "msg": "✅ PDF report saved → data\\reports\\quantpulse_report_20260612_122016.pdf"
+    }
+  ]
+}

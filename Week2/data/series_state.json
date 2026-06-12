@@ -1,0 +1,33 @@
+{
+  "arc_topic": "Digital Rupee (CBDC) Rollout: What Indian Algo Traders Need to Know",
+  "arc_title": "Digital Rupee Decoded: A Quant’s Playbook for the New CBDC Era",
+  "arc_summary": "A four‑week deep‑dive that equips IIT/IIM‑trained algo traders with the technical, regulatory, and strategic insights needed to harness the Digital Rupee’s market impact.",
+  "arc": [
+    {
+      "week": 1,
+      "angle": "Foundations – Why the Digital Rupee matters for quant finance",
+      "hook": "Imagine a currency that’s instantly settled, fully traceable, and programmable – how will that reshape your models?",
+      "key_message": "The Digital Rupee (e‑RUPI) is more than a payment tool; it introduces a new data layer and settlement paradigm that directly influences latency, liquidity, and market microstructure."
+    },
+    {
+      "week": 2,
+      "angle": "Architecture – Technical underpinnings and data feeds",
+      "hook": "From blockchain ledgers to API‑driven real‑time settlement – get the schematic that will power your next strategy.",
+      "key_message": "Understanding the RBI’s hybrid DLT architecture, API endpoints, and on‑chain/off‑chain data streams is essential for building reliable ingestion pipelines and latency‑aware algo systems."
+    },
+    {
+      "week": 3,
+      "angle": "Regulation & Market Mechanics – Rules that shape strategy",
+      "hook": "Regulatory caps, KYC checkpoints, and transaction throttles: decode the constraints that will dictate your risk models.",
+      "key_message": "RBI’s compliance framework (AML/KYC, transaction limits, privacy layers) directly impacts order execution, position sizing, and back‑testing fidelity for any Digital Rupee‑linked strategy."
+    },
+    {
+      "week": 4,
+      "angle": "Opportunities – Building and testing a Digital Rupee‑centric algo",
+      "hook": "Launch a proof‑of‑concept: a high‑frequency arbitrage bot that exploits e‑RUPI settlement speed and on‑chain price discovery.",
+      "key_message": "Combine the technical stack, data pipelines, and regulatory constraints into a concrete workflow – from data capture to live deployment – demonstrating measurable alpha in the nascent Digital Rupee market."
+    }
+  ],
+  "week": 4,
+  "created_at": "2026-06-12T12:54:37.366965"
+}
