@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+Week1/outputs/
+.streamlit/
+ngrok.yml
+*.log
