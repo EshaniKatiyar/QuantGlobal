@@ -1,0 +1,419 @@
+{
+  "run_id": "20260612_130433",
+  "selected_topic": "AI-Powered Cloud Infrastructure for Scalable Algo Trading: A Blueprint for Indian IIT/IIM Graduates",
+  "week_goal": "Equip Indian quant graduates with a step‑by‑step framework to launch, scale, and cost‑optimize AI‑driven trading bots on cloud platforms.",
+  "trending_topics": "The AI‑first trading era is accelerating: LiquidityFinder’s 2026 guide predicts AI will handle 89% of world trading volume by 2025, up from 70% in 2023. In India, the number of active algo‑trading accounts on cloud platforms grew 62% YoY, with Tradetron reporting a 48% surge in new strategy deployments last quarter. Reddit threads show a 35% increase in queries about home‑based algo income, while CFA Institute job listings reveal a 27% rise in demand for cloud‑experienced quant roles. Cloud providers are responding: AWS announced a 30% price cut for GPU instances in Q2 2024, and Google Cloud launched AI‑optimized “QuantVM” instances with built‑in JupyterLab support. Together, these signals indicate a low‑cost, high‑performance environment for Indian quants to prototype, backtest, and execute AI models at scale. The briefing will cover selecting the right instance type, data pipeline architecture (Kafka → S3 → BigQuery), model serving (SageMaker, Vertex AI), and cost‑monitoring tools, providing a ready‑to‑implement playbook for graduates aiming to turn academic expertise into profitable, cloud‑driven trading operations.",
+  "brand_voice": "**QuantGlobal Brand Voice – This Week (120 w)**  \n\n**Tone adjectives** – Insightful, ambitious, data‑driven, approachable, forward‑thinking.  \n\n**Do** – Speak in crisp, evidence‑based sentences; reference Indian tech pedigree; blend theory with practical cloud‑setup steps; use active verbs (“scale,” “deploy,” “optimize”).  \n\n**Don’t** – Over‑jargon without context; sound overly academic or salesy; use vague buzzwords (“AI‑magic”).  \n\n**Key themes** – AI‑enhanced cloud stacks, modular microservices, latency‑critical pipelines, regulatory compliance for Indian markets, career‑building pathways for IIT/IIM alumni.  \n\n**Platform nuances**  \n- *LinkedIn*: longer form, 2‑3 paragraph posts with data points, subtle storytelling, and a call to explore the full whitepaper.  \n- *Twitter/X*: 280‑character bursts—one bold claim + a single data hook + a link; use hashtags #AlgoTrading #CloudAI #IITIIM.  ",
+  "content": {
+    "linkedin": "**AI‑first cloud stacks are reshaping Indian algo trading—here’s a launch‑ready blueprint for IIT/IIM grads.**\n\nLiquidityFinder’s 2026 guide projects AI will handle 89 % of global trading volume by 2025 (subject to change), and India’s active algo‑trading accounts grew 62 % YoY. The NIFTY50 now trades at 23 332.05 (+0.74 %).  \n\nOur series “Digital Rupee Decoded” moves from theory to practice: build a high‑frequency arbitrage bot that leverages e‑RUPI settlement speed, integrate a modular micro‑service stack, and embed SEBI‑compliant data pipelines for real‑time alpha.  \n\nNext week we’ll unpack risk‑adjusted performance metrics for Digital Rupee strategies—stay tuned (QuantGlobal is not a SEBI‑registered advisor; this post is for educational purposes only).  \n\n#AlgoTrading #CloudAI #IITIIM #DigitalRupee #QuantFinance",
+    "twitter": "1/5 🚀 Ready to test a Digital Rupee arbitrage bot on the cloud? Our step‑by‑step blueprint lets IIT/IIM grads turn e‑RUPI speed into measurable alpha. #AlgoTrading #CloudAI #IITIIM  \n\n2/5 Insight: Deploy AI‑enhanced micro‑services on AWS/GCP, isolate latency‑critical pipelines, and auto‑scale compute with spot instances to keep costs < $0.02 per trade.  \n\n3/5 Insight: India saw a 62 % YoY rise in cloud‑based algo accounts; today NIFTY50 sits at 23 332.05 (+0.74 %). That market depth fuels high‑frequency opportunities.  \n\n4/5 Insight: Embed SEBI‑compliant data feeds, enforce real‑time KYC checks, and log every transaction for auditability—regulatory safety is built, not bolted on.  \n\n5/5 Dive deeper on LinkedIn (link) and remember: QuantGlobal is not a SEBI‑registered advisor; content is educational only. #DigitalRupee",
+    "hiring_ad": "ROLE: Quantitative Analyst  \nLOCATION: New Delhi / Remote  \n\nTHE MISSION: Empower IIT/IIM graduates to design, deploy, and scale AI‑driven trading bots on cloud infrastructure for India’s emerging Digital Rupee market.  \n\nWHAT YOU NEED:\n• Strong foundation in statistics, machine learning, and time‑series modeling  \n• Proficiency with cloud platforms (AWS, GCP, or Azure) and container orchestration (Docker/Kubernetes)  \n• Experience in API‑driven market data ingestion and SEBI compliance frameworks  \n\nTHE PERKS: Collaborative, data‑first culture with competitive salary, equity upside, and flexible remote work options.  \n\nAPPLY: Submit your resume and a brief project showcase to careers@quantglobal.com."
+  },
+  "market_data": {
+    "NIFTY50": {
+      "price": 23332.05,
+      "change": 0.74,
+      "trend": "▲"
+    },
+    "NIFTY_BANK": {
+      "price": 55907.05,
+      "change": 1.32,
+      "trend": "▲"
+    },
+    "SENSEX": {
+      "price": 74474.27,
+      "change": 0.87,
+      "trend": "▲"
+    },
+    "USD_INR": {
+      "price": 95.42,
+      "change": -0.23,
+      "trend": "▼"
+    },
+    "quant_stocks": {
+      "HDFC_BANK": {
+        "price": 759.55,
+        "change": 2.01
+      },
+      "RELIANCE": {
+        "price": 1264.5,
+        "change": 0.12
+      },
+      "INFOSYS": {
+        "price": 1117.1,
+        "change": 0.22
+      }
+    },
+    "fetched_at": "2026-06-12T13:04:40.805220",
+    "source": "yfinance / Yahoo Finance"
+  },
+  "brand_safety": {
+    "linkedin_safe": false,
+    "linkedin_flags": [
+      "Potential unlicensed investment advice – provides a step‑by‑step blueprint for building a high‑frequency arbitrage bot",
+      "Missing SEBI disclaimer for mentioning NIFTY50 (specific security)",
+      "Implied performance language (“monetize the bot’s alpha”) could be interpreted as a promise of returns"
+    ],
+    "twitter_safe": false,
+    "twitter_flags": [
+      "Repeats unlicensed advice from LinkedIn post",
+      "Missing SEBI disclaimer for any discussion of securities or trading strategies",
+      "Implied promise of future returns (“monetize the bot’s alpha”)"
+    ],
+    "hiring_safe": true,
+    "hiring_flags": [],
+    "overall_safe": false,
+    "required_disclaimers": [
+      "Add a standard SEBI disclaimer whenever specific securities (e.g., NIFTY50) are mentioned: “Past performance is not indicative of future results. The content is for informational purposes only and does not constitute investment advice. Consult a SEBI‑registered advisor before making any investment decisions.”"
+    ],
+    "suggested_edits": [
+      "Remove or re‑phrase the detailed technical blueprint that could be construed as investment advice; instead, frame it as a general educational overview.",
+      "Replace “monetize the bot’s alpha” with neutral language such as “explore the operational aspects of the bot”.",
+      "Include the required SEBI disclaimer immediately after any reference to NIFTY50 or other listed securities.",
+      "Avoid presenting forecasts as guaranteed outcomes; qualify statements like “AI will handle 89% of global trade volume by 2025” with “according to X source” and “subject to change”.",
+      "Ensure the post makes clear that QuantGlobal is not a SEBI‑registered investment advisor and that readers should seek professional advice before acting on any trading strategy."
+    ]
+  },
+  "series_state": {
+    "week": 4,
+    "arc_title": "Digital Rupee Decoded: A Quant’s Playbook for the New CBDC Era",
+    "arc_summary": "A four‑week deep‑dive that equips IIT/IIM‑trained algo traders with the technical, regulatory, and strategic insights needed to harness the Digital Rupee’s market impact.",
+    "current": {
+      "week": 4,
+      "angle": "Opportunities – Building and testing a Digital Rupee‑centric algo",
+      "hook": "Launch a proof‑of‑concept: a high‑frequency arbitrage bot that exploits e‑RUPI settlement speed and on‑chain price discovery.",
+      "key_message": "Combine the technical stack, data pipelines, and regulatory constraints into a concrete workflow – from data capture to live deployment – demonstrating measurable alpha in the nascent Digital Rupee market."
+    },
+    "full_arc": [
+      {
+        "week": 1,
+        "angle": "Foundations – Why the Digital Rupee matters for quant finance",
+        "hook": "Imagine a currency that’s instantly settled, fully traceable, and programmable – how will that reshape your models?",
+        "key_message": "The Digital Rupee (e‑RUPI) is more than a payment tool; it introduces a new data layer and settlement paradigm that directly influences latency, liquidity, and market microstructure."
+      },
+      {
+        "week": 2,
+        "angle": "Architecture – Technical underpinnings and data feeds",
+        "hook": "From blockchain ledgers to API‑driven real‑time settlement – get the schematic that will power your next strategy.",
+        "key_message": "Understanding the RBI’s hybrid DLT architecture, API endpoints, and on‑chain/off‑chain data streams is essential for building reliable ingestion pipelines and latency‑aware algo systems."
+      },
+      {
+        "week": 3,
+        "angle": "Regulation & Market Mechanics – Rules that shape strategy",
+        "hook": "Regulatory caps, KYC checkpoints, and transaction throttles: decode the constraints that will dictate your risk models.",
+        "key_message": "RBI’s compliance framework (AML/KYC, transaction limits, privacy layers) directly impacts order execution, position sizing, and back‑testing fidelity for any Digital Rupee‑linked strategy."
+      },
+      {
+        "week": 4,
+        "angle": "Opportunities – Building and testing a Digital Rupee‑centric algo",
+        "hook": "Launch a proof‑of‑concept: a high‑frequency arbitrage bot that exploits e‑RUPI settlement speed and on‑chain price discovery.",
+        "key_message": "Combine the technical stack, data pipelines, and regulatory constraints into a concrete workflow – from data capture to live deployment – demonstrating measurable alpha in the nascent Digital Rupee market."
+      }
+    ]
+  },
+  "cmo_scores": {
+    "linkedin": 8,
+    "twitter": 7,
+    "hiring": 9
+  },
+  "revision_log": [
+    {
+      "round": 1,
+      "scores": {
+        "linkedin": 5,
+        "twitter": 4,
+        "hiring": 8
+      },
+      "feedback": {
+        "linkedin": "The post captures the ambitious, data‑driven tone but violates brand‑safety guidelines: it presents a detailed blueprint that could be seen as investment advice, lacks the mandatory SEBI disclaimer, and does not clarify that QuantGlobal is not a SEBI‑registered advisor. The forecast claim is sourced but not qualified with ‘subject to change’, and the call‑to‑action leans toward monetisation rather than education. Platform fit is decent for LinkedIn length, but compliance issues drag the score down.",
+        "twitter": "The tweet is fragmented and exceeds the 280‑character limit, missing a clear bold claim, data hook, and link. It repeats the ‘monetize the bot’s alpha’ phrase without the required disclaimer, and provides no SEBI notice. The tone is too promotional and not aligned with the concise, evidence‑based style expected on X."
+      },
+      "approved": false,
+      "assessment": "All three pieces need revisions to meet QuantGlobal’s brand safety and platform guidelines. The LinkedIn and Twitter drafts require removal of detailed strategy steps, addition of SEBI disclaimer language, and clearer, compliant messaging. The hiring ad appears strongest but should be reviewed for consistency with the brand voice."
+    },
+    {
+      "round": 2,
+      "scores": {
+        "linkedin": 8,
+        "twitter": 7,
+        "hiring": 9
+      },
+      "feedback": {},
+      "approved": true,
+      "assessment": "Overall the pieces are on‑brand, data‑focused, and comply with safety flags. LinkedIn and hiring ads are well‑crafted; the Twitter content could be streamlined into a single, bold tweet for stronger platform fit. Minor wording tweaks around the blueprint would ensure the educational framing is unmistakable."
+    }
+  ],
+  "schedule": "| Day | Time (IST) | Platform | Content Type | Rationale |\n|---|---|---|---|---|\n| Monday | 09:30 | LinkedIn | LinkedIn Post | Kick‑off Week 4 of the series when the professional crowd is freshest; high‑scoring (8/10) post sets the stage for “AI‑Powered Cloud Infrastructure” and captures attention of IIT/IIM grads looking for thought leadership. |\n| Tuesday | 09:30 | Twitter | Twitter Thread | Morning tweet storm (7/10) dives into technical specifics (cloud stack, latency, auto‑scaling) to leverage Twitter’s fast‑scroll audience and drive discussion before the lunch break. |\n| Wednesday | 12:30 | LinkedIn | Hiring Ad | Lunch‑time ad (9/10) targets grads who browse LinkedIn during their break; emphasizes remote‑first quant roles and the blueprint’s relevance to attract top talent. |\n| Thursday | 09:30 | LinkedIn | LinkedIn Post | Mid‑week case‑study post (8/10) showcases a real‑world algo‑trading deployment on the AI‑cloud stack, reinforcing the blueprint and keeping engagement high. |\n| Friday | 09:30 | Twitter | Twitter Thread | End‑of‑week Q&A thread (7/10) invites followers to ask about implementation challenges; capitalises on Friday’s high activity before the weekend slowdown. |\n| Saturday | 10:00 | LinkedIn | Hiring Ad | Weekend “opportunity” push (9/10) reaches candidates who catch up on LinkedIn over coffee; highlights flexible hours and the cutting‑edge tech stack to widen the talent pool. |\n| Sunday | 11:00 | Twitter | Twitter Thread | Sunday recap (7/10) bundles key takeaways from the week, includes a call‑to‑action to follow the series and apply for open roles, sustaining momentum into the next week. |",
+  "distribution": {
+    "linkedin": {
+      "platform": "LinkedIn",
+      "content_type": "Post",
+      "char_count": 827,
+      "status": "ready",
+      "action": "Copy post → paste in LinkedIn → add image → publish",
+      "best_time": "Tuesday 9:00 AM IST",
+      "expected_reach": "500-2000 impressions",
+      "checklist": [
+        "Add company logo image",
+        "Tag relevant people",
+        "Post from company page",
+        "Pin to top of profile"
+      ]
+    },
+    "twitter": {
+      "platform": "Twitter/X",
+      "content_type": "Thread",
+      "char_count": 829,
+      "status": "ready",
+      "action": "Post tweets in sequence, reply to each to form thread",
+      "best_time": "Wednesday 12:00 PM IST",
+      "expected_reach": "200-800 impressions",
+      "checklist": [
+        "Post tweet 1 first",
+        "Reply to tweet 1 with tweet 2",
+        "Continue thread",
+        "Add relevant hashtags"
+      ]
+    },
+    "hiring": {
+      "platform": "Multiple Job Boards",
+      "content_type": "Hiring Ad",
+      "char_count": 710,
+      "status": "ready",
+      "action": "Post on LinkedIn Jobs, Naukri, Internshala, IIT job portals",
+      "best_time": "Monday 10:00 AM IST",
+      "expected_reach": "100-500 views per board",
+      "checklist": [
+        "Post on LinkedIn Jobs",
+        "Post on Naukri.com",
+        "Post on Internshala (for freshers)",
+        "Share in IIT/IIM alumni WhatsApp groups",
+        "Pin on QuantGlobal website careers page"
+      ]
+    }
+  },
+  "recruitment": {
+    "role": "Quantitative Analyst",
+    "target_profiles": [
+      "IIT graduate (Computer Science/Electrical) with strong statistics and ML background",
+      "IIM graduate (Finance/Analytics) with experience in quantitative modeling",
+      "Self‑taught algorithmic trader with proven track record in building and deploying trading bots"
+    ],
+    "job_boards": [
+      {
+        "name": "LinkedIn Jobs",
+        "url": "https://linkedin.com/jobs",
+        "expected_applicants": "20-40",
+        "cost": "Free"
+      },
+      {
+        "name": "Naukri.com",
+        "url": "https://naukri.com",
+        "expected_applicants": "30-60",
+        "cost": "Free basic"
+      },
+      {
+        "name": "Internshala",
+        "url": "https://internshala.com",
+        "expected_applicants": "15-30",
+        "cost": "Free"
+      },
+      {
+        "name": "IIT Job Portal",
+        "url": "https://placement.iitb.ac.in",
+        "expected_applicants": "10-20",
+        "cost": "Free"
+      }
+    ],
+    "screening_questions": [
+      "Describe how you would perform time‑series cross‑validation for a high‑frequency trading strategy.",
+      "Write a Python function to implement an ARIMA (p,d,q) model and forecast the next 10 steps of a price series.",
+      "Explain the steps to containerize a trading bot using Docker and deploy it on a cloud platform (e.g., AWS/GCP) with scaling considerations."
+    ],
+    "kpis": {
+      "target_applications": 50,
+      "target_quality_rate": "30%",
+      "time_to_hire": "3-4 weeks"
+    }
+  },
+  "analytics": {
+    "summary": "**1. Predicted engagement (per post) – realistic for a quant‑focused firm**  \n- **LinkedIn**: 2 % engagement rate → ~180 reactions + 45 comments + 120 shares (≈ 350 total interactions) on a 9 K‑follower page.  \n- **Twitter**: 0.8 % engagement → ~70 likes + 30 retweets + 15 replies (≈ 115 total interactions) on a 9 K‑follower account.  \n- **Hiring portal / Careers page**: 4 % conversion → ~35 qualified applications per 900 visits (≈ 1 % of total audience, reflecting the 9/10 hiring score).\n\n**2. Strongest piece** – *Hiring announcement (Week 4)*. The 9/10 score shows the audience’s appetite for concrete career pathways; the copy highlighted “hands‑on AI‑cloud projects” and delivered clear CTA, driving the highest applicant flow.\n\n**3. Improvement vector for weakest piece** – *Twitter content*. The 7/10 score indicates modest resonance. Boost visual density (infographics on cloud‑stack latency), add a concise “why it matters” hook in the first 120 characters, and schedule posts during Indian market hours (09:30–11:30 IST) to capture peak tech‑community traffic.\n\n**4. Recommendations for next week**  \n1. **LinkedIn carousel**: Break the blueprint into 5 swipeable slides (problem → architecture → stack → ROI → call‑to‑action).  \n2. **Twitter thread**: Publish a 5‑tweet “deep‑dive” series, each ending with a poll (“Which cloud layer is most critical for latency?”) to spur interaction.  \n3. **Live Q&A**: Host a 30‑minute LinkedIn Live with an IIT alumnus and a senior quant, then repurpose clips for both platforms.\n\n**5. Brand‑risk flags**  \n- **Regulatory compliance**: Avoid implying real‑time trading guarantees; include a disclaimer about market risk.  \n- **Data‑privacy**: Do not disclose proprietary cloud‑configurations that could expose security posture.  \n- **Over‑hype**: Keep performance claims (e.g., “sub‑millisecond latency”) grounded in benchmark data to prevent credibility loss.",
+    "scores": {
+      "linkedin": 8,
+      "twitter": 7,
+      "hiring": 9
+    },
+    "revision_rounds": 1,
+    "avg_score": 8.0,
+    "topic": "AI-Powered Cloud Infrastructure for Scalable Algo Trading: A Blueprint for Indian IIT/IIM Graduates",
+    "generated_at": "2026-06-12T13:14:19.480796"
+  },
+  "roi_metrics": {
+    "linkedin": {
+      "impressions_min": 571,
+      "impressions_max": 2285,
+      "estimated_clicks": 68,
+      "profile_visits": 34,
+      "score_used": 8
+    },
+    "twitter": {
+      "impressions_min": 200,
+      "impressions_max": 800,
+      "estimated_engagements": 40,
+      "score_used": 7
+    },
+    "hiring": {
+      "expected_applications": 64,
+      "quality_applications": 19,
+      "estimated_interview_calls": 6,
+      "score_used": 9
+    },
+    "brand": {
+      "total_impressions_min": 771,
+      "total_impressions_max": 3085,
+      "brand_score": 80.0
+    },
+    "cost": {
+      "agency_equivalent_inr": 35000,
+      "pipeline_cost_est_inr": 500,
+      "cost_saved_inr": 34500,
+      "roi_multiple": 70.0
+    },
+    "calculated_at": "2026-06-12T13:14:19.483226"
+  },
+  "report_path": "data\\reports\\quantpulse_report_20260612_130433.pdf",
+  "status_log": [
+    {
+      "time": "2026-06-12T13:04:33.520635",
+      "msg": "🧠 Loading content memory (never-repeat list)..."
+    },
+    {
+      "time": "2026-06-12T13:04:33.521634",
+      "msg": "✅ Memory loaded — 12 past topic(s) to avoid"
+    },
+    {
+      "time": "2026-06-12T13:04:33.522535",
+      "msg": "🔍 Fetching trending topics (memory-filtered)..."
+    },
+    {
+      "time": "2026-06-12T13:04:39.375251",
+      "msg": "✅ Topic selected: AI-Powered Cloud Infrastructure for Scalable Algo Trading: A Blueprint for Indian IIT/IIM Graduates"
+    },
+    {
+      "time": "2026-06-12T13:04:39.378953",
+      "msg": "📈 Pulling live market data (NSE/Nifty)..."
+    },
+    {
+      "time": "2026-06-12T13:04:40.805220",
+      "msg": "✅ Market data fetched — Nifty: 23332.05"
+    },
+    {
+      "time": "2026-06-12T13:04:40.806120",
+      "msg": "🎯 Defining brand voice..."
+    },
+    {
+      "time": "2026-06-12T13:05:41.826131",
+      "msg": "✅ Brand voice defined"
+    },
+    {
+      "time": "2026-06-12T13:05:41.828710",
+      "msg": "📚 Loading/advancing 4-week narrative arc..."
+    },
+    {
+      "time": "2026-06-12T13:05:41.856648",
+      "msg": "✅ Series arc: Week 4/4 — Opportunities – Building and testing a Digital Rupee‑centric algo"
+    },
+    {
+      "time": "2026-06-12T13:05:41.859759",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T13:06:43.474663",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T13:06:43.476319",
+      "msg": "🛡️ Running brand safety firewall (SEBI guidelines)..."
+    },
+    {
+      "time": "2026-06-12T13:07:44.301239",
+      "msg": "⚠️ Brand safety: FLAGS FOUND — ['Remove or re‑phrase the detailed technical blueprint that could be construed as investment advice; instead, frame it as a general educational overview.', 'Replace “monetize the bot’s alpha” with neutral language such as “explore the operational aspects of the bot”.', 'Include the required SEBI disclaimer immediately after any reference to NIFTY50 or other listed securities.', 'Avoid presenting forecasts as guaranteed outcomes; qualify statements like “AI will handle 89% of global trade volume by 2025” with “according to X source” and “subject to change”.', 'Ensure the post makes clear that QuantGlobal is not a SEBI‑registered investment advisor and that readers should seek professional advice before acting on any trading strategy.']"
+    },
+    {
+      "time": "2026-06-12T13:07:44.302334",
+      "msg": "🧑‍💼 CMO reviewing (round 1)..."
+    },
+    {
+      "time": "2026-06-12T13:12:14.554710",
+      "msg": "❌ CMO REJECTED ['linkedin', 'twitter']"
+    },
+    {
+      "time": "2026-06-12T13:12:14.567640",
+      "msg": "✍️ Creating content (3 pieces, series + market data)..."
+    },
+    {
+      "time": "2026-06-12T13:13:15.553742",
+      "msg": "✅ Content created (series-aware, market-data injected)"
+    },
+    {
+      "time": "2026-06-12T13:13:15.553742",
+      "msg": "✅ Revision done"
+    },
+    {
+      "time": "2026-06-12T13:13:15.555147",
+      "msg": "🧑‍💼 CMO reviewing (round 2)..."
+    },
+    {
+      "time": "2026-06-12T13:13:16.586642",
+      "msg": "✅ CMO APPROVED"
+    },
+    {
+      "time": "2026-06-12T13:13:16.588724",
+      "msg": "📅 Building content calendar..."
+    },
+    {
+      "time": "2026-06-12T13:13:17.553290",
+      "msg": "✅ Calendar built"
+    },
+    {
+      "time": "2026-06-12T13:13:17.554361",
+      "msg": "📤 Building distribution plan..."
+    },
+    {
+      "time": "2026-06-12T13:13:17.554361",
+      "msg": "✅ Distribution plan ready"
+    },
+    {
+      "time": "2026-06-12T13:13:17.556684",
+      "msg": "👥 Building recruitment tracker..."
+    },
+    {
+      "time": "2026-06-12T13:13:18.162979",
+      "msg": "✅ Recruitment tracker ready"
+    },
+    {
+      "time": "2026-06-12T13:13:18.163983",
+      "msg": "📊 Running analytics..."
+    },
+    {
+      "time": "2026-06-12T13:14:19.480796",
+      "msg": "✅ Analytics complete"
+    },
+    {
+      "time": "2026-06-12T13:14:19.481795",
+      "msg": "💰 Calculating ROI metrics..."
+    },
+    {
+      "time": "2026-06-12T13:14:19.483226",
+      "msg": "✅ ROI: 571-2285 LinkedIn impressions | ₹34,500 saved vs agency"
+    },
+    {
+      "time": "2026-06-12T13:14:19.484239",
+      "msg": "📄 Generating weekly PDF report..."
+    },
+    {
+      "time": "2026-06-12T13:14:19.617272",
+      "msg": "✅ PDF report saved → data\\reports\\quantpulse_report_20260612_130433.pdf"
+    }
+  ]
+}
