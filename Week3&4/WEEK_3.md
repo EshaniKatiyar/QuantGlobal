@@ -1,66 +1,82 @@
-# WEEK 3 — QuantGlobal AI Recruitment System
+# WEEK 3 — QuantGlobal AI-Native Recruitment System
 
 ## Company Name
 QuantGlobal AI Recruitment & L&D System
 
 ## Platform
-LangGraph (stateful, hierarchical, conditional branching)
+LangGraph + Cerebras (llama3.1-8b / gpt-oss-120b)
 
 ## Agent Roles
 
 ### Root Supervisor
-Orchestrates the full pipeline. Routes candidates from Recruitment phase to L&D phase. Maintains global state. Runs a post-L&D Alpha Score calibration check (Feedback Loop 2).
+Orchestrates the full pipeline. Makes LLM-driven decisions on whether to dispatch Recruitment Team, proceed to L&D, retry sourcing, or escalate to TL. Every decision logged with reasoning to supervisor_logs table.
 
 ### Recruitment Team Supervisor
-Manages Sourcer, Screener, Assessment, Scheduler, Offer agents. Drives candidates from sourcing to offer acceptance. TL approval and offer acceptance are real human decisions (dashboard / candidate portal) — the supervisor only picks up decisions that have already been made, it never simulates or auto-decides them.
+LLM-driven orchestrator for the recruitment phase. Dispatches Sourcer → Screener → Assessment → Scheduler → Offer agents in sequence. Evaluates each stage output via Cerebras, retries sourcing if quality is weak, generates structured report for Root Supervisor.
 
 ### Sourcer Agent
-- Queries GitHub API (Delhi/NCR, Python, algo-trading topics)
-- Queries Google Custom Search API
-- Checks SQLite blacklist before adding candidates
-- Tags each candidate with inferred role (Quant Researcher / Algo Trader)
-- **Feedback Loop 1:** tracks each source's screening pass-through rate and queries the higher-yield source harder on subsequent runs
+- Queries GitHub API: `location:Delhi OR Gurgaon OR Noida, language:Python, topic:algorithmic-trading OR topic:quantitative-finance`
+- Queries Google Custom Search API: `"quant trader" OR "algorithmic trading" OR "quantitative researcher" Delhi NCR site:github.com`
+- Data extracted: username, location, repo names, commit frequency, star count, bio, inferred role
+- Checks SQLite blacklist (SHA-256 hashed identifiers) before adding any candidate
+- Tags each candidate with inferred role (Quant Researcher / Algo Trader) from repo topics and bio keywords
+- Feedback Loop 1: logs sourcing volume and screening yield per source (GitHub vs Google); queries higher-yield source harder on next run
+- Minimum output: 5 candidates per run
 
 ### Screener Agent
-- Computes Alpha Score v1 (0-75)
-- Factors: GitHub Signal (25) + Background Fit (25) + Assessment Score (25)
-- Lateral candidate scoring: work experience replaces institute score for >2yr exp
-- Background Fit tiers: IIT/ISI/CMI = 25, Tier-2 = 15, Other = 5 (matches Revised Plan §8)
-- Uses the shared Cerebras client (`core/llm.py`) to extract institute/experience from bio text — no duplicate ad-hoc LLM client
+- Computes Alpha Score v1 (0–75): GitHub Signal (0–25) + Background Fit (0–25) + Assessment placeholder (0–25)
+- Background Fit tiers: IIT/ISI/CMI = 25, Tier-2 = 15, Other = 5
+- Lateral candidates (>2yr exp): work experience score replaces institution tier entirely
+- Uses Cerebras to extract institute and years of experience from bio text
+- Feedback Loop 1: records which source produced a screening pass
 
 ### Assessment Agent
-- Role-branched practical test + domain knowledge round
-- All code runs via Piston API sandbox (never on QuantGlobal infra)
-- Quant Researcher: options pricing / stat-arb style questions, generated per-candidate from their actual repos
-- Algo Trader: execution / market-microstructure questions, generated per-candidate from their actual repos
-- A separate Cerebras call evaluates answers — never self-graded
+- Role-branched two-round evaluation: practical coding test + domain knowledge round
+- Quant Researcher: options pricing, probability, backtesting questions — generated from candidate's actual repos via Cerebras
+- Algo Trader: order books, execution algos, risk management — generated from candidate's actual repos via Cerebras
+- Cerebras plays the candidate to generate answers; separate Cerebras call evaluates — never self-graded
+- All code submissions run via Piston API sandbox (timeout: 5s, memory: 256MB, no network access) — exec()/eval() never used on QuantGlobal infrastructure
+- Assessment score feeds Alpha Score v1 finalisation
 
 ### Scheduler Agent
-- Auto-generates mock interview slot + date
-- Starts the TL decision timer (`tl_pending_since`) the moment a candidate is scheduled
-- TL notified via dashboard
+- Auto-generates mock interview slot and date
+- Records TL pending timestamp (24h timeout window per §13)
+- TL notified via dashboard — single binary Approve/Reject
 
 ### Offer Agent
-- Generates a personalized offer letter ONLY for candidates with a real, on-record TL approval
-- Candidate must accept via the Candidate Portal (real human action, not simulated) before entering L&D
+- Generates personalised offer letter via Cerebras on TL approval only — never auto-generated without real TL decision on file
+- Generates Candidate Portal credentials (username = email prefix, bcrypt-hashed password)
+- Candidate accepts via portal (real human action) — supervisor never decides on candidate's behalf
 
-## TL Approval Workflow (Revised Plan §13)
-- TL sees a fully pre-evaluated candidate (Alpha Score, assessment results, scheduling slot)
-- Single binary decision: Approve or Reject, via dashboard button
-- If no decision within `TL_APPROVAL_TIMEOUT_HOURS` (default 24h), the candidate is flagged **pending** on the dashboard — never auto-approved or auto-rejected — while the pipeline continues processing other candidates in parallel
-- The Recruitment Supervisor checks for overdue pending candidates at the start of every run
+## LLM Prompts Used (all in core/llm.py)
+- `root_decide_next_action` — pipeline decision making
+- `recruitment_evaluate_sourcing` — quality assessment of sourced batch
+- `recruitment_evaluate_screening` — screening results evaluation
+- `recruitment_evaluate_assessment` — cohort strength assessment
+- `screen_candidate_profile` — per-candidate GitHub/bio reasoning (Screener)
+- `generate_assessment_questions` — personalised from candidate's repos
+- `generate_candidate_answers` — Cerebras plays candidate
+- `evaluate_answers` — separate evaluator (not self-grading)
+- `generate_offer_letter` — personalised offer text
 
-## LLM Prompts Used
+## Alpha Score v1 (0–75)
+| Factor | Weight | Fresher | Lateral (>2yr exp) |
+|---|---|---|---|
+| GitHub Signal | 25 pts | Repo quality, commit consistency, quant topic relevance | Same |
+| Background Fit | 25 pts | IIT/ISI/CMI=25, Tier-2=15, Other=5 | Work experience score (0–25) replaces institute entirely |
+| Assessment Score | 25 pts | Speed + accuracy, role-branched | Same |
 
-### Screener — Institute/Experience Extraction
-```
-Extract institute name and years of experience from this bio.
-Bio: {bio}
-Return JSON: {"institute": "<name or 'Other'>", "years_experience": <number>}
-```
+## TL Bottleneck Design (§13)
+- TL sees fully pre-evaluated candidate: Alpha Score, assessment results, scheduled slot
+- Single binary decision: Approve or Reject via dashboard button
+- No TL response within 24h → candidate flagged pending on dashboard; pipeline continues for others in parallel
+- Supervisor never auto-approves or auto-rejects
+
+## Tech Stack
+LangGraph, Cerebras API (free), GitHub API (free), Google Custom Search API (free, 100/day), Piston API (free), Streamlit, SQLite, APScheduler, bcrypt, cryptography (Fernet AES-256), ngrok
 
 ## One Win
-Mock candidate fallback works perfectly — when GitHub/Google APIs don't return enough Delhi/NCR results, the system fills up to 5 candidates automatically without breaking the pipeline.
+LLM-driven Recruitment Supervisor correctly retried sourcing when first batch quality was flagged as weak, and surfaced a TL alert when 0% of candidates passed assessment — behaviour a rule-based system would not produce.
 
 ## One Fail
-Google Custom Search API has a 100 queries/day free limit which gets exhausted quickly during testing. Switched to mocking Google results in dev and only using real API for final demo run.
+Google Custom Search API returned 403 errors during development due to API key restrictions. Resolved by verifying Custom Search API was enabled on the correct GCP project. Switched to a representative mock pool as fallback when real APIs return no Delhi-NCR results.
