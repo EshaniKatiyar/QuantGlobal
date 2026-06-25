@@ -1,0 +1,10 @@
+# Ignore database and logs
+database/quantglobal.db
+pipeline.log
+
+# Ignore environment variables/keys
+.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc

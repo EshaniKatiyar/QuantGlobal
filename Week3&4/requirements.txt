@@ -1,0 +1,14 @@
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-core>=0.2.0
+cerebras-cloud-sdk
+streamlit>=1.35.0
+requests
+cryptography
+bcrypt
+apscheduler
+python-dotenv
+streamlit
+pandas
+plotly
+pydantic
