@@ -5,10 +5,15 @@ import json
 from datetime import datetime, timedelta
 from config import FAILED_CANDIDATE_RETENTION_DAYS, OFFBOARDED_RETENTION_DAYS
 
-DB_PATH = "database/quantglobal.db"
+# 1. Get the absolute path to the directory where THIS file (db.py) lives
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-os.makedirs("database", exist_ok=True)
+# 2. Tell SQLite exactly where the file should go
+DB_PATH = os.path.join(CURRENT_DIR, "quantglobal.db")
+
 def get_conn():
+    # 3. Connect! (We don't even need os.makedirs anymore because we are 
+    # putting the db directly into the existing 'database' folder where this script lives)
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
     conn.row_factory = sqlite3.Row
     return conn
