@@ -22,18 +22,22 @@ from database.db import (
 )
 from utils.scheduler_job import start_scheduler
 def get_candidate_code_data(candidate_id):
-        import sqlite3
-        try:
-            # Change "recruitment.db" if your database file has a different name
-            with sqlite3.connect("recruitment.db") as conn:
-                cursor = conn.cursor()
-                cursor.execute("SELECT questions, answers FROM candidates WHERE id = ?", (candidate_id,))
-                row = cursor.fetchone()
-                if row and row[0] and row[1]:
-                    return row[0], row[1]
-        except Exception:
-            return None, None
+    from database.db import get_conn
+    try:
+        # This instantly fixes the path AND connects to the correct quantglobal.db!
+        conn = get_conn()
+        cursor = conn.cursor()
+        cursor.execute("SELECT questions, answers FROM candidates WHERE id = ?", (candidate_id,))
+        row = cursor.fetchone()
+        conn.close()
+        
+        if row and row["questions"] and row["answers"]:
+            return row["questions"], row["answers"]
+    except Exception as e:
+        print(f"Code fetch error: {e}") # This will print to terminal if it ever fails again
         return None, None
+        
+    return None, None
 
 st.set_page_config(
     page_title="QuantGlobal | AI Recruitment",
@@ -283,6 +287,7 @@ def tl_dashboard():
                         log_action(c["id"], "tl_approval", "tl_rejected_manual", "TL rejected via dashboard")
                         st.error("Rejected.")
                         st.rerun()
+                
 
     # ── Tab 2: Pipeline — every candidate currently in flight ────────────────
     with tab_pipeline:
@@ -493,6 +498,8 @@ def hr_dashboard():
             else:
                 st.markdown("`No quiz data recorded yet.`")
             st.caption("Aggregated performance across all trainees.")
+        render_quiz_heatmap()
+        render_candidate_timeline()
 
     # ==========================================
     # TAB 2: RECRUITMENT HUB (Sourcing to Offer)
@@ -584,7 +591,7 @@ def hr_dashboard():
             for c in ld_candidates:
                 # 1. Calculate Growth Delta for the header
                 alpha_v1 = float(get_real_alpha_v1(c))
-                alpha_v2 = float(c.get('alpha_v2', alpha_v1))
+                alpha_v2 = float(c.get('alpha_score_v2') or alpha_v1) 
                 growth = alpha_v2 - alpha_v1
                 
                 with st.expander(f"{c['name']} | {c['role']} | {c['stage'].upper()}", expanded=True):
@@ -599,7 +606,19 @@ def hr_dashboard():
                         st.caption(f"Generates a new login password for {c['name']}'s Trainee account.")
                         if st.button("Confirm Reset", key=f"reset_pw_{c['id']}"):
                             from database.db import reset_trainee_password
-                            new_password = reset_trainee_password(c["id"])
+                            import random
+                            import string
+                            import hashlib
+
+        # 1. Generate a random 8-character plaintext password
+                            new_password = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+        
+        # 2. Hash the password for the database
+                            new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
+
+        # 3. Pass BOTH the candidate ID and the new hashed password to db.py
+                            reset_trainee_password(c["id"], new_password_hash)
+
                             st.success(f"New password for **{c['name']}**:")
                             st.code(new_password, language=None)
                             st.caption("Share this with the trainee directly — it won't be shown again after you close this.")
@@ -654,6 +673,7 @@ def hr_dashboard():
         except FileNotFoundError:
             st.warning("No pipeline.log file found yet. Run the pipeline to generate logs.")
 
+        
 
 
 def trainee_dashboard():
@@ -937,6 +957,73 @@ def main():
     else:
         st.error("Unknown role.")
 
+def render_quiz_heatmap():
+    """Trainee × topic quiz score heatmap across all weeks."""
+    from database.db import get_quiz_heatmap_data
+    data = get_quiz_heatmap_data()
+    if not data:
+        return
+    st.markdown("---")
+    st.markdown("### Quiz Performance Heatmap")
+    st.caption("Trainees × topics, averaged across all weeks. Red = weak, green = strong.")
+    try:
+        import pandas as pd
+        import plotly.express as px
+        df = pd.DataFrame(data)
+        pivot = df.pivot_table(index="name", columns="topic", values="score", aggfunc="mean")
+        fig = px.imshow(
+            pivot, text_auto=".0f", aspect="auto",
+            color_continuous_scale="RdYlGn", zmin=0, zmax=100,
+            labels=dict(x="Topic", y="Trainee", color="Score %")
+        )
+        fig.update_layout(height=max(300, 60 * len(pivot)), margin=dict(l=10, r=10, t=10, b=10))
+        st.plotly_chart(fig, use_container_width=True)
+    except Exception as e:
+        st.warning(f"Heatmap unavailable: {e}")
+
+
+def render_candidate_timeline():
+    """Gantt-style timeline: time each candidate spent at each stage."""
+    from database.db import get_stage_timeline
+    data = get_stage_timeline()
+    if not data:
+        return
+    st.markdown("---")
+    st.markdown("### Candidate Lifecycle Timeline")
+    st.caption("Each bar = time a candidate spent at a stage (drives the Hiring Velocity metric).")
+    try:
+        import pandas as pd
+        import plotly.express as px
+        df = pd.DataFrame(data)
+        df["entered_at"] = pd.to_datetime(df["entered_at"], errors="coerce")
+        df = df.dropna(subset=["entered_at"]).sort_values(["candidate_id", "entered_at"])
+        
+        # FIX: Force duration_hours to be numeric and replace NaN with 1 to prevent the crash
+        df["duration_hours"] = pd.to_numeric(df["duration_hours"], errors="coerce").fillna(1)
+        
+        rows = []
+        for cid, grp in df.groupby("candidate_id"):
+            grp = grp.reset_index(drop=True)
+            for i in range(len(grp)):
+                start = grp.loc[i, "entered_at"]
+                if i + 1 < len(grp):
+                    end = grp.loc[i + 1, "entered_at"]
+                else:
+                    dur = grp.loc[i, "duration_hours"]
+                    end = start + pd.Timedelta(hours=max(dur, 0.5))
+                rows.append(dict(Candidate=grp.loc[i, "name"], Stage=grp.loc[i, "stage"],
+                                 Start=start, Finish=end))
+        if not rows:
+            return
+        tdf = pd.DataFrame(rows)
+        fig = px.timeline(tdf, x_start="Start", x_end="Finish", y="Candidate",
+                          color="Stage", labels={"Candidate": ""})
+        fig.update_yaxes(autorange="reversed")
+        fig.update_layout(height=max(300, 50 * tdf["Candidate"].nunique()),
+                          margin=dict(l=10, r=10, t=10, b=10))
+        st.plotly_chart(fig, use_container_width=True)
+    except Exception as e:
+        st.warning(f"Timeline unavailable: {e}")
 
 if __name__ == "__main__":
     main()

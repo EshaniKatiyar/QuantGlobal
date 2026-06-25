@@ -1,19 +1,13 @@
-import os
 import sqlite3
 import hashlib
 import json
 from datetime import datetime, timedelta
 from config import FAILED_CANDIDATE_RETENTION_DAYS, OFFBOARDED_RETENTION_DAYS
 
-# 1. Get the absolute path to the directory where THIS file (db.py) lives
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = "database/quantglobal.db"
 
-# 2. Tell SQLite exactly where the file should go
-DB_PATH = os.path.join(CURRENT_DIR, "quantglobal.db")
 
 def get_conn():
-    # 3. Connect! (We don't even need os.makedirs anymore because we are 
-    # putting the db directly into the existing 'database' folder where this script lives)
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
     conn.row_factory = sqlite3.Row
     return conn
@@ -37,10 +31,11 @@ def init_db():
             status TEXT DEFAULT 'active',
             consent_given INTEGER DEFAULT 0,
             consent_timestamp TEXT,
-            password_hash TEXT,
             created_at TEXT DEFAULT CURRENT_TIMESTAMP,
             updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
-            tl_pending_since TEXT
+            tl_pending_since TEXT,
+            questions TEXT,
+            answers TEXT
         );
 
         CREATE TABLE IF NOT EXISTS blacklist (
@@ -165,18 +160,81 @@ def get_all_candidates():
 def update_candidate_stage(candidate_id, stage, status=None):
     conn = get_conn()
     c = conn.cursor()
+
+    # Record how long the candidate sat in the PREVIOUS stage, and log the
+    # per-candidate stage entry for the timeline/Gantt chart.
+    c.execute("SELECT stage, updated_at FROM candidates WHERE id = ?", (candidate_id,))
+    row = c.fetchone()
+    if row and row["stage"] and row["stage"] != stage:
+        prev_stage = row["stage"]
+        try:
+            c.execute("""
+                SELECT (julianday(CURRENT_TIMESTAMP) - julianday(?)) * 24 AS hrs
+            """, (row["updated_at"],))
+            hrs = c.fetchone()["hrs"] or 0.0
+        except Exception:
+            hrs = 0.0
+        # Real Hiring Velocity input
+        c.execute("CREATE TABLE IF NOT EXISTS stage_durations (id INTEGER PRIMARY KEY AUTOINCREMENT, stage TEXT, duration_hours REAL, created_at TEXT DEFAULT CURRENT_TIMESTAMP)")
+        c.execute("INSERT INTO stage_durations (stage, duration_hours) VALUES (?, ?)", (prev_stage, hrs))
+        # Timeline rows: one record per stage the candidate entered
+        c.execute("""CREATE TABLE IF NOT EXISTS stage_timeline (
+            id INTEGER PRIMARY KEY AUTOINCREMENT, candidate_id INTEGER,
+            stage TEXT, entered_at TEXT DEFAULT CURRENT_TIMESTAMP, duration_hours REAL)""")
+        c.execute("""UPDATE stage_timeline SET duration_hours = ?
+            WHERE candidate_id = ? AND stage = ? AND duration_hours IS NULL""",
+            (hrs, candidate_id, prev_stage))
+
     if status:
-        c.execute("""
-            UPDATE candidates SET stage = ?, status = ?, updated_at = CURRENT_TIMESTAMP
-            WHERE id = ?
-        """, (stage, status, candidate_id))
+        c.execute("UPDATE candidates SET stage = ?, status = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?",
+                  (stage, status, candidate_id))
     else:
-        c.execute("""
-            UPDATE candidates SET stage = ?, updated_at = CURRENT_TIMESTAMP
-            WHERE id = ?
-        """, (stage, candidate_id))
+        c.execute("UPDATE candidates SET stage = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?",
+                  (stage, candidate_id))
+
+    c.execute("""CREATE TABLE IF NOT EXISTS stage_timeline (
+        id INTEGER PRIMARY KEY AUTOINCREMENT, candidate_id INTEGER,
+        stage TEXT, entered_at TEXT DEFAULT CURRENT_TIMESTAMP, duration_hours REAL)""")
+    c.execute("INSERT INTO stage_timeline (candidate_id, stage) VALUES (?, ?)", (candidate_id, stage))
+
     conn.commit()
     conn.close()
+
+
+def get_stage_timeline():
+    """Returns per-candidate stage entries for the timeline/Gantt chart."""
+    conn = get_conn()
+    c = conn.cursor()
+    try:
+        c.execute("""
+            SELECT t.candidate_id, cand.name, t.stage, t.entered_at, t.duration_hours
+            FROM stage_timeline t JOIN candidates cand ON cand.id = t.candidate_id
+            ORDER BY t.candidate_id, t.entered_at
+        """)
+        rows = c.fetchall()
+        conn.close()
+        return [dict(r) for r in rows]
+    except Exception:
+        conn.close()
+        return []
+
+
+def get_quiz_heatmap_data():
+    """Returns all quiz scores for the trainee × topic heatmap."""
+    conn = get_conn()
+    c = conn.cursor()
+    try:
+        c.execute("""
+            SELECT cand.name, q.week, q.topic, q.score
+            FROM quiz_scores q JOIN candidates cand ON cand.id = q.candidate_id
+            ORDER BY cand.name, q.week
+        """)
+        rows = c.fetchall()
+        conn.close()
+        return [dict(r) for r in rows]
+    except Exception:
+        conn.close()
+        return []
 
 
 def update_alpha_score(candidate_id, v1=None, v2=None):
@@ -644,6 +702,29 @@ def log_calibration_check(run_id: int, avg_v1_top: float, avg_v2_top: float,
     conn.commit()
     conn.close()
 
+
+def update_alpha_v2(candidate_id, alpha_v2):
+    """Saves the final Alpha v2 score to the correct database."""
+    # 1. Use our safe connection method
+    conn = get_conn()
+    c = conn.cursor()
+    
+    try:
+        # 2. Update the exact column we just verified exists
+        c.execute("""
+            UPDATE candidates 
+            SET alpha_score_v2 = ? 
+            WHERE id = ?
+        """, (alpha_v2, candidate_id))
+        
+        # 3. CRITICAL: You must commit() or the database drops the change!
+        conn.commit()
+    except Exception as e:
+        print(f"Error saving Alpha v2: {e}")
+    finally:
+        conn.close()
+
+
 def get_calibration_flags() -> list:
     conn = get_conn()
     c = conn.cursor()
@@ -655,16 +736,15 @@ def get_calibration_flags() -> list:
     except Exception:
         conn.close()
         return []
+
+
 def get_cohort_topic_trends() -> list:
     conn = get_conn()
     c = conn.cursor()
     try:
-        # ADDED 'as n' to the count so the dashboard finds the key it expects
         c.execute("""
-            SELECT topic, AVG(score) as avg_score, COUNT(*) as n
-            FROM quiz_scores
-            GROUP BY topic
-            ORDER BY avg_score ASC
+            SELECT topic, AVG(score) as avg_score, COUNT(*) as count
+            FROM quiz_scores GROUP BY topic ORDER BY avg_score ASC
         """)
         rows = c.fetchall()
         conn.close()
@@ -672,91 +752,71 @@ def get_cohort_topic_trends() -> list:
     except Exception:
         conn.close()
         return []
-    
-def update_alpha_v2(candidate_id, alpha_v2):
-    with sqlite3.connect(DB_PATH) as conn:
-        cursor = conn.cursor()
-        cursor.execute("UPDATE candidates SET alpha_score_v2 = ? WHERE id = ?", (alpha_v2, candidate_id))
-        try:
-            cursor.execute("UPDATE candidates SET alpha_v2 = ? WHERE id = ?", (alpha_v2, candidate_id))
-        except sqlite3.OperationalError:
-            cursor.execute("ALTER TABLE candidates ADD COLUMN alpha_v2 REAL")
-            cursor.execute("UPDATE candidates SET alpha_v2 = ? WHERE id = ?", (alpha_v2, candidate_id))
-        conn.commit()
 
 
-def reset_trainee_password(candidate_id):
-    """Generates a fresh random password for an already-onboarded trainee
-    and returns the raw password so HR can hand it to them directly,
-    instead of having to dig through terminal logs."""
-    import bcrypt
-    import string
-    import random
-
-    raw_password = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
-    password_hash = bcrypt.hashpw(raw_password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
-
-    with sqlite3.connect(DB_PATH) as conn:
-        cursor = conn.cursor()
-        cursor.execute(
-            "UPDATE users SET password_hash = ? WHERE candidate_id = ?",
-            (password_hash, candidate_id)
-        )
-        conn.commit()
-
-    log_action(candidate_id, "onboarding", "password_reset_manual",
-               "Trainee password reset by HR via dashboard")
-
-    return raw_password
-    
-def save_candidate_code(candidate_id: str, questions: dict, answers: dict):
-    """Saves the raw JSON questions and code answers to the database."""
-    import sqlite3
-    import json
-    # Use your actual database filename here
-    conn = sqlite3.connect(DB_PATH) 
-    cursor = conn.cursor()
-    
+def get_active_candidate_count() -> int:
+    conn = get_conn()
+    c = conn.cursor()
     try:
-        cursor.execute("UPDATE candidates SET questions = ?, answers = ? WHERE id = ?", 
-                       (json.dumps(questions), json.dumps(answers), candidate_id))
-    except sqlite3.OperationalError:
-        # If the columns don't exist yet, build them dynamically!
-        cursor.execute("ALTER TABLE candidates ADD COLUMN questions TEXT")
-        cursor.execute("ALTER TABLE candidates ADD COLUMN answers TEXT")
-        cursor.execute("UPDATE candidates SET questions = ?, answers = ? WHERE id = ?", 
-                       (json.dumps(questions), json.dumps(answers), candidate_id))
-        
+        c.execute("SELECT COUNT(*) FROM candidates WHERE status = 'active'")
+        n = c.fetchone()[0]
+        conn.close()
+        return n
+    except Exception:
+        conn.close()
+        return 0
+
+
+def save_candidate_code(candidate_id: int, questions: dict, answers: dict):
+    import json as _json
+    conn = get_conn()
+    c = conn.cursor()
+    c.execute("""CREATE TABLE IF NOT EXISTS candidate_code (
+        id INTEGER PRIMARY KEY AUTOINCREMENT, candidate_id INTEGER,
+        questions TEXT, answers TEXT, created_at TEXT DEFAULT CURRENT_TIMESTAMP)""")
+    c.execute("INSERT INTO candidate_code (candidate_id, questions, answers) VALUES (?, ?, ?)",
+              (candidate_id, _json.dumps(questions), _json.dumps(answers)))
     conn.commit()
     conn.close()
 
-def get_active_candidate_count():
-    """Counts how many candidates are currently taking up pipeline capacity."""
-    import sqlite3
+
+def reset_trainee_password(candidate_id: int, new_password_hash: str):
+    conn = get_conn()
+    c = conn.cursor()
+    c.execute("UPDATE users SET password_hash = ? WHERE candidate_id = ?",
+              (new_password_hash, candidate_id))
+    conn.commit()
+    conn.close()
+
+def get_stage_timeline():
+    conn = get_conn()
+    c = conn.cursor()
     try:
-        # 1. MAKE SURE THIS PATH MATCHES YOUR REAL DB (e.g., "database/qg.db")
-        with sqlite3.connect(DB_PATH) as conn: 
-            cursor = conn.cursor()
-            
-            # 2. BULLETPROOF SQL: Using LOWER() so we don't care if it is 'Active', 'ACTIVE', or 'active'
-            cursor.execute("""
-                SELECT COUNT(*) FROM candidates 
-                WHERE LOWER(status) = 'active' 
-                AND LOWER(stage) NOT IN ('onboarded', 'talent_pool', 'rejected', 'tl_rejected')
-            """)
-            count = cursor.fetchone()[0]
-            
-            # 3. LOUD DEBUGGING: Print the exact number so we can see it in the terminal!
-            print(f"🕵️ [DB DEBUG] I see exactly {count} active candidates taking up space.")
-            return count
-            
-    except Exception as e:
-        print(f"🚨 [DB ERROR] The counter crashed: {e}")
-        return 0
-    
-def update_candidate_password(candidate_id, password_hash):
-    import sqlite3
-    with sqlite3.connect(DB_PATH) as conn:
-        cursor = conn.cursor()
-        cursor.execute("UPDATE candidates SET password_hash = ? WHERE id = ?", (password_hash, candidate_id))
-        conn.commit()
+        c.execute("""
+            SELECT t.candidate_id, cand.name, t.stage, t.entered_at, t.duration_hours
+            FROM stage_timeline t JOIN candidates cand ON cand.id = t.candidate_id
+            ORDER BY t.candidate_id, t.entered_at
+        """)
+        rows = c.fetchall()
+        conn.close()
+        return [dict(r) for r in rows]
+    except Exception:
+        conn.close()
+        return []
+
+
+def get_quiz_heatmap_data():
+    conn = get_conn()
+    c = conn.cursor()
+    try:
+        c.execute("""
+            SELECT cand.name, q.week, q.topic, q.score
+            FROM quiz_scores q JOIN candidates cand ON cand.id = q.candidate_id
+            ORDER BY cand.name, q.week
+        """)
+        rows = c.fetchall()
+        conn.close()
+        return [dict(r) for r in rows]
+    except Exception:
+        conn.close()
+        return []
