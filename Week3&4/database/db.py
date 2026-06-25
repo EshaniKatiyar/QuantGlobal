@@ -1,3 +1,4 @@
+import os
 import sqlite3
 import hashlib
 import json
@@ -6,7 +7,7 @@ from config import FAILED_CANDIDATE_RETENTION_DAYS, OFFBOARDED_RETENTION_DAYS
 
 DB_PATH = "database/quantglobal.db"
 
-
+os.makedirs("database", exist_ok=True)
 def get_conn():
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
     conn.row_factory = sqlite3.Row
